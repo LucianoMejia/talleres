@@ -1,0 +1,162 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+\title{Taller de Matemáticas Básicas III}
+\author{José Luciano Mejía Arias}
+\date{}
+
+\makeatletter
+\renewcommand{\maketitle}{
+  \begin{flushright}
+    \includegraphics[width=3cm]{logo_unal.png}
+  \end{flushright}
+  \begin{center}
+    {\LARGE \textbf{\@title}}\\[0.3cm]
+    {\large \@author}
+  \end{center}
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section*{Instrucciones}
+Resuelva cada uno de los siguientes ejercicios mostrando todo el proceso. Presente su trabajo de manera ordenada y clara.
+
+\section{Funciones - Conceptos Básicos}
+
+\subsection{Dominio y Rango}
+Determine el dominio y rango de las siguientes funciones:
+
+\begin{enumerate}
+    \item $f(x) = 3x - 5$
+    \item $g(x) = \sqrt{x - 2}$
+    \item $h(x) = \frac{1}{x - 3}$
+    \item $k(x) = x^2 - 4x + 3$
+    \item $m(x) = \frac{2x + 1}{x^2 - 9}$
+    \item $n(x) = \sqrt{4 - x^2}$
+\end{enumerate}
+
+\subsection{Evaluación de Funciones}
+Dada $f(x) = 2x^2 - 3x + 1$, calcule:
+
+\begin{enumerate}
+    \item $f(2)$
+    \item $f(-1)$
+    \item $f(a + h)$
+    \item $\frac{f(x + h) - f(x)}{h}$, con $h \neq 0$
+\end{enumerate}
+
+\subsection{Operaciones con Funciones}
+Sean $f(x) = 2x + 3$ y $g(x) = x^2 - 1$. Determine:
+
+\begin{enumerate}
+    \item $(f + g)(x)$
+    \item $(f \cdot g)(x)$
+    \item $\left(\frac{f}{g}\right)(x)$ y su dominio
+    \item $(f \circ g)(x)$
+    \item $(g \circ f)(x)$
+\end{enumerate}
+
+\section{Función Lineal}
+
+\subsection{Ecuación de la Recta}
+\begin{enumerate}
+    \item Encuentre la ecuación de la recta que pasa por los puntos $(2, 3)$ y $(-1, 6)$.
+    \item Determine la ecuación de la recta con pendiente $m = -\frac{2}{3}$ que pasa por el punto $(4, -1)$.
+    \item Halle la ecuación de la recta perpendicular a $2x + 3y = 6$ que pasa por el punto $(1, 2)$.
+    \item Encuentre la ecuación de la recta paralela a $y = 4x - 5$ que pasa por el origen.
+\end{enumerate}
+
+\subsection{Problemas de Aplicación}
+\begin{enumerate}
+    \item Un tanque contiene inicialmente 500 litros de agua. Se abre una llave que drena el tanque a razón de 15 litros por minuto.
+    \begin{enumerate}
+        \item Exprese la cantidad de agua $V$ en el tanque como función del tiempo $t$ en minutos.
+        \item ¿Cuánta agua habrá después de 12 minutos?
+        \item ¿En cuánto tiempo se vaciará completamente el tanque?
+    \end{enumerate}
+    
+    \item Una empresa de taxis cobra \$5000 por banderazo más \$1200 por cada kilómetro recorrido.
+    \begin{enumerate}
+        \item Exprese el costo $C$ como función de la distancia $d$ recorrida.
+        \item ¿Cuánto cuesta un viaje de 15 km?
+        \item Si un cliente pagó \$23000, ¿qué distancia recorrió?
+    \end{enumerate}
+\end{enumerate}
+
+\section{Función Cuadrática}
+
+\subsection{Análisis de Funciones Cuadráticas}
+Para cada función cuadrática, determine: vértice, eje de simetría, raíces (si existen), dominio, rango, y bosqueje la gráfica:
+
+\begin{enumerate}
+    \item $f(x) = x^2 - 4x + 3$
+    \item $g(x) = -2x^2 + 8x - 6$
+    \item $h(x) = x^2 + 2x + 5$
+    \item $k(x) = -x^2 + 6x - 5$
+\end{enumerate}
+
+\subsection{Problemas de Aplicación}
+\begin{enumerate}
+    \item Un objeto se lanza verticalmente hacia arriba con una velocidad inicial de 40 m/s desde una altura de 10 metros. La altura $h$ (en metros) del objeto en función del tiempo $t$ (en segundos) está dada por:
+    $$h(t) = -5t^2 + 40t + 10$$
+    \begin{enumerate}
+        \item ¿Cuál es la altura máxima que alcanza el objeto?
+        \item ¿En qué tiempo alcanza la altura máxima?
+        \item ¿Cuándo toca el suelo el objeto?
+    \end{enumerate}
+    
+    \item Un granjero tiene 240 metros de cerca para construir un corral rectangular. Uno de los lados del corral será una pared existente, por lo que solo necesita cercar tres lados.
+    \begin{enumerate}
+        \item Exprese el área $A$ del corral como función del ancho $x$.
+        \item ¿Qué dimensiones maximizan el área?
+        \item ¿Cuál es el área máxima?
+    \end{enumerate}
+\end{enumerate}
+
+\section{Derivadas}
+
+\subsection{Derivadas Básicas}
+Calcule la derivada de las siguientes funciones:
+
+\begin{enumerate}
+    \item $f(x) = 5x^3 - 4x^2 + 7x - 2$
+    \item $g(x) = \frac{3}{x^2} + \sqrt{x}$
+    \item $h(x) = (2x + 1)(3x - 5)$
+    \item $k(x) = \frac{x^2 + 1}{x - 2}$
+    \item $m(x) = (3x^2 - 2x + 1)^4$
+    \item $n(x) = \sqrt{4x^2 + 9}$
+\end{enumerate}
+
+\subsection{Aplicaciones de la Derivada}
+\begin{enumerate}
+    \item Encuentre la ecuación de la recta tangente a $f(x) = x^3 - 2x + 1$ en el punto $(1, 0)$.
+    
+    \item Determine los puntos críticos de $f(x) = x^3 - 6x^2 + 9x + 1$ y clasifíquelos como máximos o mínimos locales.
+    
+    \item Una partícula se mueve en línea recta según la ecuación de posición $s(t) = t^3 - 6t^2 + 9t$, donde $s$ está en metros y $t$ en segundos.
+    \begin{enumerate}
+        \item Encuentre la velocidad en $t = 2$ segundos.
+        \item Encuentre la aceleración en $t = 3$ segundos.
+        \item ¿En qué instantes la velocidad es cero?
+    \end{enumerate}
+    
+    \item Se desea construir una caja rectangular abierta con una lámina cuadrada de 12 cm de lado, cortando cuadrados iguales en las esquinas y doblando los lados hacia arriba. ¿Qué tamaño deben tener los cuadrados cortados para que el volumen de la caja sea máximo?
+\end{enumerate}
+
+\subsection{Razones de Cambio Relacionadas}
+\begin{enumerate}
+    \item Un globo esférico se infla de modo que su radio aumenta a razón de 2 cm/s. ¿A qué razón aumenta el volumen cuando el radio es de 5 cm? (Nota: $V = \frac{4}{3}\pi r^3$)
+    
+    \item Una escalera de 5 metros de largo está apoyada contra una pared. Si la base de la escalera se desliza alejándose de la pared a razón de 0.5 m/s, ¿a qué velocidad baja el extremo superior cuando la base está a 3 metros de la pared?
+\end{enumerate}
+
+\end{document}

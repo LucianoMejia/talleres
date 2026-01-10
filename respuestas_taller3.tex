@@ -1,0 +1,278 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+\title{Respuestas - Taller de Matemáticas Básicas III}
+\author{José Luciano Mejía Arias}
+\date{}
+
+\makeatletter
+\renewcommand{\maketitle}{
+  \begin{flushright}
+    \includegraphics[width=3cm]{logo_unal.png}
+  \end{flushright}
+  \begin{center}
+    {\LARGE \textbf{\@title}}\\[0.3cm]
+    {\large \@author}
+  \end{center}
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section{Funciones - Conceptos Básicos}
+
+\subsection{Dominio y Rango}
+
+\begin{enumerate}
+    \item $f(x) = 3x - 5$\\
+    Dominio: $\mathbb{R}$, Rango: $\mathbb{R}$
+    
+    \item $g(x) = \sqrt{x - 2}$\\
+    Dominio: $[2, \infty)$, Rango: $[0, \infty)$
+    
+    \item $h(x) = \frac{1}{x - 3}$\\
+    Dominio: $\mathbb{R} - \{3\}$, Rango: $\mathbb{R} - \{0\}$
+    
+    \item $k(x) = x^2 - 4x + 3 = (x - 2)^2 - 1$\\
+    Dominio: $\mathbb{R}$, Rango: $[-1, \infty)$
+    
+    \item $m(x) = \frac{2x + 1}{x^2 - 9}$\\
+    Dominio: $\mathbb{R} - \{-3, 3\}$, Rango: se determina mediante análisis detallado
+    
+    \item $n(x) = \sqrt{4 - x^2}$\\
+    Dominio: $[-2, 2]$, Rango: $[0, 2]$
+\end{enumerate}
+
+\subsection{Evaluación de Funciones}
+
+Dada $f(x) = 2x^2 - 3x + 1$:
+
+\begin{enumerate}
+    \item $f(2) = 2(2)^2 - 3(2) + 1 = 8 - 6 + 1 = 3$
+    
+    \item $f(-1) = 2(-1)^2 - 3(-1) + 1 = 2 + 3 + 1 = 6$
+    
+    \item $f(a + h) = 2(a + h)^2 - 3(a + h) + 1$
+    \begin{align*}
+        &= 2(a^2 + 2ah + h^2) - 3a - 3h + 1\\
+        &= 2a^2 + 4ah + 2h^2 - 3a - 3h + 1
+    \end{align*}
+    
+    \item $\frac{f(x + h) - f(x)}{h}$
+    \begin{align*}
+        &= \frac{[2(x + h)^2 - 3(x + h) + 1] - [2x^2 - 3x + 1]}{h}\\
+        &= \frac{2x^2 + 4xh + 2h^2 - 3x - 3h + 1 - 2x^2 + 3x - 1}{h}\\
+        &= \frac{4xh + 2h^2 - 3h}{h}\\
+        &= 4x + 2h - 3
+    \end{align*}
+\end{enumerate}
+
+\subsection{Operaciones con Funciones}
+
+Sean $f(x) = 2x + 3$ y $g(x) = x^2 - 1$:
+
+\begin{enumerate}
+    \item $(f + g)(x) = 2x + 3 + x^2 - 1 = x^2 + 2x + 2$
+    
+    \item $(f \cdot g)(x) = (2x + 3)(x^2 - 1) = 2x^3 + 3x^2 - 2x - 3$
+    
+    \item $\left(\frac{f}{g}\right)(x) = \frac{2x + 3}{x^2 - 1}$\\
+    Dominio: $\mathbb{R} - \{-1, 1\}$
+    
+    \item $(f \circ g)(x) = f(g(x)) = f(x^2 - 1) = 2(x^2 - 1) + 3 = 2x^2 - 2 + 3 = 2x^2 + 1$
+    
+    \item $(g \circ f)(x) = g(f(x)) = g(2x + 3) = (2x + 3)^2 - 1 = 4x^2 + 12x + 9 - 1 = 4x^2 + 12x + 8$
+\end{enumerate}
+
+\section{Función Lineal}
+
+\subsection{Ecuación de la Recta}
+
+\begin{enumerate}
+    \item Puntos $(2, 3)$ y $(-1, 6)$:
+    \begin{align*}
+        m &= \frac{6 - 3}{-1 - 2} = \frac{3}{-3} = -1\\
+        y - 3 &= -1(x - 2)\\
+        y &= -x + 5
+    \end{align*}
+    
+    \item $m = -\frac{2}{3}$, punto $(4, -1)$:
+    \begin{align*}
+        y - (-1) &= -\frac{2}{3}(x - 4)\\
+        y + 1 &= -\frac{2}{3}x + \frac{8}{3}\\
+        y &= -\frac{2}{3}x + \frac{5}{3}
+    \end{align*}
+    
+    \item Perpendicular a $2x + 3y = 6$, punto $(1, 2)$:
+    \begin{align*}
+        3y &= -2x + 6 \Rightarrow y = -\frac{2}{3}x + 2\\
+        m_{\perp} &= \frac{3}{2}\\
+        y - 2 &= \frac{3}{2}(x - 1)\\
+        y &= \frac{3}{2}x + \frac{1}{2}
+    \end{align*}
+    
+    \item Paralela a $y = 4x - 5$, pasa por el origen:
+    \begin{align*}
+        y = 4x
+    \end{align*}
+\end{enumerate}
+
+\subsection{Problemas de Aplicación}
+
+\begin{enumerate}
+    \item Tanque de agua:
+    \begin{enumerate}
+        \item $V(t) = 500 - 15t$
+        \item $V(12) = 500 - 15(12) = 500 - 180 = 320$ litros
+        \item $0 = 500 - 15t \Rightarrow t = \frac{500}{15} = 33.33$ minutos
+    \end{enumerate}
+    
+    \item Taxis:
+    \begin{enumerate}
+        \item $C(d) = 5000 + 1200d$
+        \item $C(15) = 5000 + 1200(15) = 5000 + 18000 = 23000$ pesos
+        \item $23000 = 5000 + 1200d \Rightarrow d = \frac{18000}{1200} = 15$ km
+    \end{enumerate}
+\end{enumerate}
+
+\section{Función Cuadrática}
+
+\subsection{Análisis de Funciones Cuadráticas}
+
+\begin{enumerate}
+    \item $f(x) = x^2 - 4x + 3$
+    \begin{itemize}
+        \item Vértice: $x_v = -\frac{-4}{2(1)} = 2$, $y_v = (2)^2 - 4(2) + 3 = -1 \Rightarrow (2, -1)$
+        \item Eje de simetría: $x = 2$
+        \item Raíces: $(x - 1)(x - 3) = 0 \Rightarrow x = 1, x = 3$
+        \item Dominio: $\mathbb{R}$
+        \item Rango: $[-1, \infty)$
+    \end{itemize}
+    
+    \item $g(x) = -2x^2 + 8x - 6 = -2(x^2 - 4x + 3)$
+    \begin{itemize}
+        \item Vértice: $x_v = -\frac{8}{2(-2)} = 2$, $y_v = -2(2)^2 + 8(2) - 6 = 2 \Rightarrow (2, 2)$
+        \item Eje de simetría: $x = 2$
+        \item Raíces: $-2(x - 1)(x - 3) = 0 \Rightarrow x = 1, x = 3$
+        \item Dominio: $\mathbb{R}$
+        \item Rango: $(-\infty, 2]$
+    \end{itemize}
+    
+    \item $h(x) = x^2 + 2x + 5 = (x + 1)^2 + 4$
+    \begin{itemize}
+        \item Vértice: $(-1, 4)$
+        \item Eje de simetría: $x = -1$
+        \item Raíces: No tiene raíces reales ($\Delta = 4 - 20 = -16 < 0$)
+        \item Dominio: $\mathbb{R}$
+        \item Rango: $[4, \infty)$
+    \end{itemize}
+    
+    \item $k(x) = -x^2 + 6x - 5$
+    \begin{itemize}
+        \item Vértice: $x_v = -\frac{6}{2(-1)} = 3$, $y_v = -(3)^2 + 6(3) - 5 = 4 \Rightarrow (3, 4)$
+        \item Eje de simetría: $x = 3$
+        \item Raíces: $-(x - 1)(x - 5) = 0 \Rightarrow x = 1, x = 5$
+        \item Dominio: $\mathbb{R}$
+        \item Rango: $(-\infty, 4]$
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Problemas de Aplicación}
+
+\begin{enumerate}
+    \item Objeto lanzado: $h(t) = -5t^2 + 40t + 10$
+    \begin{enumerate}
+        \item Tiempo máximo: $t_v = -\frac{40}{2(-5)} = 4$ segundos
+        \item Altura máxima: $h(4) = -5(16) + 40(4) + 10 = -80 + 160 + 10 = 90$ metros
+        \item Toca el suelo: $-5t^2 + 40t + 10 = 0 \Rightarrow t = \frac{-40 \pm \sqrt{1600 + 200}}{-10} = \frac{-40 \pm \sqrt{1800}}{-10}$
+        \begin{align*}
+            t = \frac{-40 + 42.43}{-10} \approx -0.24 \text{ (descartado)} \quad \text{o} \quad t \approx 8.24 \text{ segundos}
+        \end{align*}
+    \end{enumerate}
+    
+    \item Corral rectangular:
+    \begin{enumerate}
+        \item Sea $x$ el ancho. Perímetro: $2x + y = 240 \Rightarrow y = 240 - 2x$\\
+        Área: $A(x) = x(240 - 2x) = 240x - 2x^2$
+        \item Máximo en: $x_v = -\frac{240}{2(-2)} = 60$ metros
+        \item Dimensiones: ancho = 60 m, largo = $240 - 2(60) = 120$ m
+        \item Área máxima: $A(60) = 60(120) = 7200$ m²
+    \end{enumerate}
+\end{enumerate}
+
+\section{Derivadas}
+
+\subsection{Derivadas Básicas}
+
+\begin{enumerate}
+    \item $f(x) = 5x^3 - 4x^2 + 7x - 2$\\
+    $f'(x) = 15x^2 - 8x + 7$
+    
+    \item $g(x) = \frac{3}{x^2} + \sqrt{x} = 3x^{-2} + x^{1/2}$\\
+    $g'(x) = -6x^{-3} + \frac{1}{2}x^{-1/2} = -\frac{6}{x^3} + \frac{1}{2\sqrt{x}}$
+    
+    \item $h(x) = (2x + 1)(3x - 5)$\\
+    $h'(x) = 2(3x - 5) + (2x + 1)(3) = 6x - 10 + 6x + 3 = 12x - 7$
+    
+    \item $k(x) = \frac{x^2 + 1}{x - 2}$\\
+    $k'(x) = \frac{2x(x - 2) - (x^2 + 1)(1)}{(x - 2)^2} = \frac{2x^2 - 4x - x^2 - 1}{(x - 2)^2} = \frac{x^2 - 4x - 1}{(x - 2)^2}$
+    
+    \item $m(x) = (3x^2 - 2x + 1)^4$\\
+    $m'(x) = 4(3x^2 - 2x + 1)^3(6x - 2) = 8(3x - 1)(3x^2 - 2x + 1)^3$
+    
+    \item $n(x) = \sqrt{4x^2 + 9} = (4x^2 + 9)^{1/2}$\\
+    $n'(x) = \frac{1}{2}(4x^2 + 9)^{-1/2}(8x) = \frac{4x}{\sqrt{4x^2 + 9}}$
+\end{enumerate}
+
+\subsection{Aplicaciones de la Derivada}
+
+\begin{enumerate}
+    \item $f(x) = x^3 - 2x + 1$, punto $(1, 0)$\\
+    $f'(x) = 3x^2 - 2$, $f'(1) = 1$\\
+    Ecuación: $y - 0 = 1(x - 1) \Rightarrow y = x - 1$
+    
+    \item $f(x) = x^3 - 6x^2 + 9x + 1$\\
+    $f'(x) = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x - 1)(x - 3)$\\
+    Puntos críticos: $x = 1, x = 3$\\
+    $f''(x) = 6x - 12$\\
+    $f''(1) = -6 < 0$ (máximo local), $f''(3) = 6 > 0$ (mínimo local)
+    
+    \item $s(t) = t^3 - 6t^2 + 9t$
+    \begin{enumerate}
+        \item $v(t) = s'(t) = 3t^2 - 12t + 9$, $v(2) = 12 - 24 + 9 = -3$ m/s
+        \item $a(t) = v'(t) = 6t - 12$, $a(3) = 18 - 12 = 6$ m/s²
+        \item $v(t) = 0 \Rightarrow 3t^2 - 12t + 9 = 0 \Rightarrow t^2 - 4t + 3 = 0 \Rightarrow t = 1, t = 3$ segundos
+    \end{enumerate}
+    
+    \item Sea $x$ el lado del cuadrado cortado. Volumen: $V(x) = x(12 - 2x)^2$\\
+    $V'(x) = (12 - 2x)^2 + x \cdot 2(12 - 2x)(-2) = (12 - 2x)^2 - 4x(12 - 2x)$\\
+    $= (12 - 2x)[(12 - 2x) - 4x] = (12 - 2x)(12 - 6x) = 0$\\
+    $x = 6$ (descartado) o $x = 2$ cm
+\end{enumerate}
+
+\subsection{Razones de Cambio Relacionadas}
+
+\begin{enumerate}
+    \item $V = \frac{4}{3}\pi r^3$, $\frac{dr}{dt} = 2$ cm/s, $r = 5$ cm
+    \begin{align*}
+        \frac{dV}{dt} &= 4\pi r^2 \frac{dr}{dt} = 4\pi(5)^2(2) = 200\pi \text{ cm}^3/\text{s}
+    \end{align*}
+    
+    \item Escalera: $x^2 + y^2 = 25$, $\frac{dx}{dt} = 0.5$ m/s, $x = 3$ m
+    \begin{align*}
+        y &= \sqrt{25 - 9} = 4 \text{ m}\\
+        2x\frac{dx}{dt} + 2y\frac{dy}{dt} &= 0\\
+        \frac{dy}{dt} &= -\frac{x}{y}\frac{dx}{dt} = -\frac{3}{4}(0.5) = -0.375 \text{ m/s}
+    \end{align*}
+    El extremo superior baja a 0.375 m/s.
+\end{enumerate}
+
+\end{document}

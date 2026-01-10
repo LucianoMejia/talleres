@@ -1,0 +1,126 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+\title{Taller de Matemáticas Básicas II}
+\author{José Luciano Mejía Arias}
+\date{}
+
+\makeatletter
+\renewcommand{\maketitle}{
+  \begin{flushright}
+    \includegraphics[width=3cm]{logo_unal.png}
+  \end{flushright}
+  \begin{center}
+    {\LARGE \textbf{\@title}}\\[0.3cm]
+    {\large \@author}
+  \end{center}
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section*{Instrucciones}
+Resuelva cada uno de los siguientes ejercicios mostrando todo el proceso. Presente su trabajo de manera ordenada y clara.
+
+\section{Racionalización}
+Racionalice el denominador de las siguientes expresiones:
+
+\begin{enumerate}
+    \item $\frac{5}{\sqrt{3}}$
+    \item $\frac{2}{\sqrt{5} + 1}$
+    \item $\frac{3}{\sqrt{7} - \sqrt{2}}$
+    \item $\frac{\sqrt{2} + 1}{\sqrt{2} - 1}$
+    \item $\frac{4}{\sqrt[3]{2}}$
+    \item $\frac{x + \sqrt{x}}{x - \sqrt{x}}$
+    \item $\frac{6}{2\sqrt{3} + 3\sqrt{2}}$
+\end{enumerate}
+
+\section{Inecuaciones}
+Resuelva las siguientes inecuaciones y represente la solución en la recta numérica:
+
+\begin{enumerate}
+    \item $3x - 5 < 10$
+    \item $2(x - 3) \geq x + 4$
+    \item $-4 \leq 2x + 6 < 10$
+    \item $x^2 - 5x + 6 > 0$
+    \item $x^2 - 4x + 3 \leq 0$
+    \item $\frac{x + 2}{x - 3} > 0$
+    \item $|2x - 1| < 5$
+    \item $\frac{2x - 1}{x + 3} \geq 1$
+\end{enumerate}
+
+\section{Conjuntos}
+Dados los conjuntos $A = \{1, 2, 3, 4, 5\}$, $B = \{3, 4, 5, 6, 7\}$, $C = \{2, 4, 6, 8\}$ y $U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}$ como conjunto universal, determine:
+
+\begin{enumerate}
+    \item $A \cup B$
+    \item $A \cap B$
+    \item $A - B$
+    \item $B - A$
+    \item $(A \cup B) \cap C$
+    \item $A^c$ (complemento de A)
+    \item $(A \cap B)^c$
+    \item $A \times B$ (producto cartesiano, solo los primeros 10 elementos)
+\end{enumerate}
+
+\section{Operaciones con Conjuntos - Demostración}
+Demuestre las siguientes propiedades usando diagramas de Venn o álgebra de conjuntos:
+
+\begin{enumerate}
+    \item $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$ (Ley distributiva)
+    \item $(A \cup B)^c = A^c \cap B^c$ (Ley de De Morgan)
+    \item $A - B = A \cap B^c$
+\end{enumerate}
+
+\section{Problemas de Aplicación con Conjuntos}
+
+\begin{enumerate}
+    \item En una encuesta a 100 estudiantes sobre sus preferencias deportivas, se encontró que:
+    \begin{itemize}
+        \item 45 practican fútbol
+        \item 35 practican baloncesto
+        \item 30 practican natación
+        \item 15 practican fútbol y baloncesto
+        \item 12 practican fútbol y natación
+        \item 10 practican baloncesto y natación
+        \item 5 practican los tres deportes
+    \end{itemize}
+    Determine:
+    \begin{enumerate}
+        \item ¿Cuántos estudiantes practican solo fútbol?
+        \item ¿Cuántos estudiantes practican exactamente dos deportes?
+        \item ¿Cuántos estudiantes no practican ninguno de estos deportes?
+    \end{enumerate}
+    
+    \item En un grupo de 50 personas:
+    \begin{itemize}
+        \item 32 hablan inglés
+        \item 28 hablan francés
+        \item 25 hablan alemán
+        \item 18 hablan inglés y francés
+        \item 15 hablan inglés y alemán
+        \item 14 hablan francés y alemán
+        \item 10 hablan los tres idiomas
+    \end{itemize}
+    ¿Cuántas personas no hablan ninguno de estos tres idiomas?
+\end{enumerate}
+
+\section{Intervalos y Notación}
+Exprese los siguientes conjuntos usando notación de intervalos y represéntelos en la recta numérica:
+
+\begin{enumerate}
+    \item $\{x \in \mathbb{R} : -3 < x \leq 5\}$
+    \item $\{x \in \mathbb{R} : x \geq 2\}$
+    \item $\{x \in \mathbb{R} : x < -1 \text{ o } x > 4\}$
+    \item $\{x \in \mathbb{R} : |x - 2| < 3\}$
+\end{enumerate}
+
+\end{document}
