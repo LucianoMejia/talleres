@@ -1,0 +1,80 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+\title{Taller de Calculo Integral III}
+\author{Jose Luciano Mejia Arias}
+\date{}
+
+\makeatletter
+\renewcommand{\maketitle}{
+  \begin{flushright}
+    \includegraphics[width=3cm]{../../logo_unal.png}
+  \end{flushright}
+  \begin{center}
+    {\LARGE \textbf{\@title}}\\[0.3cm]
+    {\large \@author}
+  \end{center}
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section*{Instrucciones}
+Resuelva con tecnica adecuada (partes, fracciones parciales o sustitucion trigonometrica). Muestre verificacion cuando sea posible.
+
+\section{Integracion por Partes}
+
+\begin{enumerate}
+    \item $\int x e^x\,dx$
+    \item $\int x\ln x\,dx$, con $x>0$
+    \item $\int x^2\cos x\,dx$
+    \item $\int e^{2x}\sin x\,dx$
+    \item $\int \arctan x\,dx$
+\end{enumerate}
+
+\section{Fracciones Parciales}
+
+\begin{enumerate}
+    \item $\int \frac{3x+5}{x^2-1}\,dx$
+    \item $\int \frac{2x^2+3x+1}{x(x+1)(x+2)}\,dx$
+    \item $\int \frac{dx}{x^2+5x+6}$
+    \item $\int \frac{x+4}{(x-1)^2}\,dx$
+    \item $\int \frac{4x}{x^2(x^2+1)}\,dx$
+\end{enumerate}
+
+\section{Integrales Trigonometricas y Sustitucion Trigonometrica}
+
+\begin{enumerate}
+    \item $\int \sin^2 x\cos^2 x\,dx$
+    \item $\int \frac{dx}{\sqrt{9-x^2}}$
+    \item $\int \sqrt{16-x^2}\,dx$
+    \item $\int \frac{x^2}{\sqrt{x^2+4}}\,dx$
+    \item $\int \frac{dx}{x^2\sqrt{x^2-1}}$, con $x>1$
+\end{enumerate}
+
+\section{Integrales Impropias}
+
+\begin{enumerate}
+    \item $\int_1^{\infty} \frac{1}{x^p}\,dx$, analice para que valores de $p$ converge.
+    \item $\int_0^1 \frac{1}{\sqrt{x}}\,dx$
+    \item $\int_0^{\infty} e^{-2x}\,dx$
+    \item $\int_{-\infty}^{\infty} \frac{1}{x^2+1}\,dx$
+\end{enumerate}
+
+\section{Aplicaciones Integrales}
+
+\begin{enumerate}
+    \item Una partícula tiene velocidad $v(t)=3t^2-6t+2$ (m/s). Si $s(0)=5$, halle $s(t)$.
+    \item Halle el trabajo para estirar un resorte desde $x=0$ hasta $x=0.2$ m, si $F(x)=120x$ N.
+    \item Una funcion de costo marginal es $C'(q)=0.04q+15$ y $C(0)=800$. Determine $C(q)$.
+\end{enumerate}
+
+\end{document}

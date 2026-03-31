@@ -1,0 +1,107 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+\title{Respuestas - Taller de Ecuaciones Diferenciales II}
+\author{Jose Luciano Mejia Arias}
+\date{}
+
+\makeatletter
+\renewcommand{\maketitle}{
+  \begin{flushright}
+    \includegraphics[width=3cm]{../../logo_unal.png}
+  \end{flushright}
+  \begin{center}
+    {\LARGE \textbf{\@title}}\\[0.3cm]
+    {\large \@author}
+  \end{center}
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section{Ecuaciones Lineales Homogeneas con Coeficientes Constantes}
+\begin{enumerate}
+    \item $y''-5y'+6y=0$:
+    $$y=C_1e^{2x}+C_2e^{3x}.$$
+
+    \item $y''+4y'+4y=0$:
+    $$y=(C_1+C_2x)e^{-2x}.$$
+
+    \item $y''+9y=0$:
+    $$y=C_1\cos(3x)+C_2\sin(3x).$$
+
+    \item $y''-2y'+10y=0$:
+    $$y=e^x\left(C_1\cos(3x)+C_2\sin(3x)\right).$$
+
+    \item $y''+y'-12y=0$, $y(0)=2$, $y'(0)=1$:
+    $$y=e^{3x}+e^{-4x}.$$
+\end{enumerate}
+
+\section{Ecuaciones No Homogeneas}
+\begin{enumerate}
+    \item $y''-3y'+2y=e^x$:
+    $$y=C_1e^x+C_2e^{2x}-xe^x.$$
+
+    \item $y''+y=\cos(2x)$:
+    $$y=C_1\cos x+C_2\sin x-\frac{1}{3}\cos(2x).$$
+
+    \item $y''-4y=3x$:
+    $$y=C_1e^{2x}+C_2e^{-2x}-\frac{3}{4}x.$$
+
+    \item $y''+4y'+13y=e^{-2x}\sin(3x)$:
+    $$y=e^{-2x}\left(C_1\cos 3x+C_2\sin 3x\right)-\frac{x}{6}e^{-2x}\cos 3x.$$
+
+    \item $y''+y=\tan x$:
+    $$y=C_1\cos x+C_2\sin x-\cos x\ln|\sec x+\tan x|.$$
+\end{enumerate}
+
+\section{Problemas con Condiciones Iniciales}
+\begin{enumerate}
+    \item $y''+2y'+5y=0$, $y(0)=0$, $y'(0)=4$:
+    $$y=2e^{-x}\sin(2x).$$
+
+    \item $y''-y'-6y=0$, $y(0)=3$, $y'(0)=-1$:
+    $$y=e^{3x}+2e^{-2x}.$$
+
+    \item $y''+16y=32\sin(4x)$, $y(0)=1$, $y'(0)=0$:
+    $$y=\cos(4x)+\sin(4x)-4x\cos(4x).$$
+\end{enumerate}
+
+\section{Modelacion Fisica}
+\begin{enumerate}
+    \item Masa-resorte sin amortiguamiento ($m=1$, $k=9$):
+    $$x''+9x=0,\quad x(0)=2,\ x'(0)=0 \Rightarrow x(t)=2\cos(3t).$$
+
+    \item $x''+4x'+13x=0$, $x(0)=1$, $x'(0)=-1$:
+    $$x(t)=e^{-2t}\left(\cos(3t)+\frac{1}{3}\sin(3t)\right).$$
+    Es un sistema subamortiguado (oscilatorio amortiguado).
+
+    \item $q''+6q'+25q=0$, $q(0)=0$, $q'(0)=5$:
+    $$q(t)=\frac{5}{4}e^{-3t}\sin(4t).$$
+\end{enumerate}
+
+\section{Sistema de Ecuaciones Diferenciales (Opcional de Profundizacion)}
+\begin{enumerate}
+    \item
+    \begin{align*}
+        x' &= 3x+4y,\\
+        y' &= -4x+3y,
+    \end{align*}
+    con $x(0)=1$, $y(0)=0$:
+    $$x(t)=e^{3t}\cos(4t),\qquad y(t)=-e^{3t}\sin(4t).$$
+
+    \item Para $y''+2y'+2y=0$, una forma de primer orden es:
+    $$u_1=y,\quad u_2=y',$$
+    $$u_1'=u_2,\quad u_2'=-2u_2-2u_1.$$
+    El retrato de fase es una espiral estable hacia el origen (autovalores $-1\pm i$).
+\end{enumerate}
+
+\end{document}

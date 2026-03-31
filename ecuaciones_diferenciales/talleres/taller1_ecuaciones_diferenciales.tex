@@ -1,0 +1,78 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+\title{Taller de Ecuaciones Diferenciales I}
+\author{Jose Luciano Mejia Arias}
+\date{}
+
+\makeatletter
+\renewcommand{\maketitle}{
+  \begin{flushright}
+    \includegraphics[width=3cm]{../../logo_unal.png}
+  \end{flushright}
+  \begin{center}
+    {\LARGE \textbf{\@title}}\\[0.3cm]
+    {\large \@author}
+  \end{center}
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section*{Instrucciones}
+Clasifique cada ecuacion diferencial y resuelvala por el metodo apropiado. Indique claramente condiciones iniciales y dominio de la solucion.
+
+\section{Variables Separables}
+
+\begin{enumerate}
+    \item $\frac{dy}{dx}=xy$
+    \item $\frac{dy}{dx}=\frac{2x}{1+y^2}$
+    \item $\frac{dy}{dx}=\frac{y-1}{x+2}$
+    \item $\frac{dy}{dx}=e^{x-y}$
+    \item $\frac{dy}{dx}=\frac{x^2+1}{y^2+1}$, con $y(0)=0$
+\end{enumerate}
+
+\section{Ecuaciones Lineales de Primer Orden}
+
+\begin{enumerate}
+    \item $y'+2y=e^{-x}$
+    \item $y'-\frac{3}{x}y=x^2$, $x>0$
+    \item $y'+y=\sin x$, con $y(0)=1$
+    \item $2y'+y=4x$
+    \item $y'+\frac{1}{x}y=\ln x$, $x>0$
+\end{enumerate}
+
+\section{Ecuaciones Exactas}
+Determine si son exactas y, si no lo son, proponga un posible factor integrante simple cuando aplique:
+
+\begin{enumerate}
+    \item $(2xy+y^2)\,dx+(x^2+2xy)\,dy=0$
+    \item $(3x^2+y)\,dx+(x-4y)\,dy=0$
+    \item $(y\cos x+2x)\,dx+(\sin x+3y^2)\,dy=0$
+\end{enumerate}
+
+\section{Problemas de Aplicacion}
+
+\begin{enumerate}
+    \item Crecimiento poblacional: $\frac{dP}{dt}=0.08P$, con $P(0)=1200$. Halle $P(t)$ y el tiempo para duplicarse.
+    \item Enfriamiento de Newton: $\frac{dT}{dt}=-k(T-22)$, $T(0)=90$ y $T(10)=60$. Determine $k$ y $T(t)$.
+    \item Mezclas: un tanque tiene 100 L con 5 kg de sal. Entra salmuera a 2 L/min con concentracion de 0.1 kg/L y sale al mismo ritmo. Formule y resuelva la E.D. para la cantidad de sal $Q(t)$.
+\end{enumerate}
+
+\section{Campo Direccional y Analisis Cualitativo}
+
+\begin{enumerate}
+    \item Para $y'=y(1-y)$, identifique puntos de equilibrio y su estabilidad.
+    \item Para $y'=x-y$, describa el comportamiento cualitativo de soluciones cerca de la recta $y=x$.
+    \item Para $y'=y^2-4$, analice en que intervalos las soluciones crecen o decrecen.
+\end{enumerate}
+
+\end{document}

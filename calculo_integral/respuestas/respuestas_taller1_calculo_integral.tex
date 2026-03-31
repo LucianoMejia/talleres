@@ -1,0 +1,79 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+\title{Respuestas - Taller de Calculo Integral I}
+\author{Jose Luciano Mejia Arias}
+\date{}
+
+\makeatletter
+\renewcommand{\maketitle}{
+  \begin{flushright}
+    \includegraphics[width=3cm]{../../logo_unal.png}
+  \end{flushright}
+  \begin{center}
+    {\LARGE \textbf{\@title}}\\[0.3cm]
+    {\large \@author}
+  \end{center}
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section{Integrales Indefinidas Basicas}
+\begin{enumerate}
+    \item $\int (6x^5 - 4x^2 + 7)\,dx = x^6 - \frac{4}{3}x^3 + 7x + C$.
+    \item $\int \left(\frac{5}{x} - 3\sqrt{x} + \frac{2}{x^2}\right)\,dx = 5\ln|x| - 2x^{3/2} - \frac{2}{x} + C$.
+    \item $\int (4e^{2x} - 3\cos x)\,dx = 2e^{2x} - 3\sin x + C$.
+    \item $\int \left(\sec^2 x + 5\csc x\cot x\right)\,dx = \tan x - 5\csc x + C$.
+    \item $\int (2x+1)^7\,dx = \frac{(2x+1)^8}{16} + C$.
+    \item $\int \frac{3x^2+1}{x^3+x+4}\,dx = \ln|x^3+x+4| + C$.
+\end{enumerate}
+
+\section{Sustitucion}
+\begin{enumerate}
+    \item $\int x\sqrt{x^2+9}\,dx = \frac{1}{3}(x^2+9)^{3/2} + C$.
+    \item $\int \frac{2x-1}{x^2-x+5}\,dx = \ln(x^2-x+5) + C$.
+    \item $\int \frac{\cos(3x)}{1+\sin(3x)}\,dx = \frac{1}{3}\ln|1+\sin(3x)| + C$.
+    \item $\int \frac{e^{\sqrt{x}}}{\sqrt{x}}\,dx = 2e^{\sqrt{x}} + C$.
+    \item $\int \frac{1}{x\ln x}\,dx = \ln(\ln x) + C$, $x>1$.
+\end{enumerate}
+
+\section{Integrales Trigonometricas Elementales}
+\begin{enumerate}
+    \item $\int \sin(4x)\,dx = -\frac{1}{4}\cos(4x) + C$.
+    \item $\int \cos^3 x\sin x\,dx = -\frac{\cos^4 x}{4} + C$.
+    \item $\int \tan x\,dx = \ln|\sec x| + C$.
+    \item $\int \sec x(\sec x+\tan x)\,dx = \tan x + \sec x + C$.
+    \item $\int \frac{dx}{1+\cos x} = \tan\left(\frac{x}{2}\right) + C$.
+\end{enumerate}
+
+\section{Integrales Definidas Basicas}
+\begin{enumerate}
+    \item $\int_0^2 (3x^2-4x+1)\,dx = 2$.
+    \item $\int_{-1}^{1} (x^3+2x^2)\,dx = \frac{4}{3}$.
+    \item $\int_0^{\pi/2} \sin x\,dx = 1$.
+    \item $\int_1^{e} \frac{1}{x}\,dx = 1$.
+    \item $\int_0^1 \frac{2x}{x^2+1}\,dx = \ln 2$.
+\end{enumerate}
+
+\section{Aplicaciones Cortas}
+\begin{enumerate}
+    \item Si $f'(x)=6x^2-4x+3$, entonces $f(x)=2x^3-2x^2+3x+C$. Con $f(1)=5$ se obtiene $C=2$. Por tanto,
+    $$f(x)=2x^3-2x^2+3x+2.$$
+
+    \item Area bajo $y=2x+1$ entre $0$ y $4$:
+    $$A=\int_0^4 (2x+1)\,dx = [x^2+x]_0^4 = 20.$$
+
+    \item Area bajo $y=x^2$ en $[0,3]$:
+    $$A=\int_0^3 x^2\,dx = \left[\frac{x^3}{3}\right]_0^3 = 9.$$
+\end{enumerate}
+
+\end{document}

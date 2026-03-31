@@ -1,0 +1,84 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+\title{Taller de Calculo Integral I}
+\author{Jose Luciano Mejia Arias}
+\date{}
+
+\makeatletter
+\renewcommand{\maketitle}{
+  \begin{flushright}
+    \includegraphics[width=3cm]{../../logo_unal.png}
+  \end{flushright}
+  \begin{center}
+    {\LARGE \textbf{\@title}}\\[0.3cm]
+    {\large \@author}
+  \end{center}
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section*{Instrucciones}
+Resuelva cada ejercicio mostrando desarrollo ordenado. Verifique condiciones de dominio y simplifique resultados.
+
+\section{Integrales Indefinidas Basicas}
+Calcule las siguientes integrales:
+
+\begin{enumerate}
+    \item $\int (6x^5 - 4x^2 + 7)\,dx$
+    \item $\int \left(\frac{5}{x} - 3\sqrt{x} + \frac{2}{x^2}\right)\,dx$
+    \item $\int (4e^{2x} - 3\cos x)\,dx$
+    \item $\int \left(\sec^2 x + 5\csc x\cot x\right)\,dx$
+    \item $\int (2x+1)^7\,dx$
+    \item $\int \frac{3x^2+1}{x^3+x+4}\,dx$
+\end{enumerate}
+
+\section{Sustitucion}
+Resuelva por cambio de variable:
+
+\begin{enumerate}
+    \item $\int x\sqrt{x^2+9}\,dx$
+    \item $\int \frac{2x-1}{x^2-x+5}\,dx$
+    \item $\int \frac{\cos(3x)}{1+\sin(3x)}\,dx$
+    \item $\int \frac{e^{\sqrt{x}}}{\sqrt{x}}\,dx$
+    \item $\int \frac{1}{x\ln x}\,dx$, con $x>1$
+\end{enumerate}
+
+\section{Integrales Trigonometricas Elementales}
+
+\begin{enumerate}
+    \item $\int \sin(4x)\,dx$
+    \item $\int \cos^3 x\sin x\,dx$
+    \item $\int \tan x\,dx$
+    \item $\int \sec x(\sec x+\tan x)\,dx$
+    \item $\int \frac{dx}{1+\cos x}$
+\end{enumerate}
+
+\section{Integrales Definidas Basicas}
+
+\begin{enumerate}
+    \item $\int_0^2 (3x^2-4x+1)\,dx$
+    \item $\int_{-1}^{1} (x^3+2x^2)\,dx$
+    \item $\int_0^{\pi/2} \sin x\,dx$
+    \item $\int_1^{e} \frac{1}{x}\,dx$
+    \item $\int_0^1 \frac{2x}{x^2+1}\,dx$
+\end{enumerate}
+
+\section{Aplicaciones Cortas}
+
+\begin{enumerate}
+    \item Encuentre la funcion $f(x)$ tal que $f'(x)=6x^2-4x+3$ y $f(1)=5$.
+    \item Calcule el area bajo la curva $y=2x+1$ entre $x=0$ y $x=4$.
+    \item Determine el area entre $y=x^2$ y el eje $x$ en el intervalo $[0,3]$.
+\end{enumerate}
+
+\end{document}

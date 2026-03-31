@@ -1,0 +1,85 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+\title{Taller de Ecuaciones Diferenciales II}
+\author{Jose Luciano Mejia Arias}
+\date{}
+
+\makeatletter
+\renewcommand{\maketitle}{
+  \begin{flushright}
+    \includegraphics[width=3cm]{../../logo_unal.png}
+  \end{flushright}
+  \begin{center}
+    {\LARGE \textbf{\@title}}\\[0.3cm]
+    {\large \@author}
+  \end{center}
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section*{Instrucciones}
+Resuelva cada ecuacion diferencial de segundo orden indicando el tipo de solucion (homogenea, particular, general o con condiciones iniciales).
+
+\section{Ecuaciones Lineales Homogeneas con Coeficientes Constantes}
+
+\begin{enumerate}
+    \item $y''-5y'+6y=0$
+    \item $y''+4y'+4y=0$
+    \item $y''+9y=0$
+    \item $y''-2y'+10y=0$
+    \item $y''+y'-12y=0$, con $y(0)=2$, $y'(0)=1$
+\end{enumerate}
+
+\section{Ecuaciones No Homogeneas}
+Use coeficientes indeterminados o variacion de parametros:
+
+\begin{enumerate}
+    \item $y''-3y'+2y=e^x$
+    \item $y''+y=\cos(2x)$
+    \item $y''-4y=3x$
+    \item $y''+4y'+13y=e^{-2x}\sin(3x)$
+    \item $y''+y=\tan x$ (sugerencia: variacion de parametros)
+\end{enumerate}
+
+\section{Problemas con Condiciones Iniciales}
+
+\begin{enumerate}
+    \item $y''+2y'+5y=0$, $y(0)=0$, $y'(0)=4$
+    \item $y''-y'-6y=0$, $y(0)=3$, $y'(0)=-1$
+    \item $y''+16y=32\sin(4x)$, $y(0)=1$, $y'(0)=0$
+\end{enumerate}
+
+\section{Modelacion Fisica}
+
+\begin{enumerate}
+    \item Sistema masa-resorte sin amortiguamiento: $m=1$, $k=9$, $x(0)=2$, $x'(0)=0$. Formule y resuelva la ecuacion del movimiento.
+    \item Sistema masa-resorte con amortiguamiento: $x''+4x'+13x=0$, $x(0)=1$, $x'(0)=-1$. Interprete el tipo de amortiguamiento.
+    \item Circuito RLC simplificado: $q''+6q'+25q=0$, $q(0)=0$, $q'(0)=5$. Encuentre la carga $q(t)$.
+\end{enumerate}
+
+\section{Sistema de Ecuaciones Diferenciales (Opcional de Profundizacion)}
+
+\begin{enumerate}
+    \item Resuelva el sistema:
+    \begin{align*}
+        x' &= 3x+4y\\
+        y' &= -4x+3y
+    \end{align*}
+    con $x(0)=1$, $y(0)=0$.
+
+    \item Convierta en sistema de primer orden la ecuacion:
+    $$y''+2y'+2y=0$$
+    y describa el retrato de fase del sistema resultante.
+\end{enumerate}
+
+\end{document}
