@@ -1,0 +1,17 @@
+# Ignora todo por defecto en todo el arbol.
+**/*
+
+# Permite recorrer subcarpetas.
+!*/
+
+# Conserva fuentes LaTeX.
+!**/*.tex
+
+# Conserva solo los PDF compilados dentro de builds.
+!**/builds/*.pdf
+
+# Recurso compartido para las portadas.
+!logo_unal.png
+
+# Conserva este archivo de reglas.
+!.gitignore
