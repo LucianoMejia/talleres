@@ -1,0 +1,217 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems, skins, breakable}
+
+\geometry{margin=2.5cm}
+
+\title{Division de Polinomios}
+\author{Jose Luciano Mejia Arias}
+\date{}
+
+\makeatletter
+\renewcommand{\maketitle}{
+  \begin{flushright}
+    \includegraphics[width=3cm]{../../logo_unal.png}
+  \end{flushright}
+  \begin{center}
+    {\LARGE \textbf{\@title}}\\[0.3cm]
+    {\large \@author}
+  \end{center}
+}
+\makeatother
+
+% --- Colores ---------------------------------------------------------------
+\definecolor{azul}{RGB}{24, 95, 165}
+\definecolor{azulclaro}{RGB}{230, 241, 251}
+\definecolor{azultitulo}{RGB}{12, 68, 124}
+
+\definecolor{verde}{RGB}{15, 110, 86}
+\definecolor{verdeclaro}{RGB}{225, 245, 238}
+\definecolor{verdetitulo}{RGB}{8, 80, 65}
+
+\definecolor{coral}{RGB}{152, 60, 29}
+\definecolor{coralclaro}{RGB}{250, 236, 231}
+\definecolor{coraltitulo}{RGB}{113, 43, 19}
+
+\definecolor{purpura}{RGB}{83, 74, 183}
+\definecolor{purpuraclaro}{RGB}{238, 237, 254}
+\definecolor{purpuratitulo}{RGB}{60, 52, 137}
+
+% --- Estilos de cajas ------------------------------------------------------
+\tcbset{
+  casobase/.style={
+    enhanced, breakable,
+    colback=white,
+    boxrule=0.5pt,
+    arc=7pt,
+    left=12pt, right=12pt, top=10pt, bottom=10pt,
+    fonttitle=\bfseries\normalsize,
+    attach boxed title to top left={xshift=14pt, yshift=-\tcboxedtitleheight/2},
+    boxed title style={arc=4pt, boxrule=0.5pt, left=8pt, right=8pt}
+  },
+  subcuadro/.style={
+    enhanced, breakable,
+    boxrule=0.4pt,
+    arc=5pt,
+    left=9pt, right=9pt, top=7pt, bottom=7pt,
+    fonttitle=\small\bfseries,
+    attach boxed title to top left={xshift=10pt, yshift=-\tcboxedtitleheight/2},
+    boxed title style={arc=3pt, boxrule=0.4pt, left=6pt, right=6pt}
+  }
+}
+
+\newenvironment{definicion}{%
+  \begin{tcolorbox}[subcuadro, colback=purpuraclaro, colframe=purpura,
+    coltitle=purpuratitulo, colbacktitle=purpuraclaro,
+    title=Definicion y objetivo]
+}{\end{tcolorbox}}
+
+\newenvironment{metodo}{%
+  \begin{tcolorbox}[subcuadro, colback=coralclaro, colframe=coral,
+    coltitle=coraltitulo, colbacktitle=coralclaro,
+    title=Procedimiento general]
+}{\end{tcolorbox}}
+
+\newenvironment{ejemplo}{%
+  \begin{tcolorbox}[casobase, colframe=azul, colbacktitle=azulclaro, coltitle=azultitulo,
+    title=Ejemplo resuelto]
+}{\end{tcolorbox}}
+
+\newenvironment{observacion}{%
+  \begin{tcolorbox}[subcuadro, colback=verdeclaro, colframe=verde,
+    coltitle=verdetitulo, colbacktitle=verdeclaro,
+    title=Observacion importante]
+}{\end{tcolorbox}}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+  {\large\color{purpura} Cociente, residuo y forma correcta de dividir polinomios}\\[4pt]
+  \textcolor{purpura}{\rule{0.55\textwidth}{0.6pt}}
+\end{center}
+
+\vspace{0.4cm}
+
+\begin{definicion}
+La division de polinomios consiste en escribir un polinomio $P(x)$ como
+\[
+P(x) = Q(x)\,S(x) + R(x),
+\]
+donde $Q(x)$ es el divisor, $S(x)$ es el cociente y $R(x)$ es el residuo. Siempre se cumple que
+\[
+\deg R(x) < \deg Q(x).
+\]
+Si el grado del dividendo es menor que el del divisor, entonces el cociente es $0$ y el residuo es el mismo dividendo.
+\end{definicion}
+
+\begin{observacion}
+La forma que se usa al final de una division es
+\[
+\frac{P(x)}{Q(x)} = S(x) + \frac{R(x)}{Q(x)}.
+\]
+Es decir, el resultado no es solo el cociente: tambien aparece una fraccion con el residuo dividido por el divisor. Si $R(x)=0$, entonces la division es exacta y queda solo $S(x)$.
+\end{observacion}
+
+\begin{metodo}
+\begin{enumerate}[leftmargin=*, label=\textbf{\arabic*.}]
+  \item Ordenar ambos polinomios de mayor a menor grado.
+  \item Completar con coeficientes cero los terminos que falten.
+  \item Dividir el primer termino del dividendo entre el primer termino del divisor.
+  \item Multiplicar el divisor por ese termino y restar.
+  \item Repetir el proceso con el nuevo polinomio hasta que el residuo tenga menor grado que el divisor.
+\end{enumerate}
+\end{metodo}
+
+\begin{ejemplo}
+Dividamos
+\[
+\frac{2x^3+3x^2-5x+6}{x-2}.
+\]
+
+\textbf{Paso 1.} El primer termino del cociente es
+\[
+\frac{2x^3}{x} = 2x^2.
+\]
+Multiplicamos y restamos:
+\[
+(2x^3+3x^2-5x+6) - (2x^2)(x-2)
+= (2x^3+3x^2-5x+6) - (2x^3-4x^2)
+= 7x^2-5x+6.
+\]
+
+\textbf{Paso 2.} Dividimos otra vez:
+\[
+\frac{7x^2}{x} = 7x.
+\]
+Restamos:
+\[
+(7x^2-5x+6) - 7x(x-2)
+= (7x^2-5x+6) - (7x^2-14x)
+= 9x+6.
+\]
+
+\textbf{Paso 3.} Dividimos:
+\[
+\frac{9x}{x} = 9.
+\]
+Restamos:
+\[
+(9x+6) - 9(x-2) = (9x+6) - (9x-18) = 24.
+\]
+
+Entonces,
+\[
+\frac{2x^3+3x^2-5x+6}{x-2} = 2x^2+7x+9 + \frac{24}{x-2}.
+\]
+\end{ejemplo}
+
+\begin{observacion}
+La division de polinomios es la base para trabajar fracciones racionales impropias. Si el grado del numerador es mayor o igual que el del denominador, primero se hace esta division y luego se descompone la parte propia en fracciones parciales.
+\end{observacion}
+
+\begin{ejemplo}
+Si
+\[
+\frac{x^4-3x^3+2x+1}{x^2-1},
+\]
+primero se alinea el dividendo como
+\[
+x^4-3x^3+0x^2+2x+1.
+\]
+La division produce
+\[
+x^4-3x^3+0x^2+2x+1 = (x^2-1)(x^2-3x+1) + (-x+2),
+\]
+por lo tanto
+\[
+\frac{x^4-3x^3+2x+1}{x^2-1} = x^2-3x+1 + \frac{-x+2}{x^2-1}.
+\]
+\end{ejemplo}
+
+\begin{center}
+\bfseries Resumen rapido\\[8pt]
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{>{\centering\arraybackslash}m{4.2cm}
+                >{\centering\arraybackslash}m{5.2cm}
+                >{\centering\arraybackslash}m{4cm}}
+\toprule
+\textbf{Situacion} & \textbf{Que hacer} & \textbf{Resultado} \\
+\midrule
+$\deg P < \deg Q$ & No se divide & Fraccion propia \\
+$\deg P \geq \deg Q$ & Hacer division larga & Cociente + residuo \\
+Residuo final & Debe tener menor grado & Parte fraccionaria \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\end{document}
