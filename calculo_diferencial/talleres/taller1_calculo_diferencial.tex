@@ -1,0 +1,73 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+\title{Taller de Regla de L'Hopital}
+\author{Jose Luciano Mejia Arias}
+\date{}
+
+\makeatletter
+\renewcommand{\maketitle}{
+  \begin{flushright}
+    \includegraphics[width=3cm]{../../logo_unal.png}
+  \end{flushright}
+  \begin{center}
+    {\LARGE \textbf{\@title}}\\[0.3cm]
+    {\large \@author}
+  \end{center}
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section*{Instrucciones}
+Resuelva cada ejercicio mostrando el desarrollo. Indique cuando use la regla de L'Hopital y verifique que se cumplan sus condiciones antes de aplicarla.
+
+\section{Límites con forma $0/0$}
+Calcule los siguientes límites:
+
+\begin{enumerate}
+    \item $\displaystyle \lim_{x\to 0} \frac{\sin(4x)}{x}$
+    \item $\displaystyle \lim_{x\to 0} \frac{e^{2x}-1}{x}$
+    \item $\displaystyle \lim_{x\to 0} \frac{1-\cos(2x)}{x^2}$
+    \item $\displaystyle \lim_{x\to 0} \frac{\sqrt{1+x}-1}{x}$
+    \item $\displaystyle \lim_{x\to 2} \frac{x^2-4}{x-2}$
+\end{enumerate}
+
+\section{Límites con forma $\infty/\infty$}
+Calcule los siguientes límites:
+
+\begin{enumerate}
+    \item $\displaystyle \lim_{x\to \infty} \frac{\ln x}{x}$
+    \item $\displaystyle \lim_{x\to \infty} \frac{x}{e^x}$
+    \item $\displaystyle \lim_{x\to \infty} \frac{x^2}{e^x}$
+    \item $\displaystyle \lim_{x\to \infty} \frac{5x-1}{2x+7}$
+\end{enumerate}
+
+\section{Aplicaciones con varias derivadas}
+Resuelva los siguientes límites, aplicando L'Hopital las veces que sea necesario:
+
+\begin{enumerate}
+    \item $\displaystyle \lim_{x\to 0} \frac{x-\sin x}{x^3}$
+    \item $\displaystyle \lim_{x\to 0} \frac{\tan x - x}{x^3}$
+    \item $\displaystyle \lim_{x\to 0} \frac{e^x - 1 - x}{x^2}$
+    \item $\displaystyle \lim_{x\to 0} \frac{\ln(1+x)}{x}$
+    \item $\displaystyle \lim_{x\to \infty} \frac{\ln x}{\sqrt{x}}$
+\end{enumerate}
+
+\section{Ejercicios de aplicación}
+
+\begin{enumerate}
+    \item Halle la pendiente de la recta tangente a $f(x)=\dfrac{\sin x}{x}$ en $x=0$ usando el límite correspondiente.
+    \item Determine si la función $g(x)=\dfrac{e^x}{x^2}$ tiende a $0$, $\infty$ o a un valor finito cuando $x\to\infty$.
+    \item Use L'Hopital para justificar que $\displaystyle \lim_{x\to 0} \frac{\ln(1+x)}{x}=1$.
+\end{enumerate}
+
+\end{document}
