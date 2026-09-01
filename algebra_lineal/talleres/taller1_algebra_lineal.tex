@@ -1,0 +1,152 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+\definecolor{codebg}{gray}{0.97}
+\lstset{
+    language=Python,
+    backgroundcolor=\color{codebg},
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!50!black},
+    numbers=left,
+    numberstyle=\tiny,
+    frame=single,
+    breaklines=true
+}
+
+\title{Taller de Álgebra Lineal}
+\author{José Luciano Mejía Arias}
+\date{}
+
+\makeatletter
+\renewcommand{\maketitle}{
+  \begin{flushright}
+    \includegraphics[width=3cm]{../../logo_unal.png}
+  \end{flushright}
+  \begin{center}
+    {\LARGE \textbf{\@title}}\\[0.3cm]
+    {\large \@author}
+  \end{center}
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section*{Instrucciones}
+Resuelva cada ejercicio mostrando el procedimiento completo. Es importante justificar cada paso y escribir la respuesta final con claridad.
+
+\section*{Enunciado}
+
+\section{Sistemas de ecuaciones y forma matricial}
+Escriba cada sistema en forma matricial $AX=b$ y luego indique la matriz aumentada correspondiente.
+
+\begin{enumerate}
+    \item
+    \[
+    \begin{cases}
+    2x + 3y = 7 \\
+    x - y = 1
+    \end{cases}
+    \]
+
+    \item
+    \[
+    \begin{cases}
+    3x - 2y = 4 \\
+    x + y = 5
+    \end{cases}
+    \]
+
+    \item
+    \[
+    \begin{cases}
+    x + y + z = 6 \\
+    2x - y + z = 3 \\
+    x + 2y - z = 4
+    \end{cases}
+    \]
+\end{enumerate}
+
+\section{Eliminación de Gauss}
+Resuelva los siguientes sistemas utilizando el método de Gauss.
+
+\begin{enumerate}
+    \item
+    \[
+    \begin{cases}
+    x + 2y = 5 \\
+    3x - y = 1
+    \end{cases}
+    \]
+
+    \item
+    \[
+    \begin{cases}
+    2x + y = 8 \\
+    x - 3y = -7
+    \end{cases}
+    \]
+
+    \item
+    \[
+    \begin{cases}
+    x + y + z = 6 \\
+    2x - y + 3z = 14 \\
+    3x + 2y - z = 2
+    \end{cases}
+    \]
+\end{enumerate}
+
+\section{Determinantes}
+Calcule el determinante de cada matriz.
+
+\begin{enumerate}
+    \item
+    \[
+    A = \begin{pmatrix}
+    2 & 3 \\
+    5 & 7
+    \end{pmatrix}
+    \]
+
+    \item
+    \[
+    B = \begin{pmatrix}
+    1 & 2 \\
+    3 & 4
+    \end{pmatrix}
+    \]
+
+    \item
+    \[
+    C = \begin{pmatrix}
+    3 & 1 & 2 \\
+    2 & 0 & 1 \\
+    1 & 4 & 3
+    \end{pmatrix}
+    \]
+\end{enumerate}
+
+\section*{Ejercicio básico en Python}
+Escriba un programa en Python que pida el nombre, apellido y edad de una persona. Si la persona es mayor de edad, debe mostrar un mensaje de bienvenida. Si no lo es, debe mostrar un mensaje de bloqueo.
+
+\begin{lstlisting}[language=Python]
+# Ejercicio en Python
+# Pedir nombre, apellido y edad
+# Si edad >= 18:
+#     mostrar "Bienvenido"
+# else:
+#     mostrar "No puedes entrar"
+\end{lstlisting}
+
+\end{document}
