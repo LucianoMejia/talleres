@@ -4,13 +4,9 @@ title: "Ecuaciones diferenciales"
 
 Variables separables, ecuaciones lineales, ecuaciones exactas, modelos aplicados y análisis cualitativo.
 
-## Talleres disponibles
+## Talleres
 
-| Material | Taller | Solucionario |
+| Taller | Ejercicios | Respuestas |
 |---|---|---|
-| Taller 1 | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/ecuaciones_diferenciales/talleres/taller1_ecuaciones_diferenciales.tex) | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/ecuaciones_diferenciales/respuestas/respuestas_taller1_ecuaciones_diferenciales.tex) |
-| Taller 2 | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/ecuaciones_diferenciales/talleres/taller2_ecuaciones_diferenciales.tex) | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/ecuaciones_diferenciales/respuestas/respuestas_taller2_ecuaciones_diferenciales.tex) |
-
-::: {.callout-note}
-Este material conserva su fuente LaTeX original. Los nuevos talleres se pueden migrar a `.qmd` siguiendo la [guía](../guia.qmd).
-:::
+| Taller 1 | [Abrir taller](../talleres/ecuaciones-diferenciales/taller1.qmd) | [Abrir solucionario](../respuestas/ecuaciones-diferenciales/taller1.qmd) |
+| Taller 2 | [Abrir taller](../talleres/ecuaciones-diferenciales/taller2.qmd) | [Abrir solucionario](../respuestas/ecuaciones-diferenciales/taller2.qmd) |

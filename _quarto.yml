@@ -7,15 +7,11 @@ project:
     - materias/
     - talleres/
     - respuestas/
+    - explicaciones/
 
 website:
   title: "Talleres de matemáticas"
-  site-url: https://lucianomejia.github.io/talleres/
-  repo-url: https://github.com/LucianoMejia/talleres
-  repo-actions: [edit, issue]
   navbar:
-    background: "#12304a"
-    foreground: "#ffffff"
     left:
       - href: index.qmd
         text: Inicio
@@ -24,22 +20,13 @@ website:
       - href: guia.qmd
         text: Cómo escribir
     right:
-      - icon: github
-        href: https://github.com/LucianoMejia/talleres
-        aria-label: GitHub
-  page-footer:
-    left: "Material de apoyo académico"
-    right: "Construido con Quarto"
+      - href: https://github.com/LucianoMejia/talleres
+        text: GitHub
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
     toc: true
-    smooth-scroll: true
     html-math-method: katex
-    code-fold: true
-    code-tools: true
 
 execute:
   freeze: auto

@@ -1,0 +1,77 @@
+---
+title: "Taller de Álgebra Lineal"
+---
+
+## Instrucciones
+Resuelva cada ejercicio mostrando el procedimiento completo. Es importante justificar cada paso y escribir la respuesta final con claridad.
+
+## Enunciado
+
+## Sistemas de ecuaciones y forma matricial
+Escriba cada sistema en forma matricial $AX=b$ y luego indique la matriz aumentada correspondiente.
+1. $$
+    \begin{cases}
+    2x + 3y = 7 \\
+    x - y = 1
+    \end{cases}
+    $$
+1. $$
+    \begin{cases}
+    3x - 2y = 4 \\
+    x + y = 5
+    \end{cases}
+    $$
+1. $$
+    \begin{cases}
+    x + y + z = 6 \\
+    2x - y + z = 3 \\
+    x + 2y - z = 4
+    \end{cases}
+    $$
+
+## Eliminación de Gauss
+Resuelva los siguientes sistemas utilizando el método de Gauss.
+1. $$
+    \begin{cases}
+    x + 2y = 5 \\
+    3x - y = 1
+    \end{cases}
+    $$
+1. $$
+    \begin{cases}
+    2x + y = 8 \\
+    x - 3y = -7
+    \end{cases}
+    $$
+1. $$
+    \begin{cases}
+    x + y + z = 6 \\
+    2x - y + 3z = 14 \\
+    3x + 2y - z = 2
+    \end{cases}
+    $$
+
+## Determinantes
+Calcule el determinante de cada matriz.
+1. $$
+    A = \begin{pmatrix}
+    2 & 3 \\
+    5 & 7
+    \end{pmatrix}
+    $$
+1. $$
+    B = \begin{pmatrix}
+    1 & 2 \\
+    3 & 4
+    \end{pmatrix}
+    $$
+1. $$
+    C = \begin{pmatrix}
+    3 & 1 & 2 \\
+    2 & 0 & 1 \\
+    1 & 4 & 3
+    \end{pmatrix}
+    $$
+
+## Ejercicio básico en Python
+Escriba un programa en Python que pida el nombre, apellido y edad de una persona. Si la persona es mayor de edad, debe mostrar un mensaje de bienvenida. Si no lo es, debe mostrar un mensaje de bloqueo.

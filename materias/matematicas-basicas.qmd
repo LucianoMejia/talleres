@@ -2,18 +2,14 @@
 title: "Matemáticas básicas"
 ---
 
-Operaciones, homogenización, factorización, ecuaciones y racionalización.
+Operaciones, homogenización, factorización, ecuaciones, conjuntos y racionalización.
 
-## Talleres disponibles
+## Talleres
 
-| Material | Taller | Solucionario |
+| Taller | Ejercicios | Respuestas |
 |---|---|---|
-| Taller 1 | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/matematicas_basicas/talleres/taller1_matematicas_basicas.tex) | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/matematicas_basicas/respuestas/respuestas_taller1_matematicas_basicas.tex) |
-| Taller 2 | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/matematicas_basicas/talleres/taller2_matematicas_basicas.tex) | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/matematicas_basicas/respuestas/respuestas_taller2_matematicas_basicas.tex) |
-| Taller 3 | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/matematicas_basicas/talleres/taller3_matematicas_basicas.tex) | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/matematicas_basicas/respuestas/respuestas_taller3_matematicas_basicas.tex) |
-| Taller 4 | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/matematicas_basicas/talleres/taller4_matematicas_basicas.tex) | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/matematicas_basicas/respuestas/respuestas_taller4_matematicas_basicas.tex) |
-| Taller 5 | [Abrir en Markdown](../talleres/matematicas-basicas/taller5.qmd) | [Abrir solucionario Markdown](../respuestas/matematicas-basicas/taller5.qmd) |
-
-::: {.callout-tip}
-El Taller 5 es el primer material migrado completamente a Markdown con LaTeX. Usa su estructura como modelo para los siguientes.
-:::
+| Taller 1 | [Abrir taller](../talleres/matematicas-basicas/taller1.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller1.qmd) |
+| Taller 2 | [Abrir taller](../talleres/matematicas-basicas/taller2.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller2.qmd) |
+| Taller 3 | [Abrir taller](../talleres/matematicas-basicas/taller3.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller3.qmd) |
+| Taller 4 | [Abrir taller](../talleres/matematicas-basicas/taller4.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller4.qmd) |
+| Taller 5 | [Abrir taller](../talleres/matematicas-basicas/taller5.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller5.qmd) |

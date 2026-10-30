@@ -1,0 +1,34 @@
+---
+title: "Taller de Regla de L'Hopital"
+---
+
+## Instrucciones
+Resuelva cada ejercicio mostrando el desarrollo. Indique cuando use la regla de L'Hopital y verifique que se cumplan sus condiciones antes de aplicarla.
+
+## Límites con forma $0/0$
+Calcule los siguientes límites:
+1. $\displaystyle \lim_{x\to 0} \frac{\sin(4x)}{x}$
+1. $\displaystyle \lim_{x\to 0} \frac{e^{2x}-1}{x}$
+1. $\displaystyle \lim_{x\to 0} \frac{1-\cos(2x)}{x^2}$
+1. $\displaystyle \lim_{x\to 0} \frac{\sqrt{1+x}-1}{x}$
+1. $\displaystyle \lim_{x\to 2} \frac{x^2-4}{x-2}$
+
+## Límites con forma $\infty/\infty$
+Calcule los siguientes límites:
+1. $\displaystyle \lim_{x\to \infty} \frac{\ln x}{x}$
+1. $\displaystyle \lim_{x\to \infty} \frac{x}{e^x}$
+1. $\displaystyle \lim_{x\to \infty} \frac{x^2}{e^x}$
+1. $\displaystyle \lim_{x\to \infty} \frac{5x-1}{2x+7}$
+
+## Aplicaciones con varias derivadas
+Resuelva los siguientes límites, aplicando L'Hopital las veces que sea necesario:
+1. $\displaystyle \lim_{x\to 0} \frac{x-\sin x}{x^3}$
+1. $\displaystyle \lim_{x\to 0} \frac{\tan x - x}{x^3}$
+1. $\displaystyle \lim_{x\to 0} \frac{e^x - 1 - x}{x^2}$
+1. $\displaystyle \lim_{x\to 0} \frac{\ln(1+x)}{x}$
+1. $\displaystyle \lim_{x\to \infty} \frac{\ln x}{\sqrt{x}}$
+
+## Ejercicios de aplicación
+1. Halle la pendiente de la recta tangente a $f(x)=\dfrac{\sin x}{x}$ en $x=0$ usando el límite correspondiente.
+1. Determine si la función $g(x)=\dfrac{e^x}{x^2}$ tiende a $0$, $\infty$ o a un valor finito cuando $x\to\infty$.
+1. Use L'Hopital para justificar que $\displaystyle \lim_{x\to 0} \frac{\ln(1+x)}{x}=1$.

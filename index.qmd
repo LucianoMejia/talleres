@@ -1,69 +1,20 @@
 ---
 title: "Talleres de matemáticas"
-page-layout: full
 ---
 
-::: {.hero}
 # Matemáticas, ordenadas para estudiar
 
 Una biblioteca sencilla de talleres, soluciones y explicaciones. Elige una materia, abre el ejercicio y trabaja directamente desde el navegador.
-:::
 
 ## Materias
 
-<div class="subject-grid">
-
-<div class="subject-card">
-
-### Álgebra lineal
-
-Sistemas de ecuaciones, matrices, eliminación de Gauss y determinantes.
-
-[Ver materia →](materias/algebra-lineal.qmd)
-
-</div>
-
-<div class="subject-card">
-
-### Cálculo diferencial
-
-Límites, regla de L'Hopital y aplicaciones de las derivadas.
-
-[Ver materia →](materias/calculo-diferencial.qmd)
-
-</div>
-
-<div class="subject-card">
-
-### Cálculo integral
-
-Integrales, sustitución, integrales trigonométricas y aplicaciones.
-
-[Ver materia →](materias/calculo-integral.qmd)
-
-</div>
-
-<div class="subject-card">
-
-### Ecuaciones diferenciales
-
-Variables separables, ecuaciones lineales, exactas y modelos aplicados.
-
-[Ver materia →](materias/ecuaciones-diferenciales.qmd)
-
-</div>
-
-<div class="subject-card">
-
-### Matemáticas básicas
-
-Operaciones, homogenización, factorización, ecuaciones y racionalización.
-
-[Ver materia →](materias/matematicas-basicas.qmd)
-
-</div>
-
-</div>
+| Materia | Contenido |
+|---|---|
+| [Álgebra lineal](materias/algebra-lineal.qmd) | Sistemas, matrices y determinantes |
+| [Cálculo diferencial](materias/calculo-diferencial.qmd) | Límites y derivadas |
+| [Cálculo integral](materias/calculo-integral.qmd) | Integrales y aplicaciones |
+| [Ecuaciones diferenciales](materias/ecuaciones-diferenciales.qmd) | Ecuaciones y modelos |
+| [Matemáticas básicas](materias/matematicas-basicas.qmd) | Álgebra, conjuntos y ecuaciones |
 
 ## Cómo usar este sitio
 
@@ -72,8 +23,4 @@ Operaciones, homogenización, factorización, ecuaciones y racionalización.
 3. Consulta la respuesta después de intentar los ejercicios.
 4. Usa la [guía de Markdown y LaTeX](guia.qmd) para mantener el material ordenado cuando agregues nuevos talleres.
 
-::: {.callout-tip}
-## Sitio abierto
-
-Todo el contenido está escrito en Markdown con fórmulas LaTeX y se publica automáticamente en GitHub Pages mediante Quarto.
-:::
+Todo el contenido se muestra directamente en páginas Markdown con fórmulas LaTeX y se publica automáticamente mediante Quarto.

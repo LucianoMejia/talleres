@@ -1,0 +1,35 @@
+---
+title: "Taller de Calculo Integral II"
+---
+
+## Instrucciones
+Resuelva cada ejercicio justificando cada paso. Si usa propiedades de simetria o teoremas, indiquelo explicitamente.
+
+## Integrales Definidas y Propiedades
+1. $\int_{-2}^{2} (x^5+3x^2)\,dx$
+1. $\int_0^3 |x-1|\,dx$
+1. $\int_1^4 (2x-3)\,dx$
+1. $\int_0^{\pi} \cos x\,dx$
+1. Si $\int_0^2 f(x)\,dx=5$ y $\int_2^6 f(x)\,dx=-3$, halle $\int_0^6 f(x)\,dx$.
+
+## Teorema Fundamental del Calculo
+1. Si $F(x)=\int_1^x (t^2+2t)\,dt$, encuentre $F'(x)$ y $F(3)$.
+1. Si $G(x)=\int_{x}^{2x} \ln(1+t^2)\,dt$, calcule $G'(x)$.
+1. Determine $\frac{d}{dx}\left(\int_0^{x^3} \sqrt{1+t^4}\,dt\right)$.
+1. Sea $H(x)=\int_{\sin x}^{\cos x} (1+t^3)\,dt$. Halle $H'(x)$.
+
+## Area Entre Curvas
+1. Calcule el area encerrada entre $y=x$ y $y=x^2$.
+1. Halle el area entre $y=4-x^2$ y el eje $x$.
+1. Determine el area limitada por $y=2x+3$ y $y=x^2$.
+1. Encuentre el area entre $y=\sin x$ y $y=\cos x$ en $[0,\pi/2]$.
+
+## Volumenes por Discos y Arandelas
+1. Genere el volumen al girar la region bajo $y=x^2$, $0\le x\le 2$, alrededor del eje $x$.
+1. Genere el volumen al girar la region entre $y=\sqrt{x}$ y $y=0$, $0\le x\le 4$, alrededor del eje $x$.
+1. Calcule el volumen del solido al girar la region entre $y=4-x$ y $y=0$, $0\le x\le 4$, alrededor del eje $y$ (metodo de arandelas en funcion de $y$).
+
+## Longitud de Arco y Promedio
+1. Encuentre la longitud de arco de $y=\frac{x^2}{2}$ en $[0,1]$.
+1. Calcule el valor promedio de $f(x)=x^2+1$ en $[0,3]$.
+1. Halle el valor promedio de $f(x)=\sin x$ en $[0,\pi]$.

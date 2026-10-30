@@ -1,0 +1,98 @@
+---
+title: "Division de Polinomios"
+---
+
+\begin{definicion}
+La division de polinomios consiste en escribir un polinomio $P(x)$ como
+$$
+P(x) = Q(x)\,S(x) + R(x),
+$$
+donde $Q(x)$ es el divisor, $S(x)$ es el cociente y $R(x)$ es el residuo. Siempre se cumple que
+$$
+\deg R(x) < \deg Q(x).
+$$
+Si el grado del dividendo es menor que el del divisor, entonces el cociente es $0$ y el residuo es el mismo dividendo.
+\end{definicion}
+
+\begin{observacion}
+La forma que se usa al final de una division es
+$$
+\frac{P(x)}{Q(x)} = S(x) + \frac{R(x)}{Q(x)}.
+$$
+Es decir, el resultado no es solo el cociente: tambien aparece una fraccion con el residuo dividido por el divisor. Si $R(x)=0$, entonces la division es exacta y queda solo $S(x)$.
+\end{observacion}
+
+\begin{metodo}
+1. Ordenar ambos polinomios de mayor a menor grado.
+1. Completar con coeficientes cero los terminos que falten.
+1. Dividir el primer termino del dividendo entre el primer termino del divisor.
+1. Multiplicar el divisor por ese termino y restar.
+1. Repetir el proceso con el nuevo polinomio hasta que el residuo tenga menor grado que el divisor.
+
+\end{metodo}
+
+\begin{ejemplo}
+Dividamos
+$$
+\frac{2x^3+3x^2-5x+6}{x-2}.
+$$
+
+**Paso 1.** El primer termino del cociente es
+$$
+\frac{2x^3}{x} = 2x^2.
+$$
+Multiplicamos y restamos:
+$$
+(2x^3+3x^2-5x+6) - (2x^2)(x-2)
+= (2x^3+3x^2-5x+6) - (2x^3-4x^2)
+= 7x^2-5x+6.
+$$
+
+**Paso 2.** Dividimos otra vez:
+$$
+\frac{7x^2}{x} = 7x.
+$$
+Restamos:
+$$
+(7x^2-5x+6) - 7x(x-2)
+= (7x^2-5x+6) - (7x^2-14x)
+= 9x+6.
+$$
+
+**Paso 3.** Dividimos:
+$$
+\frac{9x}{x} = 9.
+$$
+Restamos:
+$$
+(9x+6) - 9(x-2) = (9x+6) - (9x-18) = 24.
+$$
+
+Entonces,
+$$
+\frac{2x^3+3x^2-5x+6}{x-2} = 2x^2+7x+9 + \frac{24}{x-2}.
+$$
+\end{ejemplo}
+
+\begin{observacion}
+La division de polinomios es la base para trabajar fracciones racionales impropias. Si el grado del numerador es mayor o igual que el del denominador, primero se hace esta division y luego se descompone la parte propia en fracciones parciales.
+\end{observacion}
+
+\begin{ejemplo}
+Si
+$$
+\frac{x^4-3x^3+2x+1}{x^2-1},
+$$
+primero se alinea el dividendo como
+$$
+x^4-3x^3+0x^2+2x+1.
+$$
+La division produce
+$$
+x^4-3x^3+0x^2+2x+1 = (x^2-1)(x^2-3x+1) + (-x+2),
+$$
+por lo tanto
+$$
+\frac{x^4-3x^3+2x+1}{x^2-1} = x^2-3x+1 + \frac{-x+2}{x^2-1}.
+$$
+\end{ejemplo}

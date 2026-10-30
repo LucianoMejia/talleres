@@ -1,0 +1,195 @@
+---
+title: "Respuestas - Taller de Matemáticas Básicas III"
+---
+
+## Funciones - Conceptos Básicos
+
+### Dominio y Rango
+1. $f(x) = 3x - 5$\\
+    Dominio: $\mathbb{R}$, Rango: $\mathbb{R}$
+1. $g(x) = \sqrt{x - 2}$\\
+    Dominio: $[2, \infty)$, Rango: $[0, \infty)$
+1. $h(x) = \frac{1}{x - 3}$\\
+    Dominio: $\mathbb{R} - \{3\}$, Rango: $\mathbb{R} - \{0\}$
+1. $k(x) = x^2 - 4x + 3 = (x - 2)^2 - 1$\\
+    Dominio: $\mathbb{R}$, Rango: $[-1, \infty)$
+1. $m(x) = \frac{2x + 1}{x^2 - 9}$\\
+    Dominio: $\mathbb{R} - \{-3, 3\}$, Rango: se determina mediante análisis detallado
+1. $n(x) = \sqrt{4 - x^2}$\\
+    Dominio: $[-2, 2]$, Rango: $[0, 2]$
+
+### Evaluación de Funciones
+
+Dada $f(x) = 2x^2 - 3x + 1$:
+1. $f(2) = 2(2)^2 - 3(2) + 1 = 8 - 6 + 1 = 3$
+1. $f(-1) = 2(-1)^2 - 3(-1) + 1 = 2 + 3 + 1 = 6$
+1. $f(a + h) = 2(a + h)^2 - 3(a + h) + 1$
+    $$
+\begin{aligned}
+        &= 2(a^2 + 2ah + h^2) - 3a - 3h + 1\\
+        &= 2a^2 + 4ah + 2h^2 - 3a - 3h + 1
+    \end{aligned}
+$$
+1. $\frac{f(x + h) - f(x)}{h}$
+    $$
+\begin{aligned}
+        &= \frac{[2(x + h)^2 - 3(x + h) + 1] - [2x^2 - 3x + 1]}{h}\\
+        &= \frac{2x^2 + 4xh + 2h^2 - 3x - 3h + 1 - 2x^2 + 3x - 1}{h}\\
+        &= \frac{4xh + 2h^2 - 3h}{h}\\
+        &= 4x + 2h - 3
+    \end{aligned}
+$$
+
+### Operaciones con Funciones
+
+Sean $f(x) = 2x + 3$ y $g(x) = x^2 - 1$:
+1. $(f + g)(x) = 2x + 3 + x^2 - 1 = x^2 + 2x + 2$
+1. $(f \cdot g)(x) = (2x + 3)(x^2 - 1) = 2x^3 + 3x^2 - 2x - 3$
+1. $\left(\frac{f}{g}\right)(x) = \frac{2x + 3}{x^2 - 1}$\\
+    Dominio: $\mathbb{R} - \{-1, 1\}$
+1. $(f \circ g)(x) = f(g(x)) = f(x^2 - 1) = 2(x^2 - 1) + 3 = 2x^2 - 2 + 3 = 2x^2 + 1$
+1. $(g \circ f)(x) = g(f(x)) = g(2x + 3) = (2x + 3)^2 - 1 = 4x^2 + 12x + 9 - 1 = 4x^2 + 12x + 8$
+
+## Función Lineal
+
+### Ecuación de la Recta
+1. Puntos $(2, 3)$ y $(-1, 6)$:
+    $$
+\begin{aligned}
+        m &= \frac{6 - 3}{-1 - 2} = \frac{3}{-3} = -1\\
+        y - 3 &= -1(x - 2)\\
+        y &= -x + 5
+    \end{aligned}
+$$
+1. $m = -\frac{2}{3}$, punto $(4, -1)$:
+    $$
+\begin{aligned}
+        y - (-1) &= -\frac{2}{3}(x - 4)\\
+        y + 1 &= -\frac{2}{3}x + \frac{8}{3}\\
+        y &= -\frac{2}{3}x + \frac{5}{3}
+    \end{aligned}
+$$
+1. Perpendicular a $2x + 3y = 6$, punto $(1, 2)$:
+    $$
+\begin{aligned}
+        3y &= -2x + 6 \Rightarrow y = -\frac{2}{3}x + 2\\
+        m_{\perp} &= \frac{3}{2}\\
+        y - 2 &= \frac{3}{2}(x - 1)\\
+        y &= \frac{3}{2}x + \frac{1}{2}
+    \end{aligned}
+$$
+1. Paralela a $y = 4x - 5$, pasa por el origen:
+    $$
+\begin{aligned}
+        y = 4x
+    \end{aligned}
+$$
+
+### Problemas de Aplicación
+1. Tanque de agua:
+1. $V(t) = 500 - 15t$
+1. $V(12) = 500 - 15(12) = 500 - 180 = 320$ litros
+1. $0 = 500 - 15t \Rightarrow t = \frac{500}{15} = 33.33$ minutos
+1. Taxis:
+1. $C(d) = 5000 + 1200d$
+1. $C(15) = 5000 + 1200(15) = 5000 + 18000 = 23000$ pesos
+1. $23000 = 5000 + 1200d \Rightarrow d = \frac{18000}{1200} = 15$ km
+    
+
+## Función Cuadrática
+
+### Análisis de Funciones Cuadráticas
+1. $f(x) = x^2 - 4x + 3$
+1. Vértice: $x_v = -\frac{-4}{2(1)} = 2$, $y_v = (2)^2 - 4(2) + 3 = -1 \Rightarrow (2, -1)$
+1. Eje de simetría: $x = 2$
+1. Raíces: $(x - 1)(x - 3) = 0 \Rightarrow x = 1, x = 3$
+1. Dominio: $\mathbb{R}$
+1. Rango: $[-1, \infty)$
+1. $g(x) = -2x^2 + 8x - 6 = -2(x^2 - 4x + 3)$
+1. Vértice: $x_v = -\frac{8}{2(-2)} = 2$, $y_v = -2(2)^2 + 8(2) - 6 = 2 \Rightarrow (2, 2)$
+1. Eje de simetría: $x = 2$
+1. Raíces: $-2(x - 1)(x - 3) = 0 \Rightarrow x = 1, x = 3$
+1. Dominio: $\mathbb{R}$
+1. Rango: $(-\infty, 2]$
+1. $h(x) = x^2 + 2x + 5 = (x + 1)^2 + 4$
+1. Vértice: $(-1, 4)$
+1. Eje de simetría: $x = -1$
+1. Raíces: No tiene raíces reales ($\Delta = 4 - 20 = -16 < 0$)
+1. Dominio: $\mathbb{R}$
+1. Rango: $[4, \infty)$
+1. $k(x) = -x^2 + 6x - 5$
+1. Vértice: $x_v = -\frac{6}{2(-1)} = 3$, $y_v = -(3)^2 + 6(3) - 5 = 4 \Rightarrow (3, 4)$
+1. Eje de simetría: $x = 3$
+1. Raíces: $-(x - 1)(x - 5) = 0 \Rightarrow x = 1, x = 5$
+1. Dominio: $\mathbb{R}$
+1. Rango: $(-\infty, 4]$
+    
+
+### Problemas de Aplicación
+1. Objeto lanzado: $h(t) = -5t^2 + 40t + 10$
+1. Tiempo máximo: $t_v = -\frac{40}{2(-5)} = 4$ segundos
+1. Altura máxima: $h(4) = -5(16) + 40(4) + 10 = -80 + 160 + 10 = 90$ metros
+1. Toca el suelo: $-5t^2 + 40t + 10 = 0 \Rightarrow t = \frac{-40 \pm \sqrt{1600 + 200}}{-10} = \frac{-40 \pm \sqrt{1800}}{-10}$
+        $$
+\begin{aligned}
+            t = \frac{-40 + 42.43}{-10} \approx -0.24 \text{ (descartado)} \quad \text{o} \quad t \approx 8.24 \text{ segundos}
+        \end{aligned}
+$$
+1. Corral rectangular:
+1. Sea $x$ el ancho. Perímetro: $2x + y = 240 \Rightarrow y = 240 - 2x$\\
+        Área: $A(x) = x(240 - 2x) = 240x - 2x^2$
+1. Máximo en: $x_v = -\frac{240}{2(-2)} = 60$ metros
+1. Dimensiones: ancho = 60 m, largo = $240 - 2(60) = 120$ m
+1. Área máxima: $A(60) = 60(120) = 7200$ m²
+    
+
+## Derivadas
+
+### Derivadas Básicas
+1. $f(x) = 5x^3 - 4x^2 + 7x - 2$\\
+    $f'(x) = 15x^2 - 8x + 7$
+1. $g(x) = \frac{3}{x^2} + \sqrt{x} = 3x^{-2} + x^{1/2}$\\
+    $g'(x) = -6x^{-3} + \frac{1}{2}x^{-1/2} = -\frac{6}{x^3} + \frac{1}{2\sqrt{x}}$
+1. $h(x) = (2x + 1)(3x - 5)$\\
+    $h'(x) = 2(3x - 5) + (2x + 1)(3) = 6x - 10 + 6x + 3 = 12x - 7$
+1. $k(x) = \frac{x^2 + 1}{x - 2}$\\
+    $k'(x) = \frac{2x(x - 2) - (x^2 + 1)(1)}{(x - 2)^2} = \frac{2x^2 - 4x - x^2 - 1}{(x - 2)^2} = \frac{x^2 - 4x - 1}{(x - 2)^2}$
+1. $m(x) = (3x^2 - 2x + 1)^4$\\
+    $m'(x) = 4(3x^2 - 2x + 1)^3(6x - 2) = 8(3x - 1)(3x^2 - 2x + 1)^3$
+1. $n(x) = \sqrt{4x^2 + 9} = (4x^2 + 9)^{1/2}$\\
+    $n'(x) = \frac{1}{2}(4x^2 + 9)^{-1/2}(8x) = \frac{4x}{\sqrt{4x^2 + 9}}$
+
+### Aplicaciones de la Derivada
+1. $f(x) = x^3 - 2x + 1$, punto $(1, 0)$\\
+    $f'(x) = 3x^2 - 2$, $f'(1) = 1$\\
+    Ecuación: $y - 0 = 1(x - 1) \Rightarrow y = x - 1$
+1. $f(x) = x^3 - 6x^2 + 9x + 1$\\
+    $f'(x) = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x - 1)(x - 3)$\\
+    Puntos críticos: $x = 1, x = 3$\\
+    $f''(x) = 6x - 12$\\
+    $f''(1) = -6 < 0$ (máximo local), $f''(3) = 6 > 0$ (mínimo local)
+1. $s(t) = t^3 - 6t^2 + 9t$
+1. $v(t) = s'(t) = 3t^2 - 12t + 9$, $v(2) = 12 - 24 + 9 = -3$ m/s
+1. $a(t) = v'(t) = 6t - 12$, $a(3) = 18 - 12 = 6$ m/s²
+1. $v(t) = 0 \Rightarrow 3t^2 - 12t + 9 = 0 \Rightarrow t^2 - 4t + 3 = 0 \Rightarrow t = 1, t = 3$ segundos
+1. Sea $x$ el lado del cuadrado cortado. Volumen: $V(x) = x(12 - 2x)^2$\\
+    $V'(x) = (12 - 2x)^2 + x \cdot 2(12 - 2x)(-2) = (12 - 2x)^2 - 4x(12 - 2x)$\\
+    $= (12 - 2x)[(12 - 2x) - 4x] = (12 - 2x)(12 - 6x) = 0$\\
+    $x = 6$ (descartado) o $x = 2$ cm
+
+### Razones de Cambio Relacionadas
+1. $V = \frac{4}{3}\pi r^3$, $\frac{dr}{dt} = 2$ cm/s, $r = 5$ cm
+    $$
+\begin{aligned}
+        \frac{dV}{dt} &= 4\pi r^2 \frac{dr}{dt} = 4\pi(5)^2(2) = 200\pi \text{ cm}^3/\text{s}
+    \end{aligned}
+$$
+1. Escalera: $x^2 + y^2 = 25$, $\frac{dx}{dt} = 0.5$ m/s, $x = 3$ m
+    $$
+\begin{aligned}
+        y &= \sqrt{25 - 9} = 4 \text{ m}\\
+        2x\frac{dx}{dt} + 2y\frac{dy}{dt} &= 0\\
+        \frac{dy}{dt} &= -\frac{x}{y}\frac{dx}{dt} = -\frac{3}{4}(0.5) = -0.375 \text{ m/s}
+    \end{aligned}
+$$
+    El extremo superior baja a 0.375 m/s.

@@ -1,0 +1,210 @@
+---
+title: "Fracciones Parciales"
+---
+
+\begin{condicion}
+Sea $\dfrac{P(x)}{Q(x)}$ una fracci\'{o}n racional **propia**: $\deg P(x) < \deg Q(x)$.\$$4pt]
+Si no fuera el caso, primero se realiza la \textbf{divisi\'{o}n de polinomios} y se trabaja
+\'{u}nicamente con el residuo. La descomposici\'{o}n depende de los **factores del denominador** $Q(x)$.
+\end{condicion}
+
+%% ── CASO 1 ───────────────────────────────────────────────────────────────────
+\begin{caso1}
+
+**Forma del denominador:** factores lineales $(x - a_i)$ todos distintos entre s\'{i}.
+
+$$
+  \frac{P(x)}{(x-a_1)(x-a_2)\cdots(x-a_n)}
+  \;=\; \frac{A_1}{x-a_1} + \frac{A_2}{x-a_2} + \cdots + \frac{A_n}{x-a_n}
+$$
+
+\begin{metodocuadro}{C\'{o}mo hallar las constantes --- Caso 1}
+Se multiplican ambos lados por el denominador completo:
+$$
+  P(x) = A_1(x-a_2)\cdots(x-a_n) + A_2(x-a_1)(x-a_3)\cdots(x-a_n) + \cdots
+$$
+\textbf{M\'{e}todo de ra\'{i}ces (el m\'{a}s r\'{a}pido):} se sustituye cada ra\'{i}z $x = a_i$.
+Al hacerlo, todos los factores $(x-a_j)$ con $j \neq i$ se anulan, dejando una ecuaci\'{o}n
+con una sola inc\'{o}gnita $A_i$.
+\end{metodocuadro}
+
+\medskip
+**Ejemplo resuelto:**
+$$
+  \frac{3x + 1}{(x-1)(x+2)} = \frac{A}{x-1} + \frac{B}{x+2}
+$$
+Multiplicando por $(x-1)(x+2)$:
+$$
+  3x+1 = A(x+2) + B(x-1)
+$$
+[leftmargin=2em]
+1. $x = 1$:\quad $4 = 3A \;\Rightarrow\; A = \dfrac{4}{3}$
+1. $x = -2$:\quad $-5 = -3B \;\Rightarrow\; B = \dfrac{5}{3}$
+
+$$
+  \therefore\quad \frac{3x+1}{(x-1)(x+2)} = \frac{4/3}{x-1} + \frac{5/3}{x+2}
+$$
+
+\end{caso1}
+
+%% ── CASO 2 ───────────────────────────────────────────────────────────────────
+\begin{caso2}
+
+**Forma del denominador:** un factor lineal $(x-a)$ elevado a la potencia $n$.
+
+$$
+  \frac{P(x)}{(x-a)^n}
+  \;=\; \frac{A_1}{x-a} + \frac{A_2}{(x-a)^2} + \cdots + \frac{A_n}{(x-a)^n}
+$$
+
+Si el denominador mezcla un factor repetido con uno simple:
+$$
+  \frac{P(x)}{(x-a)^n(x-b)}
+  = \frac{A_1}{x-a} + \frac{A_2}{(x-a)^2} + \cdots + \frac{A_n}{(x-a)^n} + \frac{B}{x-b}
+$$
+
+\begin{metodocuadro}{C\'{o}mo hallar las constantes --- Caso 2}
+Se multiplican ambos lados por todo el denominador.
+
+[leftmargin=2em]
+1. **Constante $A_n$ (mayor potencia):** sustituir $x = a$. Todos los t\'{e}rminos
+        salvo $A_n$ desaparecen, aislando directamente esa constante.
+1. \textbf{Constantes $A_1, \ldots, A_{n-1}$:} se obtienen **igualando coeficientes**
+        de cada potencia de $x$ en ambos lados (sistema de ecuaciones), o bien
+        diferenciando sucesivamente la identidad respecto a $x$ y evaluando en $x = a$.
+1. **Constante $B$** (factor simple $x-b$, si existe): sustituir $x = b$.
+
+\end{metodocuadro}
+
+\medskip
+**Ejemplo resuelto:**
+$$
+  \frac{x^2 + 1}{(x-1)^2(x+3)} = \frac{A}{x-1} + \frac{B}{(x-1)^2} + \frac{C}{x+3}
+$$
+Multiplicando por $(x-1)^2(x+3)$:
+$$
+  x^2+1 = A(x-1)(x+3) + B(x+3) + C(x-1)^2
+$$
+[leftmargin=2em]
+1. $x = 1$:\quad $2 = 4B \;\Rightarrow\; B = \dfrac{1}{2}$
+1. $x = -3$:\quad $10 = 16C \;\Rightarrow\; C = \dfrac{5}{8}$
+1. Coeficiente de $x^2$:\quad $1 = A + C \;\Rightarrow\; A = \dfrac{3}{8}$
+
+\end{caso2}
+
+%% ── CASO 3 ───────────────────────────────────────────────────────────────────
+\begin{caso3}
+
+**Forma del denominador:** factores cuadr\'{a}ticos $ax^2+bx+c$ con $b^2-4ac < 0$
+(sin ra\'{i}ces reales), todos distintos.
+
+$$
+  \frac{P(x)}{(a_1x^2+b_1x+c_1)\cdots(a_kx^2+b_kx+c_k)}
+  \;=\; \sum_{i=1}^{k} \frac{A_i x + B_i}{a_i x^2 + b_i x + c_i}
+$$
+
+\begin{metodocuadro}{C\'{o}mo hallar las constantes --- Caso 3}
+Los factores cuadr\'{a}ticos irreducibles \textbf{no tienen ra\'{i}ces reales}, por lo que
+el m\'{e}todo de sustituci\'{o}n directa no puede aislar cada par $(A_i, B_i)$ por s\'{i} solo.
+El procedimiento es:
+1. Multiplicar ambos lados por el denominador completo.
+1. **Igualar coeficientes** de cada potencia de $x$ (grado 0, 1, 2, \ldots) en
+        ambos lados. Esto genera un sistema de ecuaciones lineales con las inc\'{o}gnitas
+        $A_1, B_1, A_2, B_2, \ldots$
+1. Resolver el sistema resultante.
+
+*Nota:* si el denominador mezcla factores lineales y cuadr\'{a}ticos, las ra\'{i}ces
+reales de los factores lineales pueden sustituirse primero para reducir el sistema.
+\end{metodocuadro}
+
+\medskip
+**Ejemplo resuelto:**
+$$
+  \frac{5x}{(x^2+1)(x^2+4)} = \frac{Ax+B}{x^2+1} + \frac{Cx+D}{x^2+4}
+$$
+Multiplicando por $(x^2+1)(x^2+4)$:
+$$
+  5x = (Ax+B)(x^2+4) + (Cx+D)(x^2+1)
+$$
+Igualando coeficientes:
+$$
+  \begin{cases}
+    x^3\!\!: & A + C = 0 \\
+    x^2\!\!: & B + D = 0 \\
+    x^1\!\!: & 4A + C = 5 \\
+    x^0\!\!: & 4B + D = 0
+  \end{cases}
+  \;\Rightarrow\;
+  A = \tfrac{5}{3},\; C = -\tfrac{5}{3},\; B = D = 0
+$$
+$$
+  \therefore\quad \frac{5x}{(x^2+1)(x^2+4)} = \frac{5x/3}{x^2+1} - \frac{5x/3}{x^2+4}
+$$
+
+\end{caso3}
+
+%% ── CASO 4 ───────────────────────────────────────────────────────────────────
+\begin{caso4}
+
+**Forma del denominador:** un factor cuadr\'{a}tico irreducible $(ax^2+bx+c)$ repetido $n$ veces.
+
+$$
+  \frac{P(x)}{(ax^2+bx+c)^n}
+  \;=\; \frac{A_1 x+B_1}{ax^2+bx+c} + \frac{A_2 x+B_2}{(ax^2+bx+c)^2}
+        + \cdots + \frac{A_n x+B_n}{(ax^2+bx+c)^n}
+$$
+
+\begin{metodocuadro}{C\'{o}mo hallar las constantes --- Caso 4}
+Al igual que en el Caso 3, no existen ra\'{i}ces reales para sustituir directamente.
+El \'{u}nico m\'{e}todo disponible es la \textbf{igualaci\'{o}n de coeficientes}:
+1. Multiplicar ambos lados por $(ax^2+bx+c)^n$.
+1. Expandir el lado derecho completamente.
+1. Igualar los coeficientes de $x^0, x^1, x^2, \ldots$ de ambos lados.
+        Esto produce un sistema de $2n$ ecuaciones con $2n$ inc\'{o}gnitas
+        $(A_1, B_1, \ldots, A_n, B_n)$.
+1. Resolver el sistema por sustituci\'{o}n o eliminaci\'{o}n.
+
+*Nota:* si el denominador combina un factor cuadr\'{a}tico repetido con factores lineales,
+primero se sustituyen las ra\'{i}ces reales para hallar esas constantes y luego se reduce el sistema.
+\end{metodocuadro}
+
+\medskip
+**Ejemplo resuelto:**
+$$
+  \frac{x^3+2x}{(x^2+1)^2} = \frac{Ax+B}{x^2+1} + \frac{Cx+D}{(x^2+1)^2}
+$$
+Multiplicando por $(x^2+1)^2$:
+$$
+  x^3+2x = (Ax+B)(x^2+1) + (Cx+D)
+$$
+Expandiendo: $\;x^3+2x = Ax^3 + Bx^2 + (A+C)x + (B+D)$.\$$4pt]
+Igualando coeficientes:
+$$
+  \begin{cases}
+    x^3\!\!: & A = 1 \\
+    x^2\!\!: & B = 0 \\
+    x^1\!\!: & A + C = 2 \;\Rightarrow\; C = 1 \\
+    x^0\!\!: & B + D = 0 \;\Rightarrow\; D = 0
+  \end{cases}
+$$
+$$
+  \therefore\quad \frac{x^3+2x}{(x^2+1)^2} = \frac{x}{x^2+1} + \frac{x}{(x^2+1)^2}
+$$
+
+\end{caso4}
+
+%% ── PROCEDIMIENTO GENERAL ────────────────────────────────────────────────────
+\begin{procedimiento}
+1. **Verificar el grado.** $\deg P < \deg Q$. Si no, dividir primero y trabajar con el residuo.
+1. **Factorizar** $Q(x)$ en factores lineales y cuadr\'{a}ticos irreducibles.
+1. **Escribir la forma** de las fracciones parciales seg\'{u}n los casos 1--4.
+1. **Multiplicar** ambos lados por $Q(x)$ para eliminar denominadores.
+1. **Hallar las constantes:**
+1. \textit{Ra\'{i}ces reales} (Casos 1 y 2): sustituir $x = a_i$ para aislar cada constante.
+1. \textit{Factores cuadr\'{a}ticos} (Casos 3 y 4): igualar coeficientes y resolver el sistema.
+1. *Casos mixtos*: combinar ambos m\'{e}todos.
+1. **Escribir el resultado final** con las constantes ya determinadas.
+
+\end{procedimiento}
+
+%% ── TABLA RESUMEN ────────────────────────────────────────────────────────────

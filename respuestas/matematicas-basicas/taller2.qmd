@@ -1,0 +1,190 @@
+---
+title: "Respuestas - Taller de Matemáticas Básicas II"
+---
+
+## Racionalización
+1. $\frac{5}{\sqrt{3}} = \frac{5\sqrt{3}}{3}$
+1. $\frac{2}{\sqrt{5} + 1}$
+    $$
+\begin{aligned}
+        &= \frac{2(\sqrt{5} - 1)}{(\sqrt{5} + 1)(\sqrt{5} - 1)}\\
+        &= \frac{2(\sqrt{5} - 1)}{5 - 1}\\
+        &= \frac{2(\sqrt{5} - 1)}{4}\\
+        &= \frac{\sqrt{5} - 1}{2}
+    \end{aligned}
+$$
+1. $\frac{3}{\sqrt{7} - \sqrt{2}}$
+    $$
+\begin{aligned}
+        &= \frac{3(\sqrt{7} + \sqrt{2})}{(\sqrt{7} - \sqrt{2})(\sqrt{7} + \sqrt{2})}\\
+        &= \frac{3(\sqrt{7} + \sqrt{2})}{7 - 2}\\
+        &= \frac{3(\sqrt{7} + \sqrt{2})}{5}
+    \end{aligned}
+$$
+1. $\frac{\sqrt{2} + 1}{\sqrt{2} - 1}$
+    $$
+\begin{aligned}
+        &= \frac{(\sqrt{2} + 1)(\sqrt{2} + 1)}{(\sqrt{2} - 1)(\sqrt{2} + 1)}\\
+        &= \frac{(\sqrt{2} + 1)^2}{2 - 1}\\
+        &= \frac{2 + 2\sqrt{2} + 1}{1}\\
+        &= 3 + 2\sqrt{2}
+    \end{aligned}
+$$
+1. $\frac{4}{\sqrt[3]{2}} = \frac{4\sqrt[3]{4}}{2} = 2\sqrt[3]{4}$
+1. $\frac{x + \sqrt{x}}{x - \sqrt{x}}$
+    $$
+\begin{aligned}
+        &= \frac{(x + \sqrt{x})(x + \sqrt{x})}{(x - \sqrt{x})(x + \sqrt{x})}\\
+        &= \frac{(x + \sqrt{x})^2}{x^2 - x}\\
+        &= \frac{x^2 + 2x\sqrt{x} + x}{x(x - 1)}\\
+        &= \frac{x^2 + x + 2x\sqrt{x}}{x(x - 1)}
+    \end{aligned}
+$$
+1. $\frac{6}{2\sqrt{3} + 3\sqrt{2}}$
+    $$
+\begin{aligned}
+        &= \frac{6(2\sqrt{3} - 3\sqrt{2})}{(2\sqrt{3} + 3\sqrt{2})(2\sqrt{3} - 3\sqrt{2})}\\
+        &= \frac{6(2\sqrt{3} - 3\sqrt{2})}{12 - 18}\\
+        &= \frac{6(2\sqrt{3} - 3\sqrt{2})}{-6}\\
+        &= -(2\sqrt{3} - 3\sqrt{2})\\
+        &= 3\sqrt{2} - 2\sqrt{3}
+    \end{aligned}
+$$
+
+## Inecuaciones
+1. $3x - 5 < 10$
+    $$
+\begin{aligned}
+        3x &< 15\\
+        x &< 5
+    \end{aligned}
+$$
+    Solución: $(-\infty, 5)$
+1. $2(x - 3) \geq x + 4$
+    $$
+\begin{aligned}
+        2x - 6 &\geq x + 4\\
+        x &\geq 10
+    \end{aligned}
+$$
+    Solución: $[10, \infty)$
+1. $-4 \leq 2x + 6 < 10$
+    $$
+\begin{aligned}
+        -10 \leq 2x &< 4\\
+        -5 \leq x &< 2
+    \end{aligned}
+$$
+    Solución: $[-5, 2)$
+1. $x^2 - 5x + 6 > 0$
+    $$
+\begin{aligned}
+        (x - 2)(x - 3) &> 0
+    \end{aligned}
+$$
+    Solución: $(-\infty, 2) \cup (3, \infty)$
+1. $x^2 - 4x + 3 \leq 0$
+    $$
+\begin{aligned}
+        (x - 1)(x - 3) &\leq 0
+    \end{aligned}
+$$
+    Solución: $[1, 3]$
+1. $\frac{x + 2}{x - 3} > 0$\\
+    Puntos críticos: $x = -2, x = 3$\\
+    Solución: $(-\infty, -2) \cup (3, \infty)$
+1. $|2x - 1| < 5$
+    $$
+\begin{aligned}
+        -5 < 2x - 1 &< 5\\
+        -4 < 2x &< 6\\
+        -2 < x &< 3
+    \end{aligned}
+$$
+    Solución: $(-2, 3)$
+1. $\frac{2x - 1}{x + 3} \geq 1$
+    $$
+\begin{aligned}
+        \frac{2x - 1}{x + 3} - 1 &\geq 0\\
+        \frac{2x - 1 - x - 3}{x + 3} &\geq 0\\
+        \frac{x - 4}{x + 3} &\geq 0
+    \end{aligned}
+$$
+    Solución: $(-\infty, -3) \cup [4, \infty)$
+
+## Conjuntos
+
+Dados: $A = \{1, 2, 3, 4, 5\}$, $B = \{3, 4, 5, 6, 7\}$, $C = \{2, 4, 6, 8\}$, $U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}$
+1. $A \cup B = \{1, 2, 3, 4, 5, 6, 7\}$
+1. $A \cap B = \{3, 4, 5\}$
+1. $A - B = \{1, 2\}$
+1. $B - A = \{6, 7\}$
+1. $(A \cup B) \cap C = \{1, 2, 3, 4, 5, 6, 7\} \cap \{2, 4, 6, 8\} = \{2, 4, 6\}$
+1. $A^c = \{6, 7, 8, 9, 10\}$
+1. $(A \cap B)^c = \{3, 4, 5\}^c = \{1, 2, 6, 7, 8, 9, 10\}$
+1. $A \times B$ (primeros 10 elementos):
+    $$
+\begin{aligned}
+        &\{(1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7)\}
+    \end{aligned}
+$$
+
+## Operaciones con Conjuntos - Demostración
+1. **Ley distributiva:** $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$
+    
+    **Demostración:** Sea $x \in A \cup (B \cap C)$. Entonces:
+1. Si $x \in A$, entonces $x \in A \cup B$ y $x \in A \cup C$, por lo tanto $x \in (A \cup B) \cap (A \cup C)$.
+1. Si $x \in B \cap C$, entonces $x \in B$ y $x \in C$, luego $x \in A \cup B$ y $x \in A \cup C$, así $x \in (A \cup B) \cap (A \cup C)$.
+    
+    La inclusión contraria se demuestra de manera similar.
+1. **Ley de De Morgan:** $(A \cup B)^c = A^c \cap B^c$
+    
+    **Demostración:** $x \in (A \cup B)^c \Leftrightarrow x \notin A \cup B \Leftrightarrow x \notin A \text{ y } x \notin B \Leftrightarrow x \in A^c \text{ y } x \in B^c \Leftrightarrow x \in A^c \cap B^c$
+1. **Diferencia:** $A - B = A \cap B^c$
+    
+    **Demostración:** $x \in A - B \Leftrightarrow x \in A \text{ y } x \notin B \Leftrightarrow x \in A \text{ y } x \in B^c \Leftrightarrow x \in A \cap B^c$
+
+## Problemas de Aplicación con Conjuntos
+1. Sean: $F$ = fútbol, $B$ = baloncesto, $N$ = natación
+    
+    Datos: $|F| = 45$, $|B| = 35$, $|N| = 30$, $|F \cap B| = 15$, $|F \cap N| = 12$, $|B \cap N| = 10$, $|F \cap B \cap N| = 5$
+1. Solo fútbol: $|F| - |F \cap B| - |F \cap N| + |F \cap B \cap N| = 45 - 15 - 12 + 5 = 23$
+1. Exactamente dos deportes:
+        $$
+\begin{aligned}
+            &(|F \cap B| - |F \cap B \cap N|) + (|F \cap N| - |F \cap B \cap N|) + (|B \cap N| - |F \cap B \cap N|)\\
+            &= (15 - 5) + (12 - 5) + (10 - 5) = 10 + 7 + 5 = 22
+        \end{aligned}
+$$
+1. Ningún deporte:
+        $$
+\begin{aligned}
+            &100 - [|F| + |B| + |N| - |F \cap B| - |F \cap N| - |B \cap N| + |F \cap B \cap N|]\\
+            &= 100 - [45 + 35 + 30 - 15 - 12 - 10 + 5]\\
+            &= 100 - 78 = 22
+        \end{aligned}
+$$
+1. Sean: $I$ = inglés, $F$ = francés, $A$ = alemán
+    
+    Datos: $|I| = 32$, $|F| = 28$, $|A| = 25$, $|I \cap F| = 18$, $|I \cap A| = 15$, $|F \cap A| = 14$, $|I \cap F \cap A| = 10$
+    
+    $$
+\begin{aligned}
+        &\text{Hablan al menos uno} = |I| + |F| + |A| - |I \cap F| - |I \cap A| - |F \cap A| + |I \cap F \cap A|\\
+        &= 32 + 28 + 25 - 18 - 15 - 14 + 10 = 48\\
+        &\text{Ningún idioma} = 50 - 48 = 2
+    \end{aligned}
+$$
+
+## Intervalos y Notación
+1. $\{x \in \mathbb{R} : -3 < x \leq 5\} = (-3, 5]$
+1. $\{x \in \mathbb{R} : x \geq 2\} = [2, \infty)$
+1. $\{x \in \mathbb{R} : x < -1 \text{ o } x > 4\} = (-\infty, -1) \cup (4, \infty)$
+1. $\{x \in \mathbb{R} : |x - 2| < 3\}$
+    $$
+\begin{aligned}
+        -3 < x - 2 &< 3\\
+        -1 < x &< 5
+    \end{aligned}
+$$
+    Solución: $(-1, 5)$

@@ -1,0 +1,76 @@
+---
+title: "Taller de Matemáticas Básicas II"
+---
+
+## Instrucciones
+Resuelva cada uno de los siguientes ejercicios mostrando todo el proceso. Presente su trabajo de manera ordenada y clara.
+
+## Racionalización
+Racionalice el denominador de las siguientes expresiones:
+1. $\frac{5}{\sqrt{3}}$
+1. $\frac{2}{\sqrt{5} + 1}$
+1. $\frac{3}{\sqrt{7} - \sqrt{2}}$
+1. $\frac{\sqrt{2} + 1}{\sqrt{2} - 1}$
+1. $\frac{4}{\sqrt[3]{2}}$
+1. $\frac{x + \sqrt{x}}{x - \sqrt{x}}$
+1. $\frac{6}{2\sqrt{3} + 3\sqrt{2}}$
+
+## Inecuaciones
+Resuelva las siguientes inecuaciones y represente la solución en la recta numérica:
+1. $3x - 5 < 10$
+1. $2(x - 3) \geq x + 4$
+1. $-4 \leq 2x + 6 < 10$
+1. $x^2 - 5x + 6 > 0$
+1. $x^2 - 4x + 3 \leq 0$
+1. $\frac{x + 2}{x - 3} > 0$
+1. $|2x - 1| < 5$
+1. $\frac{2x - 1}{x + 3} \geq 1$
+
+## Conjuntos
+Dados los conjuntos $A = \{1, 2, 3, 4, 5\}$, $B = \{3, 4, 5, 6, 7\}$, $C = \{2, 4, 6, 8\}$ y $U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}$ como conjunto universal, determine:
+1. $A \cup B$
+1. $A \cap B$
+1. $A - B$
+1. $B - A$
+1. $(A \cup B) \cap C$
+1. $A^c$ (complemento de A)
+1. $(A \cap B)^c$
+1. $A \times B$ (producto cartesiano, solo los primeros 10 elementos)
+
+## Operaciones con Conjuntos - Demostración
+Demuestre las siguientes propiedades usando diagramas de Venn o álgebra de conjuntos:
+1. $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$ (Ley distributiva)
+1. $(A \cup B)^c = A^c \cap B^c$ (Ley de De Morgan)
+1. $A - B = A \cap B^c$
+
+## Problemas de Aplicación con Conjuntos
+1. En una encuesta a 100 estudiantes sobre sus preferencias deportivas, se encontró que:
+1. 45 practican fútbol
+1. 35 practican baloncesto
+1. 30 practican natación
+1. 15 practican fútbol y baloncesto
+1. 12 practican fútbol y natación
+1. 10 practican baloncesto y natación
+1. 5 practican los tres deportes
+    
+    Determine:
+1. ¿Cuántos estudiantes practican solo fútbol?
+1. ¿Cuántos estudiantes practican exactamente dos deportes?
+1. ¿Cuántos estudiantes no practican ninguno de estos deportes?
+1. En un grupo de 50 personas:
+1. 32 hablan inglés
+1. 28 hablan francés
+1. 25 hablan alemán
+1. 18 hablan inglés y francés
+1. 15 hablan inglés y alemán
+1. 14 hablan francés y alemán
+1. 10 hablan los tres idiomas
+    
+    ¿Cuántas personas no hablan ninguno de estos tres idiomas?
+
+## Intervalos y Notación
+Exprese los siguientes conjuntos usando notación de intervalos y represéntelos en la recta numérica:
+1. $\{x \in \mathbb{R} : -3 < x \leq 5\}$
+1. $\{x \in \mathbb{R} : x \geq 2\}$
+1. $\{x \in \mathbb{R} : x < -1 \text{ o } x > 4\}$
+1. $\{x \in \mathbb{R} : |x - 2| < 3\}$

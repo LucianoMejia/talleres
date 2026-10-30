@@ -1,92 +1,156 @@
 ---
-title: "Solucionario: factorización, homogenización y racionalización"
+title: "Solucionario - Taller de factorización, homogenización y racionalización"
 ---
 
 ## Parte I. Factorización
-
-1. $$81a^2-100b^2=(9a)^2-(10b)^2=\boxed{(9a-10b)(9a+10b)}$$
-
-2. Por agrupación:
-
-   $$
-   \begin{aligned}
-   x^3+2x^2-9x-18
-   &=x^2(x+2)-9(x+2)\\
-   &=(x+2)(x^2-9)\\
-   &=\boxed{(x+2)(x-3)(x+3)}.
-   \end{aligned}
-   $$
-
-3. Factor común $5xy$:
-
-   $$15x^3y-25x^2y^2+5xy=\boxed{5xy(3x^2-5xy+1)}.$$
-
-4. $$4x^2+20x+25-9y^2=(2x+5)^2-(3y)^2=\boxed{(2x+5-3y)(2x+5+3y)}.$$
-
-5. Como $6(-15)=-90$ y $9+(-10)=-1$:
-
-   $$
-   6x^2-x-15=6x^2-10x+9x-15
-   =2x(3x-5)+3(3x-5)
-   =\boxed{(3x-5)(2x+3)}.
-   $$
-
-6. $$x^4-81=(x^2-9)(x^2+9)=\boxed{(x-3)(x+3)(x^2+9)}.$$
-
-7. Suma de cubos:
-
-   $$27x^3+64y^3=\boxed{(3x+4y)(9x^2-12xy+16y^2)}.$$
+1. $$
+\begin{aligned}
+      81a^2-100b^2&=(9a)^2-(10b)^2\\
+      &=\boxed{(9a-10b)(9a+10b)}
+    \end{aligned}
+$$
+1. Por agrupación:
+    $$
+\begin{aligned}
+      x^3+2x^2-9x-18
+      &=x^2(x+2)-9(x+2)\\
+      &=(x+2)(x^2-9)\\
+      &=\boxed{(x+2)(x-3)(x+3)}
+    \end{aligned}
+$$
+1. Factor común $5xy$:
+    $$
+      15x^3y-25x^2y^2+5xy=\boxed{5xy(3x^2-5xy+1)}
+    $$
+1. $$
+\begin{aligned}
+      4x^2+20x+25-9y^2
+      &=(2x+5)^2-(3y)^2\\
+      &=\boxed{(2x+5-3y)(2x+5+3y)}
+    \end{aligned}
+$$
+1. Como $6\cdot(-15)=-90$, los números $9$ y $-10$ suman $-1$:
+    $$
+\begin{aligned}
+      6x^2-x-15&=6x^2-10x+9x-15\\
+      &=2x(3x-5)+3(3x-5)\\
+      &=\boxed{(3x-5)(2x+3)}
+    \end{aligned}
+$$
+1. Diferencia de cuadrados:
+    $$
+      x^4-81=(x^2-9)(x^2+9)
+      =\boxed{(x-3)(x+3)(x^2+9)}
+    $$
+1. Suma de cubos, con $a=3x$ y $b=4y$:
+    $$
+\begin{aligned}
+      27x^3+64y^3&=(3x)^3+(4y)^3\\
+      &=\boxed{(3x+4y)(9x^2-12xy+16y^2)}
+    \end{aligned}
+$$
 
 ## Parte II. Homogenización
-
-1. $$\sqrt{3}\cdot\sqrt[3]{9}=\sqrt[6]{27}\sqrt[6]{81}=\sqrt[6]{3^7}=\boxed{3\sqrt[6]{3}}.$$
-
-2. Como $\operatorname{mcm}(2,3)=6$:
-
-   $$\boxed{\sqrt{3}=\sqrt[6]{27}},\qquad \boxed{\sqrt[3]{5}=\sqrt[6]{25}}.$$
-
-3. $$
-   \frac{3}{x-2}-\frac{2}{x+2}
-   =\frac{3(x+2)-2(x-2)}{x^2-4}
-   =\boxed{\frac{x+10}{x^2-4}}.
-   $$
-
-4. $$\sqrt{5}=\sqrt[6]{125},\qquad \sqrt[3]{11}=\sqrt[6]{121}.$$ Como $120<121<125$:
-
-   $$\boxed{\sqrt[6]{120}<\sqrt[3]{11}<\sqrt{5}}.$$
-
-5. Como $x^2-1=(x-1)(x+1)$ y $x^2+2x+1=(x+1)^2$:
-
-   $$
-   \begin{aligned}
-   &\frac{1}{x^2-1}+\frac{2}{x^2+2x+1}-\frac{1}{x-1}\\
-   &=\frac{(x+1)+2(x-1)-(x+1)^2}{(x-1)(x+1)^2}\\
-   &=\boxed{\frac{-x^2+x-2}{(x-1)(x+1)^2}}.
-   \end{aligned}
-   $$
-
-6. $$\frac{\sqrt[4]{8}}{\sqrt{2}}=\frac{\sqrt[4]{8}}{\sqrt[4]{4}}=\boxed{\sqrt[4]{2}}.$$
+1. Como
+    $\sqrt{3}=\sqrt[6]{3^3}$ y $\sqrt[3]{9}=\sqrt[6]{9^2}$,
+    $$
+\begin{aligned}
+      \sqrt{3}\cdot\sqrt[3]{9}
+      &=\sqrt[6]{27}\cdot\sqrt[6]{81}\\
+      &=\sqrt[6]{3^7}=\boxed{3\sqrt[6]{3}}.
+    \end{aligned}
+$$
+1. El mínimo común múltiplo de $2$ y $3$ es $6$:
+    $$
+      \sqrt{3}=\boxed{\sqrt[6]{27}},
+      \qquad \sqrt[3]{5}=\boxed{\sqrt[6]{25}}.
+    $$
+1. El denominador común es $(x-2)(x+2)$:
+    $$
+\begin{aligned}
+      \frac{3}{x-2}-\frac{2}{x+2}
+      &=\frac{3(x+2)-2(x-2)}{x^2-4}\\
+      &=\frac{3x+6-2x+4}{x^2-4}\\
+      &=\boxed{\frac{x+10}{x^2-4}}.
+    \end{aligned}
+$$
+1. Con índice $6$:
+    $$
+      \sqrt{5}=\sqrt[6]{125},
+      \qquad \sqrt[3]{11}=\sqrt[6]{121}.
+    $$
+    Como $120<121<125$,
+    $$
+      \boxed{\sqrt[6]{120}<\sqrt[3]{11}<\sqrt{5}}.
+    $$
+1. Factorizamos los denominadores:
+    $$
+      x^2-1=(x-1)(x+1),
+      \qquad x^2+2x+1=(x+1)^2.
+    $$
+    El denominador común es $(x-1)(x+1)^2$. Por tanto,
+    $$
+\begin{aligned}
+      &\frac{1}{x^2-1}+\frac{2}{x^2+2x+1}-\frac{1}{x-1}\\
+      &\quad=\frac{(x+1)+2(x-1)-(x+1)^2}{(x-1)(x+1)^2}\\
+      &\quad=\frac{x+1+2x-2-x^2-2x-1}{(x-1)(x+1)^2}\\
+      &\quad=\boxed{\frac{-x^2+x-2}{(x-1)(x+1)^2}}.
+    \end{aligned}
+$$
+1. Como $\sqrt{2}=\sqrt[4]{4}$,
+    $$
+      \frac{\sqrt[4]{8}}{\sqrt{2}}
+      =\frac{\sqrt[4]{8}}{\sqrt[4]{4}}
+      =\sqrt[4]{\frac{8}{4}}
+      =\boxed{\sqrt[4]{2}}.
+    $$
 
 ## Parte III. Racionalización
-
-1. $$\frac{6}{\sqrt{5}-\sqrt{2}}=\frac{6(\sqrt{5}+\sqrt{2})}{5-2}=\boxed{2(\sqrt{5}+\sqrt{2})}.$$
-
-2. $$\frac{10}{\sqrt{5}}=\frac{10\sqrt{5}}{5}=\boxed{2\sqrt{5}}.$$
-
-3. Como $(1+\sqrt{2}+\sqrt{3})(1+\sqrt{2}-\sqrt{3})=2\sqrt{2}$:
-
-   $$
-   \frac{1}{1+\sqrt{2}+\sqrt{3}}
-   =\frac{1+\sqrt{2}-\sqrt{3}}{2\sqrt{2}}
-   =\boxed{\frac{2+\sqrt{2}-\sqrt{6}}{4}}.
-   $$
-
-4. $$\frac{4}{\sqrt[3]{2}}\cdot\frac{\sqrt[3]{4}}{\sqrt[3]{4}}=\boxed{2\sqrt[3]{4}}.$$
-
-5. $$\frac{2+\sqrt{3}}{2-\sqrt{3}}=\frac{(2+\sqrt{3})^2}{4-3}=\boxed{7+4\sqrt{3}}.$$
-
-6. $$\frac{7}{3\sqrt{7}}=\frac{7\sqrt{7}}{21}=\boxed{\frac{\sqrt{7}}{3}}.$$
-
-7. $$\frac{1}{\sqrt{x+1}-\sqrt{x}}\cdot\frac{\sqrt{x+1}+\sqrt{x}}{\sqrt{x+1}+\sqrt{x}}=\boxed{\sqrt{x+1}+\sqrt{x}}.$$
-
-[Volver al taller](../../talleres/matematicas-basicas/taller5.qmd)
+1. Multiplicamos por el conjugado:
+    $$
+      \frac{6}{\sqrt{5}-\sqrt{2}}
+      =\frac{6(\sqrt{5}+\sqrt{2})}{5-2}
+      =\boxed{2(\sqrt{5}+\sqrt{2})}.
+    $$
+1. $$
+      \frac{10}{\sqrt{5}}\cdot\frac{\sqrt{5}}{\sqrt{5}}
+      =\frac{10\sqrt{5}}{5}=\boxed{2\sqrt{5}}.
+    $$
+1. Multiplicamos primero por $(1+\sqrt{2}-\sqrt{3})$:
+    $$
+\begin{aligned}
+      &(1+\sqrt{2}+\sqrt{3})(1+\sqrt{2}-\sqrt{3})\\
+      &\qquad=(1+\sqrt{2})^2-3=2\sqrt{2}.
+    \end{aligned}
+$$
+    Entonces,
+    $$
+      \frac{1}{1+\sqrt{2}+\sqrt{3}}
+      =\frac{1+\sqrt{2}-\sqrt{3}}{2\sqrt{2}}
+      \cdot\frac{\sqrt{2}}{\sqrt{2}}
+      =\boxed{\frac{2+\sqrt{2}-\sqrt{6}}{4}}.
+    $$
+1. $$
+      \frac{4}{\sqrt[3]{2}}
+      \cdot\frac{\sqrt[3]{4}}{\sqrt[3]{4}}
+      =\frac{4\sqrt[3]{4}}{2}
+      =\boxed{2\sqrt[3]{4}}.
+    $$
+1. Multiplicamos por el conjugado $(2+\sqrt{3})$:
+    $$
+      \frac{2+\sqrt{3}}{2-\sqrt{3}}
+      =\frac{(2+\sqrt{3})^2}{4-3}
+      =\boxed{7+4\sqrt{3}}.
+    $$
+1. $$
+      \frac{7}{3\sqrt{7}}\cdot\frac{\sqrt{7}}{\sqrt{7}}
+      =\frac{7\sqrt{7}}{21}
+      =\boxed{\frac{\sqrt{7}}{3}}.
+    $$
+1. Multiplicamos por el conjugado:
+    $$
+      \frac{1}{\sqrt{x+1}-\sqrt{x}}
+      \cdot\frac{\sqrt{x+1}+\sqrt{x}}{\sqrt{x+1}+\sqrt{x}}
+      =\boxed{\sqrt{x+1}+\sqrt{x}},
+    $$
+    porque $(x+1)-x=1$.

@@ -1,0 +1,42 @@
+---
+title: "Respuestas - Taller de Calculo Integral III"
+---
+
+## Integracion por Partes
+1. $\int x e^x\,dx = e^x(x-1)+C$.
+1. $\int x\ln x\,dx = \frac{x^2}{2}\ln x-\frac{x^2}{4}+C$.
+1. $\int x^2\cos x\,dx = x^2\sin x+2x\cos x-2\sin x+C$.
+1. $\int e^{2x}\sin x\,dx = \frac{e^{2x}}{5}(2\sin x-\cos x)+C$.
+1. $\int \arctan x\,dx = x\arctan x-\frac{1}{2}\ln(1+x^2)+C$.
+
+## Fracciones Parciales
+1. $\int \frac{3x+5}{x^2-1}\,dx = 4\ln|x-1|-\ln|x+1|+C$.
+1. $\int \frac{2x^2+3x+1}{x(x+1)(x+2)}\,dx = \frac{1}{2}\ln|x|+\frac{3}{2}\ln|x+2|+C$.
+1. $\int \frac{dx}{x^2+5x+6} = \ln|x+2|-\ln|x+3|+C$.
+1. $\int \frac{x+4}{(x-1)^2}\,dx = \ln|x-1|-\frac{5}{x-1}+C$.
+1. $\int \frac{4x}{x^2(x^2+1)}\,dx = 4\ln|x|-2\ln(x^2+1)+C$.
+
+## Integrales Trigonometricas y Sustitucion Trigonometrica
+1. $$\int \sin^2 x\cos^2 x\,dx = \frac{x}{8}-\frac{\sin(4x)}{32}+C.$$
+1. $$\int \frac{dx}{\sqrt{9-x^2}} = \arcsin\left(\frac{x}{3}\right)+C.$$
+1. $$\int \sqrt{16-x^2}\,dx = \frac{x}{2}\sqrt{16-x^2}+8\arcsin\left(\frac{x}{4}\right)+C.$$
+1. $$\int \frac{x^2}{\sqrt{x^2+4}}\,dx = \frac{x}{2}\sqrt{x^2+4}-2\ln\left|x+\sqrt{x^2+4}\right|+C.$$
+1. Para $x>1$:
+    $$\int \frac{dx}{x^2\sqrt{x^2-1}} = \frac{\sqrt{x^2-1}}{x}+C.$$
+
+## Integrales Impropias
+1. $$\int_1^{\infty} \frac{1}{x^p}\,dx$$
+    converge si y solo si $p>1$, y en ese caso su valor es
+    $$\frac{1}{p-1}.$$
+1. $\int_0^1 \frac{1}{\sqrt{x}}\,dx = 2$.
+1. $\int_0^{\infty} e^{-2x}\,dx = \frac{1}{2}$.
+1. $\int_{-\infty}^{\infty} \frac{1}{x^2+1}\,dx = \pi$.
+
+## Aplicaciones Integrales
+1. Si $v(t)=3t^2-6t+2$ y $s(0)=5$:
+    $$s(t)=\int (3t^2-6t+2)\,dt=t^3-3t^2+2t+C, \quad C=5,$$
+    $$s(t)=t^3-3t^2+2t+5.$$
+1. Trabajo en el resorte:
+    $$W=\int_0^{0.2}120x\,dx=60x^2\Big|_0^{0.2}=2.4\ \text{J}.$$
+1. Si $C'(q)=0.04q+15$ y $C(0)=800$:
+    $$C(q)=0.02q^2+15q+800.$$

@@ -62,11 +62,11 @@ Desarrollo del ejercicio y respuesta final.
 
 ## Enlaces entre taller y respuesta
 
-Si el archivo del taller está en `talleres/materia/taller1.qmd` y la respuesta en `respuestas/materia/taller1.qmd`, usa:
+Si el archivo del taller está en `talleres/nombre-materia/taller6.qmd` y la respuesta en `respuestas/nombre-materia/taller6.qmd`, usa:
 
 ```markdown
-[Ver taller](../talleres/materia/taller1.qmd)
-[Ver solución](../respuestas/materia/taller1.qmd)
+[Ver taller](../talleres/nombre-materia/taller6.qmd)
+[Ver solución](../respuestas/nombre-materia/taller6.qmd)
 ```
 
 Para agregar un nuevo material, crea el `.qmd`, enlázalo desde la página de su materia y ejecuta `quarto preview` para revisarlo localmente.

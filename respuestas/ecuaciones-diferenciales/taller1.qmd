@@ -1,0 +1,49 @@
+---
+title: "Respuestas - Taller de Ecuaciones Diferenciales I"
+---
+
+## Variables Separables
+1. $\dfrac{dy}{dx}=xy \Rightarrow y=Ce^{x^2/2}$.
+1. $\dfrac{dy}{dx}=\dfrac{2x}{1+y^2} \Rightarrow y+\dfrac{y^3}{3}=x^2+C$.
+1. $\dfrac{dy}{dx}=\dfrac{y-1}{x+2} \Rightarrow y=1+C(x+2)$.
+1. $\dfrac{dy}{dx}=e^{x-y} \Rightarrow e^y=e^x+C \Rightarrow y=\ln(e^x+C)$.
+1. $\dfrac{dy}{dx}=\dfrac{x^2+1}{y^2+1},\ y(0)=0$:
+    $$\frac{y^3}{3}+y=\frac{x^3}{3}+x+C,\quad C=0.$$
+
+## Ecuaciones Lineales de Primer Orden
+1. $y'+2y=e^{-x}$:
+    $$y=e^{-x}+Ce^{-2x}.$$
+1. $y'-\frac{3}{x}y=x^2$, $x>0$:
+    $$y=x^3(\ln x+C).$$
+1. $y'+y=\sin x$, $y(0)=1$:
+    $$y=\frac{1}{2}(\sin x-\cos x)+\frac{3}{2}e^{-x}.$$
+1. $2y'+y=4x$:
+    $$y=4x-8+Ce^{-x/2}.$$
+1. $y'+\frac{1}{x}y=\ln x$, $x>0$:
+    $$y=\frac{x}{2}\ln x-\frac{x}{4}+\frac{C}{x}.$$
+
+## Ecuaciones Exactas
+1. Es exacta. Solucion implicita:
+    $$x^2y+xy^2=C.$$
+1. Es exacta. Solucion implicita:
+    $$x^3+xy-2y^2=C.$$
+1. Es exacta. Solucion implicita:
+    $$y\sin x+x^2+y^3=C.$$
+
+## Problemas de Aplicacion
+1. $\dfrac{dP}{dt}=0.08P$, $P(0)=1200$:
+    $$P(t)=1200e^{0.08t}.$$
+    Tiempo de duplicacion:
+    $$t_d=\frac{\ln 2}{0.08}\approx 8.66.$$
+1. $\dfrac{dT}{dt}=-k(T-22)$, $T(0)=90$, $T(10)=60$:
+    $$T(t)=22+68e^{-kt},$$
+    $$60=22+68e^{-10k}\Rightarrow k=\frac{1}{10}\ln\left(\frac{34}{19}\right)\approx 0.0582,$$
+    $$T(t)=22+68e^{-0.0582t}.$$
+1. Mezclas, $Q(0)=5$:
+    $$\frac{dQ}{dt}=0.2-0.02Q,$$
+    $$Q(t)=10-5e^{-0.02t}.$$
+
+## Campo Direccional y Analisis Cualitativo
+1. Para $y'=y(1-y)$: equilibrios en $y=0$ y $y=1$. $y=0$ es inestable, $y=1$ es estable.
+1. Para $y'=x-y$: la pendiente es cero sobre la recta $y=x$ (isoclina). Encima de ella las pendientes son negativas y debajo positivas; las trayectorias tienden a acercarse a esa zona al avanzar en $x$.
+1. Para $y'=y^2-4=(y-2)(y+2)$: equilibrios en $y=\pm2$. Las soluciones crecen si $|y|>2$ y decrecen si $|y|<2$.

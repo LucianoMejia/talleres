@@ -1,0 +1,217 @@
+---
+title: "Respuestas - Taller de Matemáticas Básicas IV"
+---
+
+## Ejercicios de MCD
+1. Calcula el MCD de 24 y 36.
+
+Descomposición en factores primos:
+$$
+\begin{aligned}
+24 &= 2^3 \times 3 \\
+36 &= 2^2 \times 3^2
+\end{aligned}
+$$
+
+MCD(24, 36) = $2^2 \times 3 = 4 \times 3 = \boxed{12}$
+1. Encuentra el MCD de 48, 72 y 96.
+
+Descomposición en factores primos:
+$$
+\begin{aligned}
+48 &= 2^4 \times 3 \\
+72 &= 2^3 \times 3^2 \\
+96 &= 2^5 \times 3
+\end{aligned}
+$$
+
+MCD(48, 72, 96) = $2^3 \times 3 = 8 \times 3 = \boxed{24}$
+1. Determina el MCD de 105 y 140.
+
+Descomposición en factores primos:
+$$
+\begin{aligned}
+105 &= 3 \times 5 \times 7 \\
+140 &= 2^2 \times 5 \times 7
+\end{aligned}
+$$
+
+MCD(105, 140) = $5 \times 7 = \boxed{35}$
+1. Calcula el MCD de 84, 126 y 210.
+
+Descomposición en factores primos:
+$$
+\begin{aligned}
+84 &= 2^2 \times 3 \times 7 \\
+126 &= 2 \times 3^2 \times 7 \\
+210 &= 2 \times 3 \times 5 \times 7
+\end{aligned}
+$$
+
+MCD(84, 126, 210) = $2 \times 3 \times 7 = \boxed{42}$
+1. Se tienen dos cintas de tela, una de 180 cm y otra de 252 cm. Se desea cortarlas en pedazos iguales de la mayor longitud posible sin que sobre material. ¿Cuál debe ser la longitud de cada pedazo?
+
+Descomposición en factores primos:
+$$
+\begin{aligned}
+180 &= 2^2 \times 3^2 \times 5 \\
+252 &= 2^2 \times 3^2 \times 7
+\end{aligned}
+$$
+
+MCD(180, 252) = $2^2 \times 3^2 = 4 \times 9 = 36$ cm
+
+Cada pedazo debe medir \boxed{36 \text{ cm}}
+
+## Ejercicios de MCM
+
+    \setcounter{enumi}{5}
+1. Calcula el MCM de 12 y 18.
+
+Descomposición en factores primos:
+$$
+\begin{aligned}
+12 &= 2^2 \times 3 \\
+18 &= 2 \times 3^2
+\end{aligned}
+$$
+
+MCM(12, 18) = $2^2 \times 3^2 = 4 \times 9 = \boxed{36}$
+1. Encuentra el MCM de 15, 20 y 30.
+
+Descomposición en factores primos:
+$$
+\begin{aligned}
+15 &= 3 \times 5 \\
+20 &= 2^2 \times 5 \\
+30 &= 2 \times 3 \times 5
+\end{aligned}
+$$
+
+MCM(15, 20, 30) = $2^2 \times 3 \times 5 = 4 \times 3 \times 5 = \boxed{60}$
+1. Determina el MCM de 8, 12 y 16.
+
+Descomposición en factores primos:
+$$
+\begin{aligned}
+8 &= 2^3 \\
+12 &= 2^2 \times 3 \\
+16 &= 2^4
+\end{aligned}
+$$
+
+MCM(8, 12, 16) = $2^4 \times 3 = 16 \times 3 = \boxed{48}$
+1. Calcula el MCM de 45 y 75.
+
+Descomposición en factores primos:
+$$
+\begin{aligned}
+45 &= 3^2 \times 5 \\
+75 &= 3 \times 5^2
+\end{aligned}
+$$
+
+MCM(45, 75) = $3^2 \times 5^2 = 9 \times 25 = \boxed{225}$
+1. Tres luces intermitentes se encienden cada 4, 6 y 9 segundos respectivamente. Si en este momento se encienden al mismo tiempo, ¿en cuántos segundos volverán a coincidir?
+
+Descomposición en factores primos:
+$$
+\begin{aligned}
+4 &= 2^2 \\
+6 &= 2 \times 3 \\
+9 &= 3^2
+\end{aligned}
+$$
+
+MCM(4, 6, 9) = $2^2 \times 3^2 = 4 \times 9 = 36$ segundos
+
+Volverán a coincidir en \boxed{36 \text{ segundos}}
+
+## Ejercicios combinados
+
+    \setcounter{enumi}{10}
+1. Encuentra el MCD y MCM de 60 y 90.
+
+Descomposición en factores primos:
+$$
+\begin{aligned}
+60 &= 2^2 \times 3 \times 5 \\
+90 &= 2 \times 3^2 \times 5
+\end{aligned}
+$$
+
+MCD(60, 90) = $2 \times 3 \times 5 = \boxed{30}$
+
+MCM(60, 90) = $2^2 \times 3^2 \times 5 = 4 \times 9 \times 5 = \boxed{180}$
+1. Calcula el MCD y MCM de 28, 42 y 70.
+
+Descomposición en factores primos:
+$$
+\begin{aligned}
+28 &= 2^2 \times 7 \\
+42 &= 2 \times 3 \times 7 \\
+70 &= 2 \times 5 \times 7
+\end{aligned}
+$$
+
+MCD(28, 42, 70) = $2 \times 7 = \boxed{14}$
+
+MCM(28, 42, 70) = $2^2 \times 3 \times 5 \times 7 = 4 \times 3 \times 5 \times 7 = \boxed{420}$
+1. Dos planetas completan sus órbitas alrededor del sol en 12 y 18 meses respectivamente. Si hoy están alineados, ¿en cuántos meses volverán a alinearse?
+
+Descomposición en factores primos:
+$$
+\begin{aligned}
+12 &= 2^2 \times 3 \\
+18 &= 2 \times 3^2
+\end{aligned}
+$$
+
+MCM(12, 18) = $2^2 \times 3^2 = 4 \times 9 = 36$ meses
+
+Volverán a alinearse en \boxed{36 \text{ meses}}
+1. Se tienen tres tubos de 120 cm, 180 cm y 240 cm de longitud. Se desea cortarlos en segmentos de igual longitud, la mayor posible, sin que sobre material. ¿Cuál debe ser la longitud de cada segmento? ¿Cuántos segmentos se obtendrán en total?
+
+Descomposición en factores primos:
+$$
+\begin{aligned}
+120 &= 2^3 \times 3 \times 5 \\
+180 &= 2^2 \times 3^2 \times 5 \\
+240 &= 2^4 \times 3 \times 5
+\end{aligned}
+$$
+
+MCD(120, 180, 240) = $2^2 \times 3 \times 5 = 4 \times 3 \times 5 = 60$ cm
+
+Número de segmentos:
+1. Del tubo de 120 cm: $120 \div 60 = 2$ segmentos
+1. Del tubo de 180 cm: $180 \div 60 = 3$ segmentos
+1. Del tubo de 240 cm: $240 \div 60 = 4$ segmentos
+1. Total: $2 + 3 + 4 = 9$ segmentos
+
+Cada segmento debe medir \boxed{60 \text{ cm}} y se obtendrán \boxed{9 \text{ segmentos}} en total.
+1. Demuestra que para dos números cualesquiera $a$ y $b$, se cumple que: 
+$$\text{MCD}(a,b) \times \text{MCM}(a,b) = a \times b$$
+Verifica esta propiedad con los números 16 y 24.
+
+Verificación con 16 y 24:
+
+Descomposición en factores primos:
+$$
+\begin{aligned}
+16 &= 2^4 \\
+24 &= 2^3 \times 3
+\end{aligned}
+$$
+
+MCD(16, 24) = $2^3 = 8$
+
+MCM(16, 24) = $2^4 \times 3 = 16 \times 3 = 48$
+
+Verificación:
+$$\text{MCD}(16,24) \times \text{MCM}(16,24) = 8 \times 48 = 384$$
+$$16 \times 24 = 384$$
+
+$$\boxed{384 = 384} \quad \checkmark$$
+
+La propiedad se cumple.
