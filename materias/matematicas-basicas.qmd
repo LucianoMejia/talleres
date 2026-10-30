@@ -1,0 +1,19 @@
+---
+title: "Matemáticas básicas"
+---
+
+Operaciones, homogenización, factorización, ecuaciones y racionalización.
+
+## Talleres disponibles
+
+| Material | Taller | Solucionario |
+|---|---|---|
+| Taller 1 | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/matematicas_basicas/talleres/taller1_matematicas_basicas.tex) | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/matematicas_basicas/respuestas/respuestas_taller1_matematicas_basicas.tex) |
+| Taller 2 | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/matematicas_basicas/talleres/taller2_matematicas_basicas.tex) | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/matematicas_basicas/respuestas/respuestas_taller2_matematicas_basicas.tex) |
+| Taller 3 | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/matematicas_basicas/talleres/taller3_matematicas_basicas.tex) | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/matematicas_basicas/respuestas/respuestas_taller3_matematicas_basicas.tex) |
+| Taller 4 | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/matematicas_basicas/talleres/taller4_matematicas_basicas.tex) | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/matematicas_basicas/respuestas/respuestas_taller4_matematicas_basicas.tex) |
+| Taller 5 | [Abrir en Markdown](../talleres/matematicas-basicas/taller5.qmd) | [Abrir solucionario Markdown](../respuestas/matematicas-basicas/taller5.qmd) |
+
+::: {.callout-tip}
+El Taller 5 es el primer material migrado completamente a Markdown con LaTeX. Usa su estructura como modelo para los siguientes.
+:::

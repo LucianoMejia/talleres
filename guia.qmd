@@ -1,0 +1,72 @@
+---
+title: "Cómo escribir talleres"
+description: "Guía breve para agregar talleres en Markdown con LaTeX"
+---
+
+Los archivos `.qmd` combinan Markdown para el texto y LaTeX para las fórmulas. Quarto los convierte en páginas HTML listas para GitHub Pages.
+
+## Estructura mínima
+
+```markdown
+---
+title: "Taller de límites"
+---
+
+## Instrucciones
+
+Resuelva cada ejercicio mostrando el procedimiento.
+
+## Ejercicios
+
+1. Calcule $\lim_{x \to 0} \frac{\sin x}{x}$.
+2. Resuelva:
+
+   $$
+   \frac{dy}{dx} = xy.
+   $$
+```
+
+## Fórmulas
+
+- Fórmula en línea: `La derivada de $x^2$ es $2x$.`
+- Fórmula centrada:
+
+  ```markdown
+  $$
+  \int_0^1 x^2\,dx = \frac{1}{3}
+  $$
+  ```
+
+- Sistemas:
+
+  ```markdown
+  $$
+  \begin{cases}
+  2x + y = 5 \\
+  x - y = 1
+  \end{cases}
+  $$
+  ```
+
+## Respuestas plegables
+
+Para que el estudiante intente primero el ejercicio, puede ocultar la solución:
+
+```markdown
+::: {.callout-note collapse="true"}
+## Solución
+
+Desarrollo del ejercicio y respuesta final.
+:::
+```
+
+## Enlaces entre taller y respuesta
+
+Si el archivo del taller está en `talleres/materia/taller1.qmd` y la respuesta en `respuestas/materia/taller1.qmd`, usa:
+
+```markdown
+[Ver taller](../talleres/materia/taller1.qmd)
+[Ver solución](../respuestas/materia/taller1.qmd)
+```
+
+Para agregar un nuevo material, crea el `.qmd`, enlázalo desde la página de su materia y ejecuta `quarto preview` para revisarlo localmente.

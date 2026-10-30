@@ -1,0 +1,197 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+\title{Solucionario - Taller de factorización, homogenización y racionalización}
+\author{José Luciano Mejía Arias}
+\date{}
+
+\makeatletter
+\renewcommand{\maketitle}{
+  \begin{flushright}
+    \includegraphics[width=3cm]{../../logo_unal.png}
+  \end{flushright}
+  \begin{center}
+    {\LARGE \textbf{\@title}}\\[0.3cm]
+    {\large \@author}
+  \end{center}
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\begin{center}
+  {\large Valor total: 50 puntos}
+\end{center}
+
+\section*{Parte I. Factorización}
+\begin{enumerate}
+  \item
+    \begin{align*}
+      81a^2-100b^2&=(9a)^2-(10b)^2\\
+      &=\boxed{(9a-10b)(9a+10b)}
+    \end{align*}
+
+  \item Por agrupación:
+    \begin{align*}
+      x^3+2x^2-9x-18
+      &=x^2(x+2)-9(x+2)\\
+      &=(x+2)(x^2-9)\\
+      &=\boxed{(x+2)(x-3)(x+3)}
+    \end{align*}
+
+  \item Factor común $5xy$:
+    \[
+      15x^3y-25x^2y^2+5xy=\boxed{5xy(3x^2-5xy+1)}
+    \]
+
+  \item
+    \begin{align*}
+      4x^2+20x+25-9y^2
+      &=(2x+5)^2-(3y)^2\\
+      &=\boxed{(2x+5-3y)(2x+5+3y)}
+    \end{align*}
+
+  \item Como $6\cdot(-15)=-90$, los números $9$ y $-10$ suman $-1$:
+    \begin{align*}
+      6x^2-x-15&=6x^2-10x+9x-15\\
+      &=2x(3x-5)+3(3x-5)\\
+      &=\boxed{(3x-5)(2x+3)}
+    \end{align*}
+
+  \item Diferencia de cuadrados:
+    \[
+      x^4-81=(x^2-9)(x^2+9)
+      =\boxed{(x-3)(x+3)(x^2+9)}
+    \]
+
+  \item Suma de cubos, con $a=3x$ y $b=4y$:
+    \begin{align*}
+      27x^3+64y^3&=(3x)^3+(4y)^3\\
+      &=\boxed{(3x+4y)(9x^2-12xy+16y^2)}
+    \end{align*}
+\end{enumerate}
+
+\section*{Parte II. Homogenización}
+\begin{enumerate}
+  \item Como
+    $\sqrt{3}=\sqrt[6]{3^3}$ y $\sqrt[3]{9}=\sqrt[6]{9^2}$,
+    \begin{align*}
+      \sqrt{3}\cdot\sqrt[3]{9}
+      &=\sqrt[6]{27}\cdot\sqrt[6]{81}\\
+      &=\sqrt[6]{3^7}=\boxed{3\sqrt[6]{3}}.
+    \end{align*}
+
+  \item El mínimo común múltiplo de $2$ y $3$ es $6$:
+    \[
+      \sqrt{3}=\boxed{\sqrt[6]{27}},
+      \qquad \sqrt[3]{5}=\boxed{\sqrt[6]{25}}.
+    \]
+
+  \item El denominador común es $(x-2)(x+2)$:
+    \begin{align*}
+      \frac{3}{x-2}-\frac{2}{x+2}
+      &=\frac{3(x+2)-2(x-2)}{x^2-4}\\
+      &=\frac{3x+6-2x+4}{x^2-4}\\
+      &=\boxed{\frac{x+10}{x^2-4}}.
+    \end{align*}
+
+  \item Con índice $6$:
+    \[
+      \sqrt{5}=\sqrt[6]{125},
+      \qquad \sqrt[3]{11}=\sqrt[6]{121}.
+    \]
+    Como $120<121<125$,
+    \[
+      \boxed{\sqrt[6]{120}<\sqrt[3]{11}<\sqrt{5}}.
+    \]
+
+  \item Factorizamos los denominadores:
+    \[
+      x^2-1=(x-1)(x+1),
+      \qquad x^2+2x+1=(x+1)^2.
+    \]
+    El denominador común es $(x-1)(x+1)^2$. Por tanto,
+    \begin{align*}
+      &\frac{1}{x^2-1}+\frac{2}{x^2+2x+1}-\frac{1}{x-1}\\
+      &\quad=\frac{(x+1)+2(x-1)-(x+1)^2}{(x-1)(x+1)^2}\\
+      &\quad=\frac{x+1+2x-2-x^2-2x-1}{(x-1)(x+1)^2}\\
+      &\quad=\boxed{\frac{-x^2+x-2}{(x-1)(x+1)^2}}.
+    \end{align*}
+
+  \item Como $\sqrt{2}=\sqrt[4]{4}$,
+    \[
+      \frac{\sqrt[4]{8}}{\sqrt{2}}
+      =\frac{\sqrt[4]{8}}{\sqrt[4]{4}}
+      =\sqrt[4]{\frac{8}{4}}
+      =\boxed{\sqrt[4]{2}}.
+    \]
+\end{enumerate}
+
+\section*{Parte III. Racionalización}
+\begin{enumerate}
+  \item Multiplicamos por el conjugado:
+    \[
+      \frac{6}{\sqrt{5}-\sqrt{2}}
+      =\frac{6(\sqrt{5}+\sqrt{2})}{5-2}
+      =\boxed{2(\sqrt{5}+\sqrt{2})}.
+    \]
+
+  \item
+    \[
+      \frac{10}{\sqrt{5}}\cdot\frac{\sqrt{5}}{\sqrt{5}}
+      =\frac{10\sqrt{5}}{5}=\boxed{2\sqrt{5}}.
+    \]
+
+  \item Multiplicamos primero por $(1+\sqrt{2}-\sqrt{3})$:
+    \begin{align*}
+      &(1+\sqrt{2}+\sqrt{3})(1+\sqrt{2}-\sqrt{3})\\
+      &\qquad=(1+\sqrt{2})^2-3=2\sqrt{2}.
+    \end{align*}
+    Entonces,
+    \[
+      \frac{1}{1+\sqrt{2}+\sqrt{3}}
+      =\frac{1+\sqrt{2}-\sqrt{3}}{2\sqrt{2}}
+      \cdot\frac{\sqrt{2}}{\sqrt{2}}
+      =\boxed{\frac{2+\sqrt{2}-\sqrt{6}}{4}}.
+    \]
+
+  \item
+    \[
+      \frac{4}{\sqrt[3]{2}}
+      \cdot\frac{\sqrt[3]{4}}{\sqrt[3]{4}}
+      =\frac{4\sqrt[3]{4}}{2}
+      =\boxed{2\sqrt[3]{4}}.
+    \]
+
+  \item Multiplicamos por el conjugado $(2+\sqrt{3})$:
+    \[
+      \frac{2+\sqrt{3}}{2-\sqrt{3}}
+      =\frac{(2+\sqrt{3})^2}{4-3}
+      =\boxed{7+4\sqrt{3}}.
+    \]
+
+  \item
+    \[
+      \frac{7}{3\sqrt{7}}\cdot\frac{\sqrt{7}}{\sqrt{7}}
+      =\frac{7\sqrt{7}}{21}
+      =\boxed{\frac{\sqrt{7}}{3}}.
+    \]
+
+  \item Multiplicamos por el conjugado:
+    \[
+      \frac{1}{\sqrt{x+1}-\sqrt{x}}
+      \cdot\frac{\sqrt{x+1}+\sqrt{x}}{\sqrt{x+1}+\sqrt{x}}
+      =\boxed{\sqrt{x+1}+\sqrt{x}},
+    \]
+    porque $(x+1)-x=1$.
+\end{enumerate}
+
+\end{document}

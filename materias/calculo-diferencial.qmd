@@ -1,0 +1,15 @@
+---
+title: "Cálculo diferencial"
+---
+
+Límites, regla de L'Hopital y aplicaciones de las derivadas.
+
+## Talleres disponibles
+
+| Material | Taller | Solucionario |
+|---|---|---|
+| Taller 1: regla de L'Hopital | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/calculo_diferencial/talleres/taller1_calculo_diferencial.tex) | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/calculo_diferencial/respuestas/respuestas_taller1_calculo_diferencial.tex) |
+
+::: {.callout-note}
+Este material conserva su fuente LaTeX original. Los nuevos talleres se pueden migrar a `.qmd` siguiendo la [guía](../guia.qmd).
+:::

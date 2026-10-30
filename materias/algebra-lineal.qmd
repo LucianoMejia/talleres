@@ -1,0 +1,15 @@
+---
+title: "Álgebra lineal"
+---
+
+Sistemas de ecuaciones, matrices, eliminación de Gauss y determinantes.
+
+## Talleres disponibles
+
+| Material | Taller | Solucionario |
+|---|---|---|
+| Taller 1 | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/algebra_lineal/talleres/taller1_algebra_lineal.tex) | [Abrir fuente LaTeX](https://github.com/LucianoMejia/talleres/blob/main/algebra_lineal/respuestas/respuestas_taller1_algebra_lineal.tex) |
+
+::: {.callout-note}
+Este material conserva su fuente LaTeX original. Los nuevos talleres se pueden migrar a `.qmd` siguiendo la [guía](../guia.qmd).
+:::

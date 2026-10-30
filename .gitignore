@@ -1,17 +1,13 @@
-# Ignora todo por defecto en todo el arbol.
-**/*
+# Archivos generados por LaTeX y Quarto.
+**/*.aux
+**/*.log
+**/*.out
+**/*.toc
+**/_site/
+**/.quarto/
 
-# Permite recorrer subcarpetas.
-!*/
-
-# Conserva fuentes LaTeX.
-!**/*.tex
-
-# Conserva solo los PDF compilados dentro de builds.
-!**/builds/*.pdf
+# PDFs compilados: el sitio publica Markdown/HTML, no PDFs.
+**/builds/*.pdf
 
 # Recurso compartido para las portadas.
 !logo_unal.png
-
-# Conserva este archivo de reglas.
-!.gitignore

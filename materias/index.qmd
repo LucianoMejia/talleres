@@ -1,0 +1,15 @@
+---
+title: "Materias"
+---
+
+Selecciona una asignatura para ver sus talleres, solucionarios y explicaciones.
+
+## Catálogo
+
+- [Álgebra lineal](algebra-lineal.qmd)
+- [Cálculo diferencial](calculo-diferencial.qmd)
+- [Cálculo integral](calculo-integral.qmd)
+- [Ecuaciones diferenciales](ecuaciones-diferenciales.qmd)
+- [Matemáticas básicas](matematicas-basicas.qmd)
+
+[Volver al inicio](../index.qmd)

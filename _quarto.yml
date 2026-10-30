@@ -1,0 +1,45 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - guia.qmd
+    - materias/
+    - talleres/
+    - respuestas/
+
+website:
+  title: "Talleres de matemáticas"
+  site-url: https://lucianomejia.github.io/talleres/
+  repo-url: https://github.com/LucianoMejia/talleres
+  repo-actions: [edit, issue]
+  navbar:
+    background: "#12304a"
+    foreground: "#ffffff"
+    left:
+      - href: index.qmd
+        text: Inicio
+      - href: materias/
+        text: Materias
+      - href: guia.qmd
+        text: Cómo escribir
+    right:
+      - icon: github
+        href: https://github.com/LucianoMejia/talleres
+        aria-label: GitHub
+  page-footer:
+    left: "Material de apoyo académico"
+    right: "Construido con Quarto"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    smooth-scroll: true
+    html-math-method: katex
+    code-fold: true
+    code-tools: true
+
+execute:
+  freeze: auto
