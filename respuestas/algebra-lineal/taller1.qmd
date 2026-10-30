@@ -2,9 +2,9 @@
 title: "Respuestas - Taller de Álgebra Lineal"
 ---
 
-## Respuestas
+## Solucionario
 
-### Sistemas de ecuaciones y forma matricial
+## Punto 1. Sistemas de ecuaciones y forma matricial
 1. $$
     A = \begin{pmatrix}
     2 & 3 \\
@@ -40,7 +40,7 @@ title: "Respuestas - Taller de Álgebra Lineal"
     \end{array}\right]
     $$
 
-### Eliminación de Gauss
+## Punto 2. Eliminación de Gauss
 1. $$
     \begin{array}{cc|c}
     1 & 2 & 5 \\
@@ -90,7 +90,7 @@ title: "Respuestas - Taller de Álgebra Lineal"
     \boxed{(x,y,z)=(0,2,4)}
     $$
 
-### Determinantes
+## Punto 3. Determinantes
 1. $$
     \det(A) = 2(7)-3(5)=14-15=-1
     $$

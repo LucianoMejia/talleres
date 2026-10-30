@@ -5,34 +5,34 @@ title: "Taller de Calculo Integral III"
 ## Instrucciones
 Resuelva con tecnica adecuada (partes, fracciones parciales o sustitucion trigonometrica). Muestre verificacion cuando sea posible.
 
-## Integracion por Partes
+## Punto 1. Integración por partes
 1. $\int x e^x\,dx$
 1. $\int x\ln x\,dx$, con $x>0$
 1. $\int x^2\cos x\,dx$
 1. $\int e^{2x}\sin x\,dx$
 1. $\int \arctan x\,dx$
 
-## Fracciones Parciales
+## Punto 2. Fracciones parciales
 1. $\int \frac{3x+5}{x^2-1}\,dx$
 1. $\int \frac{2x^2+3x+1}{x(x+1)(x+2)}\,dx$
 1. $\int \frac{dx}{x^2+5x+6}$
 1. $\int \frac{x+4}{(x-1)^2}\,dx$
 1. $\int \frac{4x}{x^2(x^2+1)}\,dx$
 
-## Integrales Trigonometricas y Sustitucion Trigonometrica
+## Punto 3. Integrales trigonométricas y sustitución trigonométrica
 1. $\int \sin^2 x\cos^2 x\,dx$
 1. $\int \frac{dx}{\sqrt{9-x^2}}$
 1. $\int \sqrt{16-x^2}\,dx$
 1. $\int \frac{x^2}{\sqrt{x^2+4}}\,dx$
 1. $\int \frac{dx}{x^2\sqrt{x^2-1}}$, con $x>1$
 
-## Integrales Impropias
+## Punto 4. Integrales impropias
 1. $\int_1^{\infty} \frac{1}{x^p}\,dx$, analice para que valores de $p$ converge.
 1. $\int_0^1 \frac{1}{\sqrt{x}}\,dx$
 1. $\int_0^{\infty} e^{-2x}\,dx$
 1. $\int_{-\infty}^{\infty} \frac{1}{x^2+1}\,dx$
 
-## Aplicaciones Integrales
+## Punto 5. Aplicaciones de la integral
 1. Una partícula tiene velocidad $v(t)=3t^2-6t+2$ (m/s). Si $s(0)=5$, halle $s(t)$.
 1. Halle el trabajo para estirar un resorte desde $x=0$ hasta $x=0.2$ m, si $F(x)=120x$ N.
 1. Una funcion de costo marginal es $C'(q)=0.04q+15$ y $C(0)=800$. Determine $C(q)$.

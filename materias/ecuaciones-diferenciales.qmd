@@ -6,7 +6,7 @@ Variables separables, ecuaciones lineales, ecuaciones exactas, modelos aplicados
 
 ## Talleres
 
-| Taller | Ejercicios | Respuestas |
-|---|---|---|
-| Taller 1 | [Abrir taller](../talleres/ecuaciones-diferenciales/taller1.qmd) | [Abrir solucionario](../respuestas/ecuaciones-diferenciales/taller1.qmd) |
-| Taller 2 | [Abrir taller](../talleres/ecuaciones-diferenciales/taller2.qmd) | [Abrir solucionario](../respuestas/ecuaciones-diferenciales/taller2.qmd) |
+| Taller | Tema principal | Ejercicios | Respuestas |
+|---|---|---|---|
+| Taller 1 | Primer orden y análisis cualitativo | [Abrir taller](../talleres/ecuaciones-diferenciales/taller1.qmd) | [Abrir solucionario](../respuestas/ecuaciones-diferenciales/taller1.qmd) |
+| Taller 2 | Segundo orden y modelación física | [Abrir taller](../talleres/ecuaciones-diferenciales/taller2.qmd) | [Abrir solucionario](../respuestas/ecuaciones-diferenciales/taller2.qmd) |

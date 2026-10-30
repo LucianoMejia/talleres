@@ -6,10 +6,10 @@ Operaciones, homogenización, factorización, ecuaciones, conjuntos y racionaliz
 
 ## Talleres
 
-| Taller | Ejercicios | Respuestas |
-|---|---|---|
-| Taller 1 | [Abrir taller](../talleres/matematicas-basicas/taller1.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller1.qmd) |
-| Taller 2 | [Abrir taller](../talleres/matematicas-basicas/taller2.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller2.qmd) |
-| Taller 3 | [Abrir taller](../talleres/matematicas-basicas/taller3.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller3.qmd) |
-| Taller 4 | [Abrir taller](../talleres/matematicas-basicas/taller4.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller4.qmd) |
-| Taller 5 | [Abrir taller](../talleres/matematicas-basicas/taller5.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller5.qmd) |
+| Taller | Tema principal | Ejercicios | Respuestas |
+|---|---|---|---|
+| Taller 1 | Operaciones, álgebra y ecuaciones | [Abrir taller](../talleres/matematicas-basicas/taller1.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller1.qmd) |
+| Taller 2 | Racionalización, inecuaciones y conjuntos | [Abrir taller](../talleres/matematicas-basicas/taller2.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller2.qmd) |
+| Taller 3 | Funciones y derivadas | [Abrir taller](../talleres/matematicas-basicas/taller3.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller3.qmd) |
+| Taller 4 | MCD, MCM y problemas combinados | [Abrir taller](../talleres/matematicas-basicas/taller4.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller4.qmd) |
+| Taller 5 | Factorización, homogenización y racionalización | [Abrir taller](../talleres/matematicas-basicas/taller5.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller5.qmd) |

@@ -6,11 +6,11 @@ Integrales, sustitución, integrales trigonométricas, fracciones parciales y ap
 
 ## Talleres
 
-| Taller | Ejercicios | Respuestas |
-|---|---|---|
-| Taller 1 | [Abrir taller](../talleres/calculo-integral/taller1.qmd) | [Abrir solucionario](../respuestas/calculo-integral/taller1.qmd) |
-| Taller 2 | [Abrir taller](../talleres/calculo-integral/taller2.qmd) | [Abrir solucionario](../respuestas/calculo-integral/taller2.qmd) |
-| Taller 3 | [Abrir taller](../talleres/calculo-integral/taller3.qmd) | [Abrir solucionario](../respuestas/calculo-integral/taller3.qmd) |
+| Taller | Tema principal | Ejercicios | Respuestas |
+|---|---|---|---|
+| Taller 1 | Integrales básicas, sustitución y aplicaciones | [Abrir taller](../talleres/calculo-integral/taller1.qmd) | [Abrir solucionario](../respuestas/calculo-integral/taller1.qmd) |
+| Taller 2 | Integrales definidas, áreas y volúmenes | [Abrir taller](../talleres/calculo-integral/taller2.qmd) | [Abrir solucionario](../respuestas/calculo-integral/taller2.qmd) |
+| Taller 3 | Integración por partes, fracciones parciales e impropias | [Abrir taller](../talleres/calculo-integral/taller3.qmd) | [Abrir solucionario](../respuestas/calculo-integral/taller3.qmd) |
 
 ## Explicaciones
 

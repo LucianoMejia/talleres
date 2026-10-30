@@ -6,6 +6,6 @@ Límites, regla de L'Hopital y aplicaciones de las derivadas.
 
 ## Talleres
 
-| Taller | Ejercicios | Respuestas |
-|---|---|---|
-| Taller 1 | [Abrir taller](../talleres/calculo-diferencial/taller1.qmd) | [Abrir solucionario](../respuestas/calculo-diferencial/taller1.qmd) |
+| Taller | Tema principal | Ejercicios | Respuestas |
+|---|---|---|---|
+| Taller 1 | Límites y regla de L'Hopital | [Abrir taller](../talleres/calculo-diferencial/taller1.qmd) | [Abrir solucionario](../respuestas/calculo-diferencial/taller1.qmd) |

@@ -6,6 +6,6 @@ Sistemas de ecuaciones, matrices, eliminación de Gauss y determinantes.
 
 ## Talleres
 
-| Taller | Ejercicios | Respuestas |
-|---|---|---|
-| Taller 1 | [Abrir taller](../talleres/algebra-lineal/taller1.qmd) | [Abrir solucionario](../respuestas/algebra-lineal/taller1.qmd) |
+| Taller | Tema principal | Ejercicios | Respuestas |
+|---|---|---|---|
+| Taller 1 | Sistemas, Gauss y determinantes | [Abrir taller](../talleres/algebra-lineal/taller1.qmd) | [Abrir solucionario](../respuestas/algebra-lineal/taller1.qmd) |

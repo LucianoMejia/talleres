@@ -1,0 +1,92 @@
+/* Estilo de apuntes: navegación clara, lectura amplia y ejercicios distinguibles. */
+
+:root {
+  --ink: #203040;
+  --muted: #647585;
+  --accent: #237a7b;
+  --accent-dark: #155456;
+  --paper: #fbfcfa;
+  --line: #dce5e8;
+  --exercise: #f1f7f6;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.sidebar-title,
+h1,
+h2,
+h3 {
+  color: var(--accent-dark);
+}
+
+h1 {
+  font-weight: 750;
+}
+
+h2 {
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 0.35rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin-top: 1.35rem;
+}
+
+.sidebar nav[role="doc-toc"] a,
+.sidebar nav a {
+  color: var(--ink);
+}
+
+.sidebar nav a:hover,
+.sidebar nav .active > a {
+  color: var(--accent);
+}
+
+table {
+  background: white;
+  border: 1px solid var(--line);
+}
+
+th {
+  background: var(--exercise);
+  color: var(--accent-dark);
+}
+
+.exercise-list {
+  background: var(--exercise);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 5px 5px 0;
+  padding: 0.75rem 1.5rem 0.75rem 2.5rem;
+}
+
+.exercise-list > ol {
+  list-style-type: lower-alpha;
+}
+
+main ol {
+  list-style-type: lower-alpha;
+}
+
+.solution {
+  border-left: 4px solid #c17a31;
+  background: #fff8ec;
+  padding: 0.75rem 1rem;
+}
+
+.point-label {
+  color: var(--accent);
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 700px) {
+  .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

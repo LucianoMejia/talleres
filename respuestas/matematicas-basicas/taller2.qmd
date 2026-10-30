@@ -2,7 +2,7 @@
 title: "Respuestas - Taller de Matemáticas Básicas II"
 ---
 
-## Racionalización
+## Punto 1. Racionalización
 1. $\frac{5}{\sqrt{3}} = \frac{5\sqrt{3}}{3}$
 1. $\frac{2}{\sqrt{5} + 1}$
     $$
@@ -51,7 +51,7 @@ $$
     \end{aligned}
 $$
 
-## Inecuaciones
+## Punto 2. Inecuaciones
 1. $3x - 5 < 10$
     $$
 \begin{aligned}
@@ -112,7 +112,7 @@ $$
 $$
     Solución: $(-\infty, -3) \cup [4, \infty)$
 
-## Conjuntos
+## Punto 3. Conjuntos
 
 Dados: $A = \{1, 2, 3, 4, 5\}$, $B = \{3, 4, 5, 6, 7\}$, $C = \{2, 4, 6, 8\}$, $U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}$
 1. $A \cup B = \{1, 2, 3, 4, 5, 6, 7\}$
@@ -129,7 +129,7 @@ Dados: $A = \{1, 2, 3, 4, 5\}$, $B = \{3, 4, 5, 6, 7\}$, $C = \{2, 4, 6, 8\}$, $
     \end{aligned}
 $$
 
-## Operaciones con Conjuntos - Demostración
+## Punto 4. Operaciones con conjuntos: demostración
 1. **Ley distributiva:** $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$
     
     **Demostración:** Sea $x \in A \cup (B \cap C)$. Entonces:
@@ -144,7 +144,7 @@ $$
     
     **Demostración:** $x \in A - B \Leftrightarrow x \in A \text{ y } x \notin B \Leftrightarrow x \in A \text{ y } x \in B^c \Leftrightarrow x \in A \cap B^c$
 
-## Problemas de Aplicación con Conjuntos
+## Punto 5. Problemas de aplicación con conjuntos
 1. Sean: $F$ = fútbol, $B$ = baloncesto, $N$ = natación
     
     Datos: $|F| = 45$, $|B| = 35$, $|N| = 30$, $|F \cap B| = 15$, $|F \cap N| = 12$, $|B \cap N| = 10$, $|F \cap B \cap N| = 5$
@@ -176,7 +176,7 @@ $$
     \end{aligned}
 $$
 
-## Intervalos y Notación
+## Punto 6. Intervalos y notación
 1. $\{x \in \mathbb{R} : -3 < x \leq 5\} = (-3, 5]$
 1. $\{x \in \mathbb{R} : x \geq 2\} = [2, \infty)$
 1. $\{x \in \mathbb{R} : x < -1 \text{ o } x > 4\} = (-\infty, -1) \cup (4, \infty)$

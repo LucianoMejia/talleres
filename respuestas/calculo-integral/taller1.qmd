@@ -2,7 +2,7 @@
 title: "Respuestas - Taller de Calculo Integral I"
 ---
 
-## Integrales Indefinidas Basicas
+## Punto 1. Integrales indefinidas básicas
 1. $\int (6x^5 - 4x^2 + 7)\,dx = x^6 - \frac{4}{3}x^3 + 7x + C$.
 1. $\int \left(\frac{5}{x} - 3\sqrt{x} + \frac{2}{x^2}\right)\,dx = 5\ln|x| - 2x^{3/2} - \frac{2}{x} + C$.
 1. $\int (4e^{2x} - 3\cos x)\,dx = 2e^{2x} - 3\sin x + C$.
@@ -10,28 +10,28 @@ title: "Respuestas - Taller de Calculo Integral I"
 1. $\int (2x+1)^7\,dx = \frac{(2x+1)^8}{16} + C$.
 1. $\int \frac{3x^2+1}{x^3+x+4}\,dx = \ln|x^3+x+4| + C$.
 
-## Sustitucion
+## Punto 2. Sustitución
 1. $\int x\sqrt{x^2+9}\,dx = \frac{1}{3}(x^2+9)^{3/2} + C$.
 1. $\int \frac{2x-1}{x^2-x+5}\,dx = \ln(x^2-x+5) + C$.
 1. $\int \frac{\cos(3x)}{1+\sin(3x)}\,dx = \frac{1}{3}\ln|1+\sin(3x)| + C$.
 1. $\int \frac{e^{\sqrt{x}}}{\sqrt{x}}\,dx = 2e^{\sqrt{x}} + C$.
 1. $\int \frac{1}{x\ln x}\,dx = \ln(\ln x) + C$, $x>1$.
 
-## Integrales Trigonometricas Elementales
+## Punto 3. Integrales trigonométricas elementales
 1. $\int \sin(4x)\,dx = -\frac{1}{4}\cos(4x) + C$.
 1. $\int \cos^3 x\sin x\,dx = -\frac{\cos^4 x}{4} + C$.
 1. $\int \tan x\,dx = \ln|\sec x| + C$.
 1. $\int \sec x(\sec x+\tan x)\,dx = \tan x + \sec x + C$.
 1. $\int \frac{dx}{1+\cos x} = \tan\left(\frac{x}{2}\right) + C$.
 
-## Integrales Definidas Basicas
+## Punto 4. Integrales definidas básicas
 1. $\int_0^2 (3x^2-4x+1)\,dx = 2$.
 1. $\int_{-1}^{1} (x^3+2x^2)\,dx = \frac{4}{3}$.
 1. $\int_0^{\pi/2} \sin x\,dx = 1$.
 1. $\int_1^{e} \frac{1}{x}\,dx = 1$.
 1. $\int_0^1 \frac{2x}{x^2+1}\,dx = \ln 2$.
 
-## Aplicaciones Cortas
+## Punto 5. Aplicaciones cortas
 1. Si $f'(x)=6x^2-4x+3$, entonces $f(x)=2x^3-2x^2+3x+C$. Con $f(1)=5$ se obtiene $C=2$. Por tanto,
     $$f(x)=2x^3-2x^2+3x+2.$$
 1. Area bajo $y=2x+1$ entre $0$ y $4$:

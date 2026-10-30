@@ -7,7 +7,7 @@ Resuelva cada ejercicio mostrando el procedimiento completo. Es importante justi
 
 ## Enunciado
 
-## Sistemas de ecuaciones y forma matricial
+## Punto 1. Sistemas de ecuaciones y forma matricial
 Escriba cada sistema en forma matricial $AX=b$ y luego indique la matriz aumentada correspondiente.
 1. $$
     \begin{cases}
@@ -29,7 +29,7 @@ Escriba cada sistema en forma matricial $AX=b$ y luego indique la matriz aumenta
     \end{cases}
     $$
 
-## Eliminación de Gauss
+## Punto 2. Eliminación de Gauss
 Resuelva los siguientes sistemas utilizando el método de Gauss.
 1. $$
     \begin{cases}
@@ -51,7 +51,7 @@ Resuelva los siguientes sistemas utilizando el método de Gauss.
     \end{cases}
     $$
 
-## Determinantes
+## Punto 3. Determinantes
 Calcule el determinante de cada matriz.
 1. $$
     A = \begin{pmatrix}
@@ -73,5 +73,5 @@ Calcule el determinante de cada matriz.
     \end{pmatrix}
     $$
 
-## Ejercicio básico en Python
+## Punto 4. Ejercicio básico en Python
 Escriba un programa en Python que pida el nombre, apellido y edad de una persona. Si la persona es mayor de edad, debe mostrar un mensaje de bienvenida. Si no lo es, debe mostrar un mensaje de bloqueo.

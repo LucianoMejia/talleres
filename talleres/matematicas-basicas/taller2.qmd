@@ -5,7 +5,7 @@ title: "Taller de Matemáticas Básicas II"
 ## Instrucciones
 Resuelva cada uno de los siguientes ejercicios mostrando todo el proceso. Presente su trabajo de manera ordenada y clara.
 
-## Racionalización
+## Punto 1. Racionalización
 Racionalice el denominador de las siguientes expresiones:
 1. $\frac{5}{\sqrt{3}}$
 1. $\frac{2}{\sqrt{5} + 1}$
@@ -15,7 +15,7 @@ Racionalice el denominador de las siguientes expresiones:
 1. $\frac{x + \sqrt{x}}{x - \sqrt{x}}$
 1. $\frac{6}{2\sqrt{3} + 3\sqrt{2}}$
 
-## Inecuaciones
+## Punto 2. Inecuaciones
 Resuelva las siguientes inecuaciones y represente la solución en la recta numérica:
 1. $3x - 5 < 10$
 1. $2(x - 3) \geq x + 4$
@@ -26,7 +26,7 @@ Resuelva las siguientes inecuaciones y represente la solución en la recta numé
 1. $|2x - 1| < 5$
 1. $\frac{2x - 1}{x + 3} \geq 1$
 
-## Conjuntos
+## Punto 3. Conjuntos
 Dados los conjuntos $A = \{1, 2, 3, 4, 5\}$, $B = \{3, 4, 5, 6, 7\}$, $C = \{2, 4, 6, 8\}$ y $U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}$ como conjunto universal, determine:
 1. $A \cup B$
 1. $A \cap B$
@@ -37,13 +37,13 @@ Dados los conjuntos $A = \{1, 2, 3, 4, 5\}$, $B = \{3, 4, 5, 6, 7\}$, $C = \{2, 
 1. $(A \cap B)^c$
 1. $A \times B$ (producto cartesiano, solo los primeros 10 elementos)
 
-## Operaciones con Conjuntos - Demostración
+## Punto 4. Operaciones con conjuntos: demostración
 Demuestre las siguientes propiedades usando diagramas de Venn o álgebra de conjuntos:
 1. $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$ (Ley distributiva)
 1. $(A \cup B)^c = A^c \cap B^c$ (Ley de De Morgan)
 1. $A - B = A \cap B^c$
 
-## Problemas de Aplicación con Conjuntos
+## Punto 5. Problemas de aplicación con conjuntos
 1. En una encuesta a 100 estudiantes sobre sus preferencias deportivas, se encontró que:
 1. 45 practican fútbol
 1. 35 practican baloncesto
@@ -68,7 +68,7 @@ Demuestre las siguientes propiedades usando diagramas de Venn o álgebra de conj
     
     ¿Cuántas personas no hablan ninguno de estos tres idiomas?
 
-## Intervalos y Notación
+## Punto 6. Intervalos y notación
 Exprese los siguientes conjuntos usando notación de intervalos y represéntelos en la recta numérica:
 1. $\{x \in \mathbb{R} : -3 < x \leq 5\}$
 1. $\{x \in \mathbb{R} : x \geq 2\}$

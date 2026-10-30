@@ -1,5 +1,5 @@
 project:
-  type: website
+  type: book
   output-dir: _site
   render:
     - index.qmd
@@ -9,24 +9,25 @@ project:
     - respuestas/
     - explicaciones/
 
-website:
+lang: es
+
+book:
   title: "Talleres de matemáticas"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Inicio
-      - href: materias/
-        text: Materias
-      - href: guia.qmd
-        text: Cómo escribir
-    right:
-      - href: https://github.com/LucianoMejia/talleres
-        text: GitHub
+  author: "José Luciano Mejía Arias"
+  chapters:
+    - index.qmd
+    - materias/algebra-lineal.qmd
+    - materias/calculo-diferencial.qmd
+    - materias/calculo-integral.qmd
+    - materias/ecuaciones-diferenciales.qmd
+    - materias/matematicas-basicas.qmd
+    - guia.qmd
 
 format:
   html:
     toc: true
     html-math-method: katex
+    css: styles.css
 
 execute:
   freeze: auto

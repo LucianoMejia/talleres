@@ -5,7 +5,7 @@ title: "Taller de Matemáticas Básicas III"
 ## Instrucciones
 Resuelva cada uno de los siguientes ejercicios mostrando todo el proceso. Presente su trabajo de manera ordenada y clara.
 
-## Funciones - Conceptos Básicos
+## Punto 1. Funciones: conceptos básicos
 
 ### Dominio y Rango
 Determine el dominio y rango de las siguientes funciones:
@@ -31,7 +31,7 @@ Sean $f(x) = 2x + 3$ y $g(x) = x^2 - 1$. Determine:
 1. $(f \circ g)(x)$
 1. $(g \circ f)(x)$
 
-## Función Lineal
+## Punto 2. Función lineal
 
 ### Ecuación de la Recta
 1. Encuentre la ecuación de la recta que pasa por los puntos $(2, 3)$ y $(-1, 6)$.
@@ -50,7 +50,7 @@ Sean $f(x) = 2x + 3$ y $g(x) = x^2 - 1$. Determine:
 1. Si un cliente pagó \$23000, ¿qué distancia recorrió?
     
 
-## Función Cuadrática
+## Punto 3. Función cuadrática
 
 ### Análisis de Funciones Cuadráticas
 Para cada función cuadrática, determine: vértice, eje de simetría, raíces (si existen), dominio, rango, y bosqueje la gráfica:
@@ -71,7 +71,7 @@ Para cada función cuadrática, determine: vértice, eje de simetría, raíces (
 1. ¿Cuál es el área máxima?
     
 
-## Derivadas
+## Punto 4. Derivadas
 
 ### Derivadas Básicas
 Calcule la derivada de las siguientes funciones:
