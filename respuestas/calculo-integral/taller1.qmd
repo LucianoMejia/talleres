@@ -1,6 +1,12 @@
 ---
-title: "Respuestas - Taller de Calculo Integral I"
+title: "Solucionario del taller 1"
+subtitle: "Integrales básicas, sustitución y aplicaciones"
+categories: ["Cálculo integral"]
 ---
+
+::: {.callout-tip title="Antes de mirar"}
+Intente resolver primero el [taller 1](../../talleres/calculo-integral/taller1.qmd) y use este solucionario para comparar sus respuestas.
+:::
 
 ## Punto 1. Integrales indefinidas básicas
 1. $\int (6x^5 - 4x^2 + 7)\,dx = x^6 - \frac{4}{3}x^3 + 7x + C$.
@@ -38,3 +44,8 @@ title: "Respuestas - Taller de Calculo Integral I"
     $$A=\int_0^4 (2x+1)\,dx = [x^2+x]_0^4 = 20.$$
 1. Area bajo $y=x^2$ en $[0,3]$:
     $$A=\int_0^3 x^2\,dx = \left[\frac{x^3}{3}\right]_0^3 = 9.$$
+
+::: {.taller-nav}
+[← Volver al taller 1](../../talleres/calculo-integral/taller1.qmd)
+[Cálculo integral](../../materias/calculo-integral.qmd){.btn .btn-outline-primary}
+:::

@@ -1,9 +1,8 @@
 project:
-  type: book
+  type: website
   output-dir: _site
   render:
     - index.qmd
-    - guia.qmd
     - materias/
     - talleres/
     - respuestas/
@@ -11,23 +10,111 @@ project:
 
 lang: es
 
-book:
+website:
   title: "Talleres de matemáticas"
-  author: "José Luciano Mejía Arias"
-  chapters:
-    - index.qmd
-    - materias/algebra-lineal.qmd
-    - materias/calculo-diferencial.qmd
-    - materias/calculo-integral.qmd
-    - materias/ecuaciones-diferenciales.qmd
-    - materias/matematicas-basicas.qmd
-    - guia.qmd
+  description: "Talleres, solucionarios y explicaciones de matemáticas"
+  favicon: logo_unal.png
+  search:
+    location: sidebar
+  page-navigation: true
+  sidebar:
+    style: docked
+    collapse-level: 1
+    contents:
+      - text: "Inicio"
+        href: index.qmd
+
+      - section: "1. Matemáticas básicas"
+        href: materias/matematicas-basicas.qmd
+        contents:
+          - text: "Taller 1 · Operaciones y ecuaciones"
+            href: talleres/matematicas-basicas/taller1.qmd
+          - text: "Taller 2 · Racionalización y conjuntos"
+            href: talleres/matematicas-basicas/taller2.qmd
+          - text: "Taller 3 · Funciones y derivadas"
+            href: talleres/matematicas-basicas/taller3.qmd
+          - text: "Taller 4 · MCD y MCM"
+            href: talleres/matematicas-basicas/taller4.qmd
+          - text: "Taller 5 · Factorización y racionalización"
+            href: talleres/matematicas-basicas/taller5.qmd
+          - section: "Solucionarios"
+            contents:
+              - text: "Solucionario 1"
+                href: respuestas/matematicas-basicas/taller1.qmd
+              - text: "Solucionario 2"
+                href: respuestas/matematicas-basicas/taller2.qmd
+              - text: "Solucionario 3"
+                href: respuestas/matematicas-basicas/taller3.qmd
+              - text: "Solucionario 4"
+                href: respuestas/matematicas-basicas/taller4.qmd
+              - text: "Solucionario 5"
+                href: respuestas/matematicas-basicas/taller5.qmd
+
+      - section: "2. Cálculo diferencial"
+        href: materias/calculo-diferencial.qmd
+        contents:
+          - text: "Taller 1 · Límites y L'Hôpital"
+            href: talleres/calculo-diferencial/taller1.qmd
+          - section: "Solucionarios"
+            contents:
+              - text: "Solucionario 1"
+                href: respuestas/calculo-diferencial/taller1.qmd
+
+      - section: "3. Cálculo integral"
+        href: materias/calculo-integral.qmd
+        contents:
+          - text: "Taller 1 · Integrales y sustitución"
+            href: talleres/calculo-integral/taller1.qmd
+          - text: "Taller 2 · Áreas y volúmenes"
+            href: talleres/calculo-integral/taller2.qmd
+          - text: "Taller 3 · Técnicas de integración"
+            href: talleres/calculo-integral/taller3.qmd
+          - section: "Explicaciones"
+            contents:
+              - text: "División de polinomios"
+                href: explicaciones/division-polinomios.qmd
+              - text: "Fracciones parciales"
+                href: explicaciones/fracciones-parciales.qmd
+          - section: "Solucionarios"
+            contents:
+              - text: "Solucionario 1"
+                href: respuestas/calculo-integral/taller1.qmd
+              - text: "Solucionario 2"
+                href: respuestas/calculo-integral/taller2.qmd
+              - text: "Solucionario 3"
+                href: respuestas/calculo-integral/taller3.qmd
+
+      - section: "4. Álgebra lineal"
+        href: materias/algebra-lineal.qmd
+        contents:
+          - text: "Taller 1 · Sistemas y determinantes"
+            href: talleres/algebra-lineal/taller1.qmd
+          - section: "Solucionarios"
+            contents:
+              - text: "Solucionario 1"
+                href: respuestas/algebra-lineal/taller1.qmd
+
+      - section: "5. Ecuaciones diferenciales"
+        href: materias/ecuaciones-diferenciales.qmd
+        contents:
+          - text: "Taller 1 · Primer orden"
+            href: talleres/ecuaciones-diferenciales/taller1.qmd
+          - text: "Taller 2 · Segundo orden"
+            href: talleres/ecuaciones-diferenciales/taller2.qmd
+          - section: "Solucionarios"
+            contents:
+              - text: "Solucionario 1"
+                href: respuestas/ecuaciones-diferenciales/taller1.qmd
+              - text: "Solucionario 2"
+                href: respuestas/ecuaciones-diferenciales/taller2.qmd
+
+  page-footer:
+    center: "Talleres de matemáticas · José Luciano Mejía Arias"
 
 format:
   html:
+    theme: cosmo
     toc: true
+    toc-title: "En esta página"
     html-math-method: katex
     css: styles.css
-
-execute:
-  freeze: auto

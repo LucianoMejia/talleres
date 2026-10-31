@@ -1,5 +1,7 @@
 ---
-title: "Taller de Matemáticas Básicas I"
+title: "Taller 1"
+subtitle: "Operaciones, álgebra y ecuaciones"
+categories: ["Matemáticas básicas"]
 ---
 
 ## Instrucciones
@@ -50,3 +52,8 @@ Resuelva los siguientes problemas planteando y resolviendo la ecuación correspo
 1. Pedro tiene el triple de la edad de Juan. Si dentro de 8 años la suma de sus edades será 56 años, ¿cuál es la edad actual de cada uno?
 1. Un tanque de agua se llena con dos llaves. La primera llave puede llenar el tanque en 6 horas y la segunda en 4 horas. ¿En cuánto tiempo se llenará el tanque si se abren ambas llaves simultáneamente?
 1. Un comerciante compró cierto número de artículos por \$240. Si cada artículo hubiera costado \$2 menos, habría podido comprar 4 artículos más por el mismo dinero. ¿Cuántos artículos compró?
+
+::: {.taller-nav}
+[← Matemáticas básicas](../../materias/matematicas-basicas.qmd)
+[Ver solucionario →](../../respuestas/matematicas-basicas/taller1.qmd){.btn .btn-outline-primary}
+:::

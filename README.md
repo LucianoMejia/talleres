@@ -1,32 +1,61 @@
 # Talleres de matemáticas
 
-Sitio académico construido con [Quarto](https://quarto.org/). Los talleres nuevos se escriben en Markdown (`.qmd`) y las fórmulas se escriben con LaTeX.
+Sitio web con talleres, solucionarios y explicaciones, construido con [Quarto](https://quarto.org/). Las páginas se escriben en Markdown (`.qmd`) y las fórmulas en LaTeX.
+
+## Organización
+
+Las materias aparecen en el orden en que se estudian:
+
+1. Matemáticas básicas
+2. Cálculo diferencial
+3. Cálculo integral
+4. Álgebra lineal
+5. Ecuaciones diferenciales
+
+```
+_quarto.yml                  configuración y menú lateral (orden de las materias)
+index.qmd                    página de inicio
+materias/<materia>.qmd       página de cada materia con la tabla de talleres
+talleres/<materia>/tallerN.qmd     enunciados
+respuestas/<materia>/tallerN.qmd   solucionarios
+explicaciones/               material de apoyo
+styles.css                   estilos
+```
 
 ## Ver el sitio localmente
 
-Instala Quarto y ejecuta:
+Instale Quarto y ejecute:
 
 ```bash
 quarto preview
 ```
 
-Para generar el sitio final:
+Para generar el sitio final (queda en `_site/`):
 
 ```bash
 quarto render
 ```
 
-El resultado queda en `_site/`.
-
 ## Publicar en GitHub Pages
 
-El workflow de `.github/workflows/publish.yml` publica automáticamente cada vez que se hace push a `main`.
-
-En GitHub, entra a **Settings > Pages** y selecciona **GitHub Actions** como fuente de publicación.
+El workflow `.github/workflows/publish.yml` publica el sitio cada vez que se hace push a `main`. En GitHub, entre a **Settings > Pages** y seleccione **GitHub Actions** como fuente.
 
 ## Agregar un taller
 
-1. Crea `talleres/nombre-de-materia/taller6.qmd`.
-2. Crea la respuesta en `respuestas/nombre-de-materia/taller6.qmd`.
-3. Agrega ambos enlaces en la página correspondiente dentro de `materias/`.
-4. Revisa con `quarto preview` y haz push a `main`.
+1. Cree `talleres/<materia>/tallerN.qmd` y `respuestas/<materia>/tallerN.qmd` copiando la estructura de uno existente (encabezado con `title`, `subtitle` y `categories`, sección `## Instrucciones`, puntos `## Punto 1. ...` y el bloque `.taller-nav` al final).
+2. Agregue la fila del taller en `materias/<materia>.qmd`.
+3. Agregue el taller y su solucionario en el menú lateral de `_quarto.yml`.
+4. Revise con `quarto preview` y haga push a `main`.
+
+### Convenciones
+
+- Los ejercicios de cada punto se escriben como lista numerada (`1.`); el sitio los muestra como a), b), c)…
+- Los subítems se indentan con cuatro espacios y se muestran como i, ii, iii…
+- Fórmula en línea: `$x^2$`. Fórmula centrada: `$$ ... $$` en líneas propias.
+- Un recuadro de ayuda se escribe así:
+
+  ```markdown
+  ::: {.callout-tip}
+  Texto del recuadro.
+  :::
+  ```

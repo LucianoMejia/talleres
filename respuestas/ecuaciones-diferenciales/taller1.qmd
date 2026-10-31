@@ -1,6 +1,12 @@
 ---
-title: "Respuestas - Taller de Ecuaciones Diferenciales I"
+title: "Solucionario del taller 1"
+subtitle: "Ecuaciones de primer orden y análisis cualitativo"
+categories: ["Ecuaciones diferenciales"]
 ---
+
+::: {.callout-tip title="Antes de mirar"}
+Intente resolver primero el [taller 1](../../talleres/ecuaciones-diferenciales/taller1.qmd) y use este solucionario para comparar sus respuestas.
+:::
 
 ## Punto 1. Variables separables
 1. $\dfrac{dy}{dx}=xy \Rightarrow y=Ce^{x^2/2}$.
@@ -23,11 +29,11 @@ title: "Respuestas - Taller de Ecuaciones Diferenciales I"
     $$y=\frac{x}{2}\ln x-\frac{x}{4}+\frac{C}{x}.$$
 
 ## Punto 3. Ecuaciones exactas
-1. Es exacta. Solucion implicita:
+1. Es exacta. Solución implicita:
     $$x^2y+xy^2=C.$$
-1. Es exacta. Solucion implicita:
+1. Es exacta. Solución implicita:
     $$x^3+xy-2y^2=C.$$
-1. Es exacta. Solucion implicita:
+1. Es exacta. Solución implicita:
     $$y\sin x+x^2+y^3=C.$$
 
 ## Punto 4. Problemas de aplicación
@@ -47,3 +53,8 @@ title: "Respuestas - Taller de Ecuaciones Diferenciales I"
 1. Para $y'=y(1-y)$: equilibrios en $y=0$ y $y=1$. $y=0$ es inestable, $y=1$ es estable.
 1. Para $y'=x-y$: la pendiente es cero sobre la recta $y=x$ (isoclina). Encima de ella las pendientes son negativas y debajo positivas; las trayectorias tienden a acercarse a esa zona al avanzar en $x$.
 1. Para $y'=y^2-4=(y-2)(y+2)$: equilibrios en $y=\pm2$. Las soluciones crecen si $|y|>2$ y decrecen si $|y|<2$.
+
+::: {.taller-nav}
+[← Volver al taller 1](../../talleres/ecuaciones-diferenciales/taller1.qmd)
+[Ecuaciones diferenciales](../../materias/ecuaciones-diferenciales.qmd){.btn .btn-outline-primary}
+:::

@@ -1,11 +1,13 @@
 ---
 title: "Álgebra lineal"
+subtitle: "Materia 4 de 5"
+toc: false
 ---
 
 Sistemas de ecuaciones, matrices, eliminación de Gauss y determinantes.
 
 ## Talleres
 
-| Taller | Tema principal | Ejercicios | Respuestas |
-|---|---|---|---|
-| Taller 1 | Sistemas, Gauss y determinantes | [Abrir taller](../talleres/algebra-lineal/taller1.qmd) | [Abrir solucionario](../respuestas/algebra-lineal/taller1.qmd) |
+| Taller | Tema | Ejercicios | Solucionario |
+|:-:|---|:-:|:-:|
+| 1 | Sistemas, eliminación de Gauss y determinantes | [Abrir](../talleres/algebra-lineal/taller1.qmd) | [Abrir](../respuestas/algebra-lineal/taller1.qmd) |

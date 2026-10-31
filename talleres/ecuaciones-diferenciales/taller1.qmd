@@ -1,9 +1,11 @@
 ---
-title: "Taller de Ecuaciones Diferenciales I"
+title: "Taller 1"
+subtitle: "Ecuaciones de primer orden y análisis cualitativo"
+categories: ["Ecuaciones diferenciales"]
 ---
 
 ## Instrucciones
-Clasifique cada ecuacion diferencial y resuelvala por el metodo apropiado. Indique claramente condiciones iniciales y dominio de la solucion.
+Clasifique cada ecuación diferencial y resuélvala por el método apropiado. Indique claramente las condiciones iniciales y el dominio de la solución.
 
 ## Punto 1. Variables separables
 1. $\frac{dy}{dx}=xy$
@@ -28,9 +30,14 @@ Determine si son exactas y, si no lo son, proponga un posible factor integrante 
 ## Punto 4. Problemas de aplicación
 1. Crecimiento poblacional: $\frac{dP}{dt}=0.08P$, con $P(0)=1200$. Halle $P(t)$ y el tiempo para duplicarse.
 1. Enfriamiento de Newton: $\frac{dT}{dt}=-k(T-22)$, $T(0)=90$ y $T(10)=60$. Determine $k$ y $T(t)$.
-1. Mezclas: un tanque tiene 100 L con 5 kg de sal. Entra salmuera a 2 L/min con concentracion de 0.1 kg/L y sale al mismo ritmo. Formule y resuelva la E.D. para la cantidad de sal $Q(t)$.
+1. Mezclas: un tanque tiene 100 L con 5 kg de sal. Entra salmuera a 2 L/min con concentración de 0.1 kg/L y sale al mismo ritmo. Formule y resuelva la E.D. para la cantidad de sal $Q(t)$.
 
 ## Punto 5. Campo direccional y análisis cualitativo
 1. Para $y'=y(1-y)$, identifique puntos de equilibrio y su estabilidad.
 1. Para $y'=x-y$, describa el comportamiento cualitativo de soluciones cerca de la recta $y=x$.
-1. Para $y'=y^2-4$, analice en que intervalos las soluciones crecen o decrecen.
+1. Para $y'=y^2-4$, analice en qué intervalos las soluciones crecen o decrecen.
+
+::: {.taller-nav}
+[← Ecuaciones diferenciales](../../materias/ecuaciones-diferenciales.qmd)
+[Ver solucionario →](../../respuestas/ecuaciones-diferenciales/taller1.qmd){.btn .btn-outline-primary}
+:::

@@ -1,5 +1,7 @@
 ---
-title: "Taller de Matemáticas Básicas III"
+title: "Taller 3"
+subtitle: "Funciones y derivadas"
+categories: ["Matemáticas básicas"]
 ---
 
 ## Instrucciones
@@ -41,13 +43,15 @@ Sean $f(x) = 2x + 3$ y $g(x) = x^2 - 1$. Determine:
 
 ### Problemas de Aplicación
 1. Un tanque contiene inicialmente 500 litros de agua. Se abre una llave que drena el tanque a razón de 15 litros por minuto.
-1. Exprese la cantidad de agua $V$ en el tanque como función del tiempo $t$ en minutos.
-1. ¿Cuánta agua habrá después de 12 minutos?
-1. ¿En cuánto tiempo se vaciará completamente el tanque?
+
+    1. Exprese la cantidad de agua $V$ en el tanque como función del tiempo $t$ en minutos.
+    1. ¿Cuánta agua habrá después de 12 minutos?
+    1. ¿En cuánto tiempo se vaciará completamente el tanque?
 1. Una empresa de taxis cobra \$5000 por banderazo más \$1200 por cada kilómetro recorrido.
-1. Exprese el costo $C$ como función de la distancia $d$ recorrida.
-1. ¿Cuánto cuesta un viaje de 15 km?
-1. Si un cliente pagó \$23000, ¿qué distancia recorrió?
+
+    1. Exprese el costo $C$ como función de la distancia $d$ recorrida.
+    1. ¿Cuánto cuesta un viaje de 15 km?
+    1. Si un cliente pagó \$23000, ¿qué distancia recorrió?
     
 
 ## Punto 3. Función cuadrática
@@ -62,13 +66,15 @@ Para cada función cuadrática, determine: vértice, eje de simetría, raíces (
 ### Problemas de Aplicación
 1. Un objeto se lanza verticalmente hacia arriba con una velocidad inicial de 40 m/s desde una altura de 10 metros. La altura $h$ (en metros) del objeto en función del tiempo $t$ (en segundos) está dada por:
     $$h(t) = -5t^2 + 40t + 10$$
-1. ¿Cuál es la altura máxima que alcanza el objeto?
-1. ¿En qué tiempo alcanza la altura máxima?
-1. ¿Cuándo toca el suelo el objeto?
+
+    1. ¿Cuál es la altura máxima que alcanza el objeto?
+    1. ¿En qué tiempo alcanza la altura máxima?
+    1. ¿Cuándo toca el suelo el objeto?
 1. Un granjero tiene 240 metros de cerca para construir un corral rectangular. Uno de los lados del corral será una pared existente, por lo que solo necesita cercar tres lados.
-1. Exprese el área $A$ del corral como función del ancho $x$.
-1. ¿Qué dimensiones maximizan el área?
-1. ¿Cuál es el área máxima?
+
+    1. Exprese el área $A$ del corral como función del ancho $x$.
+    1. ¿Qué dimensiones maximizan el área?
+    1. ¿Cuál es el área máxima?
     
 
 ## Punto 4. Derivadas
@@ -86,11 +92,17 @@ Calcule la derivada de las siguientes funciones:
 1. Encuentre la ecuación de la recta tangente a $f(x) = x^3 - 2x + 1$ en el punto $(1, 0)$.
 1. Determine los puntos críticos de $f(x) = x^3 - 6x^2 + 9x + 1$ y clasifíquelos como máximos o mínimos locales.
 1. Una partícula se mueve en línea recta según la ecuación de posición $s(t) = t^3 - 6t^2 + 9t$, donde $s$ está en metros y $t$ en segundos.
-1. Encuentre la velocidad en $t = 2$ segundos.
-1. Encuentre la aceleración en $t = 3$ segundos.
-1. ¿En qué instantes la velocidad es cero?
+
+    1. Encuentre la velocidad en $t = 2$ segundos.
+    1. Encuentre la aceleración en $t = 3$ segundos.
+    1. ¿En qué instantes la velocidad es cero?
 1. Se desea construir una caja rectangular abierta con una lámina cuadrada de 12 cm de lado, cortando cuadrados iguales en las esquinas y doblando los lados hacia arriba. ¿Qué tamaño deben tener los cuadrados cortados para que el volumen de la caja sea máximo?
 
 ### Razones de Cambio Relacionadas
 1. Un globo esférico se infla de modo que su radio aumenta a razón de 2 cm/s. ¿A qué razón aumenta el volumen cuando el radio es de 5 cm? (Nota: $V = \frac{4}{3}\pi r^3$)
 1. Una escalera de 5 metros de largo está apoyada contra una pared. Si la base de la escalera se desliza alejándose de la pared a razón de 0.5 m/s, ¿a qué velocidad baja el extremo superior cuando la base está a 3 metros de la pared?
+
+::: {.taller-nav}
+[← Matemáticas básicas](../../materias/matematicas-basicas.qmd)
+[Ver solucionario →](../../respuestas/matematicas-basicas/taller3.qmd){.btn .btn-outline-primary}
+:::

@@ -1,26 +1,24 @@
 ---
 title: "Talleres de matemáticas"
+subtitle: "Talleres, solucionarios y explicaciones para practicar"
+toc: false
 ---
 
-# Matemáticas, ordenadas para estudiar
-
-Una biblioteca sencilla de talleres, soluciones y explicaciones. Elige una materia, abre el ejercicio y trabaja directamente desde el navegador.
+Bienvenido. Aquí encuentra los talleres de cada materia en el orden en que se estudian. Cada taller tiene su solucionario para que pueda revisar su trabajo.
 
 ## Materias
 
-| Materia | Contenido |
-|---|---|
-| [Álgebra lineal](materias/algebra-lineal.qmd) | Sistemas, matrices y determinantes |
-| [Cálculo diferencial](materias/calculo-diferencial.qmd) | Límites y derivadas |
-| [Cálculo integral](materias/calculo-integral.qmd) | Integrales y aplicaciones |
-| [Ecuaciones diferenciales](materias/ecuaciones-diferenciales.qmd) | Ecuaciones y modelos |
-| [Matemáticas básicas](materias/matematicas-basicas.qmd) | Álgebra, conjuntos y ecuaciones |
+| # | Materia | Contenido | Talleres |
+|:-:|---|---|:-:|
+| 1 | [Matemáticas básicas](materias/matematicas-basicas.qmd) | Operaciones, factorización, ecuaciones, conjuntos y funciones | 5 |
+| 2 | [Cálculo diferencial](materias/calculo-diferencial.qmd) | Límites, derivadas y regla de L'Hôpital | 1 |
+| 3 | [Cálculo integral](materias/calculo-integral.qmd) | Técnicas de integración, áreas y volúmenes | 3 |
+| 4 | [Álgebra lineal](materias/algebra-lineal.qmd) | Sistemas de ecuaciones, matrices y determinantes | 1 |
+| 5 | [Ecuaciones diferenciales](materias/ecuaciones-diferenciales.qmd) | Ecuaciones de primer y segundo orden, modelación | 2 |
 
-## Cómo usar este sitio
+## Cómo trabajar los talleres
 
-1. Entra a una materia.
-2. Abre el taller que quieras resolver.
-3. Consulta la respuesta después de intentar los ejercicios.
-4. Usa la [guía de Markdown y LaTeX](guia.qmd) para mantener el material ordenado cuando agregues nuevos talleres.
-
-Todo el contenido se muestra directamente en páginas Markdown con fórmulas LaTeX y se publica automáticamente mediante Quarto.
+1. Elija la materia y abra el taller que le asignaron.
+2. Resuelva los ejercicios en su cuaderno, mostrando todo el procedimiento.
+3. Solo después de intentarlo, abra el solucionario y compare sus respuestas.
+4. Si tiene dudas sobre un tema, revise las explicaciones de la materia.

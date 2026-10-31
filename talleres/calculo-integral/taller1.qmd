@@ -1,5 +1,7 @@
 ---
-title: "Taller de Calculo Integral I"
+title: "Taller 1"
+subtitle: "Integrales básicas, sustitución y aplicaciones"
+categories: ["Cálculo integral"]
 ---
 
 ## Instrucciones
@@ -37,6 +39,11 @@ Resuelva por cambio de variable:
 1. $\int_0^1 \frac{2x}{x^2+1}\,dx$
 
 ## Punto 5. Aplicaciones cortas
-1. Encuentre la funcion $f(x)$ tal que $f'(x)=6x^2-4x+3$ y $f(1)=5$.
-1. Calcule el area bajo la curva $y=2x+1$ entre $x=0$ y $x=4$.
-1. Determine el area entre $y=x^2$ y el eje $x$ en el intervalo $[0,3]$.
+1. Encuentre la función $f(x)$ tal que $f'(x)=6x^2-4x+3$ y $f(1)=5$.
+1. Calcule el área bajo la curva $y=2x+1$ entre $x=0$ y $x=4$.
+1. Determine el área entre $y=x^2$ y el eje $x$ en el intervalo $[0,3]$.
+
+::: {.taller-nav}
+[← Cálculo integral](../../materias/calculo-integral.qmd)
+[Ver solucionario →](../../respuestas/calculo-integral/taller1.qmd){.btn .btn-outline-primary}
+:::

@@ -1,5 +1,7 @@
 ---
-title: "Taller de Matemáticas Básicas II"
+title: "Taller 2"
+subtitle: "Racionalización, inecuaciones y conjuntos"
+categories: ["Matemáticas básicas"]
 ---
 
 ## Instrucciones
@@ -45,27 +47,31 @@ Demuestre las siguientes propiedades usando diagramas de Venn o álgebra de conj
 
 ## Punto 5. Problemas de aplicación con conjuntos
 1. En una encuesta a 100 estudiantes sobre sus preferencias deportivas, se encontró que:
-1. 45 practican fútbol
-1. 35 practican baloncesto
-1. 30 practican natación
-1. 15 practican fútbol y baloncesto
-1. 12 practican fútbol y natación
-1. 10 practican baloncesto y natación
-1. 5 practican los tres deportes
-    
+
+    - 45 practican fútbol
+    - 35 practican baloncesto
+    - 30 practican natación
+    - 15 practican fútbol y baloncesto
+    - 12 practican fútbol y natación
+    - 10 practican baloncesto y natación
+    - 5 practican los tres deportes
+
     Determine:
-1. ¿Cuántos estudiantes practican solo fútbol?
-1. ¿Cuántos estudiantes practican exactamente dos deportes?
-1. ¿Cuántos estudiantes no practican ninguno de estos deportes?
+
+    1. ¿Cuántos estudiantes practican solo fútbol?
+    1. ¿Cuántos estudiantes practican exactamente dos deportes?
+    1. ¿Cuántos estudiantes no practican ninguno de estos deportes?
+
 1. En un grupo de 50 personas:
-1. 32 hablan inglés
-1. 28 hablan francés
-1. 25 hablan alemán
-1. 18 hablan inglés y francés
-1. 15 hablan inglés y alemán
-1. 14 hablan francés y alemán
-1. 10 hablan los tres idiomas
-    
+
+    - 32 hablan inglés
+    - 28 hablan francés
+    - 25 hablan alemán
+    - 18 hablan inglés y francés
+    - 15 hablan inglés y alemán
+    - 14 hablan francés y alemán
+    - 10 hablan los tres idiomas
+
     ¿Cuántas personas no hablan ninguno de estos tres idiomas?
 
 ## Punto 6. Intervalos y notación
@@ -74,3 +80,8 @@ Exprese los siguientes conjuntos usando notación de intervalos y represéntelos
 1. $\{x \in \mathbb{R} : x \geq 2\}$
 1. $\{x \in \mathbb{R} : x < -1 \text{ o } x > 4\}$
 1. $\{x \in \mathbb{R} : |x - 2| < 3\}$
+
+::: {.taller-nav}
+[← Matemáticas básicas](../../materias/matematicas-basicas.qmd)
+[Ver solucionario →](../../respuestas/matematicas-basicas/taller2.qmd){.btn .btn-outline-primary}
+:::

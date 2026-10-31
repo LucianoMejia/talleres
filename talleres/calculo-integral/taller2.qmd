@@ -1,9 +1,11 @@
 ---
-title: "Taller de Calculo Integral II"
+title: "Taller 2"
+subtitle: "Integrales definidas, áreas y volúmenes"
+categories: ["Cálculo integral"]
 ---
 
 ## Instrucciones
-Resuelva cada ejercicio justificando cada paso. Si usa propiedades de simetria o teoremas, indiquelo explicitamente.
+Resuelva cada ejercicio justificando cada paso. Si usa propiedades de simetría o teoremas, indíquelo explícitamente.
 
 ## Punto 1. Integrales definidas y propiedades
 1. $\int_{-2}^{2} (x^5+3x^2)\,dx$
@@ -19,17 +21,22 @@ Resuelva cada ejercicio justificando cada paso. Si usa propiedades de simetria o
 1. Sea $H(x)=\int_{\sin x}^{\cos x} (1+t^3)\,dt$. Halle $H'(x)$.
 
 ## Punto 3. Área entre curvas
-1. Calcule el area encerrada entre $y=x$ y $y=x^2$.
-1. Halle el area entre $y=4-x^2$ y el eje $x$.
-1. Determine el area limitada por $y=2x+3$ y $y=x^2$.
-1. Encuentre el area entre $y=\sin x$ y $y=\cos x$ en $[0,\pi/2]$.
+1. Calcule el área encerrada entre $y=x$ y $y=x^2$.
+1. Halle el área entre $y=4-x^2$ y el eje $x$.
+1. Determine el área limitada por $y=2x+3$ y $y=x^2$.
+1. Encuentre el área entre $y=\sin x$ y $y=\cos x$ en $[0,\pi/2]$.
 
 ## Punto 4. Volúmenes por discos y arandelas
-1. Genere el volumen al girar la region bajo $y=x^2$, $0\le x\le 2$, alrededor del eje $x$.
-1. Genere el volumen al girar la region entre $y=\sqrt{x}$ y $y=0$, $0\le x\le 4$, alrededor del eje $x$.
-1. Calcule el volumen del solido al girar la region entre $y=4-x$ y $y=0$, $0\le x\le 4$, alrededor del eje $y$ (metodo de arandelas en funcion de $y$).
+1. Genere el volumen al girar la región bajo $y=x^2$, $0\le x\le 2$, alrededor del eje $x$.
+1. Genere el volumen al girar la región entre $y=\sqrt{x}$ y $y=0$, $0\le x\le 4$, alrededor del eje $x$.
+1. Calcule el volumen del sólido al girar la región entre $y=4-x$ y $y=0$, $0\le x\le 4$, alrededor del eje $y$ (método de arandelas en función de $y$).
 
 ## Punto 5. Longitud de arco y valor promedio
 1. Encuentre la longitud de arco de $y=\frac{x^2}{2}$ en $[0,1]$.
 1. Calcule el valor promedio de $f(x)=x^2+1$ en $[0,3]$.
 1. Halle el valor promedio de $f(x)=\sin x$ en $[0,\pi]$.
+
+::: {.taller-nav}
+[← Cálculo integral](../../materias/calculo-integral.qmd)
+[Ver solucionario →](../../respuestas/calculo-integral/taller2.qmd){.btn .btn-outline-primary}
+:::

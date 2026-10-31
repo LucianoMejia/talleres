@@ -1,13 +1,12 @@
-# Archivos generados por LaTeX y Quarto.
-**/*.aux
-**/*.log
-**/*.out
-**/*.toc
-**/_site/
-**/.quarto/
+# Archivos generados por Quarto.
+/_site/
+/.quarto/
+**/*.quarto_ipynb
 
-# PDFs compilados: el sitio publica Markdown/HTML, no PDFs.
-**/builds/*.pdf
-
-# Recurso compartido para las portadas.
-!logo_unal.png
+# Restos de la versión anterior en LaTeX.
+**/builds/
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz

@@ -1,13 +1,16 @@
 ---
-title: "Taller de Matemáticas Básicas IV"
+title: "Taller 4"
+subtitle: "MCD, MCM y problemas combinados"
+categories: ["Matemáticas básicas"]
 ---
 
 ## Instrucciones
 Resuelva cada uno de los siguientes ejercicios mostrando todo el proceso. Presente su trabajo de manera ordenada y clara.
 
 **Conceptos importantes:**
-1. El **MCD** (Máximo Común Divisor) es el mayor número que divide exactamente a dos o más números.
-1. El **MCM** (Mínimo Común Múltiplo) es el menor número que es múltiplo de dos o más números.
+
+- El **MCD** (Máximo Común Divisor) es el mayor número que divide exactamente a dos o más números.
+- El **MCM** (Mínimo Común Múltiplo) es el menor número que es múltiplo de dos o más números.
 
 ## Punto 1. Máximo común divisor (MCD)
 
@@ -46,3 +49,8 @@ Resuelva cada uno de los siguientes ejercicios mostrando todo el proceso. Presen
 **15.** Demuestra que para dos números cualesquiera $a$ y $b$, se cumple que: 
 $$\text{MCD}(a,b) \times \text{MCM}(a,b) = a \times b$$
 Verifica esta propiedad con los números 16 y 24.
+
+::: {.taller-nav}
+[← Matemáticas básicas](../../materias/matematicas-basicas.qmd)
+[Ver solucionario →](../../respuestas/matematicas-basicas/taller4.qmd){.btn .btn-outline-primary}
+:::

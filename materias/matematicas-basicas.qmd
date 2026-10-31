@@ -1,15 +1,17 @@
 ---
 title: "Matemáticas básicas"
+subtitle: "Materia 1 de 5"
+toc: false
 ---
 
-Operaciones, homogenización, factorización, ecuaciones, conjuntos y racionalización.
+Operaciones, homogenización, factorización, ecuaciones, conjuntos, racionalización y funciones.
 
 ## Talleres
 
-| Taller | Tema principal | Ejercicios | Respuestas |
-|---|---|---|---|
-| Taller 1 | Operaciones, álgebra y ecuaciones | [Abrir taller](../talleres/matematicas-basicas/taller1.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller1.qmd) |
-| Taller 2 | Racionalización, inecuaciones y conjuntos | [Abrir taller](../talleres/matematicas-basicas/taller2.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller2.qmd) |
-| Taller 3 | Funciones y derivadas | [Abrir taller](../talleres/matematicas-basicas/taller3.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller3.qmd) |
-| Taller 4 | MCD, MCM y problemas combinados | [Abrir taller](../talleres/matematicas-basicas/taller4.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller4.qmd) |
-| Taller 5 | Factorización, homogenización y racionalización | [Abrir taller](../talleres/matematicas-basicas/taller5.qmd) | [Abrir solucionario](../respuestas/matematicas-basicas/taller5.qmd) |
+| Taller | Tema | Ejercicios | Solucionario |
+|:-:|---|:-:|:-:|
+| 1 | Operaciones, álgebra y ecuaciones | [Abrir](../talleres/matematicas-basicas/taller1.qmd) | [Abrir](../respuestas/matematicas-basicas/taller1.qmd) |
+| 2 | Racionalización, inecuaciones y conjuntos | [Abrir](../talleres/matematicas-basicas/taller2.qmd) | [Abrir](../respuestas/matematicas-basicas/taller2.qmd) |
+| 3 | Funciones y derivadas | [Abrir](../talleres/matematicas-basicas/taller3.qmd) | [Abrir](../respuestas/matematicas-basicas/taller3.qmd) |
+| 4 | MCD, MCM y problemas combinados | [Abrir](../talleres/matematicas-basicas/taller4.qmd) | [Abrir](../respuestas/matematicas-basicas/taller4.qmd) |
+| 5 | Factorización, homogenización y racionalización | [Abrir](../talleres/matematicas-basicas/taller5.qmd) | [Abrir](../respuestas/matematicas-basicas/taller5.qmd) |

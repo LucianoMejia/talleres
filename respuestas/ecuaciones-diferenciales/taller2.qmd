@@ -1,6 +1,12 @@
 ---
-title: "Respuestas - Taller de Ecuaciones Diferenciales II"
+title: "Solucionario del taller 2"
+subtitle: "Ecuaciones de segundo orden y modelación física"
+categories: ["Ecuaciones diferenciales"]
 ---
+
+::: {.callout-tip title="Antes de mirar"}
+Intente resolver primero el [taller 2](../../talleres/ecuaciones-diferenciales/taller2.qmd) y use este solucionario para comparar sus respuestas.
+:::
 
 ## Punto 1. Ecuaciones lineales homogéneas con coeficientes constantes
 1. $y''-5y'+6y=0$:
@@ -45,14 +51,19 @@ title: "Respuestas - Taller de Ecuaciones Diferenciales II"
 
 ## Punto 5. Sistema de ecuaciones diferenciales
 1. $$
-\begin{aligned}
+    \begin{aligned}
         x' &= 3x+4y,\\
         y' &= -4x+3y,
     \end{aligned}
-$$
+    $$
     con $x(0)=1$, $y(0)=0$:
     $$x(t)=e^{3t}\cos(4t),\qquad y(t)=-e^{3t}\sin(4t).$$
 1. Para $y''+2y'+2y=0$, una forma de primer orden es:
     $$u_1=y,\quad u_2=y',$$
     $$u_1'=u_2,\quad u_2'=-2u_2-2u_1.$$
     El retrato de fase es una espiral estable hacia el origen (autovalores $-1\pm i$).
+
+::: {.taller-nav}
+[← Volver al taller 2](../../talleres/ecuaciones-diferenciales/taller2.qmd)
+[Ecuaciones diferenciales](../../materias/ecuaciones-diferenciales.qmd){.btn .btn-outline-primary}
+:::

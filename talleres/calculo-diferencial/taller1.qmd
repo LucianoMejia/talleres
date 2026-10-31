@@ -1,9 +1,11 @@
 ---
-title: "Taller de Regla de L'Hopital"
+title: "Taller 1"
+subtitle: "Límites y regla de L'Hôpital"
+categories: ["Cálculo diferencial"]
 ---
 
 ## Instrucciones
-Resuelva cada ejercicio mostrando el desarrollo. Indique cuando use la regla de L'Hopital y verifique que se cumplan sus condiciones antes de aplicarla.
+Resuelva cada ejercicio mostrando el desarrollo. Indique cuándo usa la regla de L'Hôpital y verifique que se cumplan sus condiciones antes de aplicarla.
 
 ## Punto 1. Límites con forma $0/0$
 Calcule los siguientes límites:
@@ -21,7 +23,7 @@ Calcule los siguientes límites:
 1. $\displaystyle \lim_{x\to \infty} \frac{5x-1}{2x+7}$
 
 ## Punto 3. Aplicaciones con varias derivadas
-Resuelva los siguientes límites, aplicando L'Hopital las veces que sea necesario:
+Resuelva los siguientes límites, aplicando L'Hôpital las veces que sea necesario:
 1. $\displaystyle \lim_{x\to 0} \frac{x-\sin x}{x^3}$
 1. $\displaystyle \lim_{x\to 0} \frac{\tan x - x}{x^3}$
 1. $\displaystyle \lim_{x\to 0} \frac{e^x - 1 - x}{x^2}$
@@ -31,4 +33,9 @@ Resuelva los siguientes límites, aplicando L'Hopital las veces que sea necesari
 ## Punto 4. Ejercicios de aplicación
 1. Halle la pendiente de la recta tangente a $f(x)=\dfrac{\sin x}{x}$ en $x=0$ usando el límite correspondiente.
 1. Determine si la función $g(x)=\dfrac{e^x}{x^2}$ tiende a $0$, $\infty$ o a un valor finito cuando $x\to\infty$.
-1. Use L'Hopital para justificar que $\displaystyle \lim_{x\to 0} \frac{\ln(1+x)}{x}=1$.
+1. Use L'Hôpital para justificar que $\displaystyle \lim_{x\to 0} \frac{\ln(1+x)}{x}=1$.
+
+::: {.taller-nav}
+[← Cálculo diferencial](../../materias/calculo-diferencial.qmd)
+[Ver solucionario →](../../respuestas/calculo-diferencial/taller1.qmd){.btn .btn-outline-primary}
+:::

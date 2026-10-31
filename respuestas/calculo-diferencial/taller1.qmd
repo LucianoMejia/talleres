@@ -1,6 +1,12 @@
 ---
-title: "Respuestas - Taller de Regla de L'Hopital"
+title: "Solucionario del taller 1"
+subtitle: "Límites y regla de L'Hôpital"
+categories: ["Cálculo diferencial"]
 ---
+
+::: {.callout-tip title="Antes de mirar"}
+Intente resolver primero el [taller 1](../../talleres/calculo-diferencial/taller1.qmd) y use este solucionario para comparar sus respuestas.
+:::
 
 ## Punto 1. Límites con forma $0/0$
 1. $\displaystyle \lim_{x\to 0} \frac{\sin(4x)}{x} = 4$.
@@ -32,8 +38,13 @@ title: "Respuestas - Taller de Regla de L'Hopital"
     $$
     \lim_{x\to\infty} \frac{e^x}{x^2} = \infty.
     $$
-1. Aplicando L'Hopital:
+1. Aplicando L'Hôpital:
     $$
     \lim_{x\to 0} \frac{\ln(1+x)}{x}
     = \lim_{x\to 0} \frac{\frac{1}{1+x}}{1} = 1.
     $$
+
+::: {.taller-nav}
+[← Volver al taller 1](../../talleres/calculo-diferencial/taller1.qmd)
+[Cálculo diferencial](../../materias/calculo-diferencial.qmd){.btn .btn-outline-primary}
+:::
