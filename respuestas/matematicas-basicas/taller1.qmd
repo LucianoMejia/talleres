@@ -9,6 +9,7 @@ Intente resolver primero el [taller 1](../../talleres/matematicas-basicas/taller
 :::
 
 ## Punto 1. Jerarquía de operaciones
+
 1. $5 + 3 \times 2^2 - 8 \div 4$
     $$
     \begin{aligned}
@@ -53,6 +54,7 @@ Intente resolver primero el [taller 1](../../talleres/matematicas-basicas/taller
     $$
 
 ## Punto 2. Homogenización
+
 1. $5x + 3y - 2x + 7y - x$
     $$
     \begin{aligned}
@@ -92,6 +94,7 @@ Intente resolver primero el [taller 1](../../talleres/matematicas-basicas/taller
     $$
 
 ## Punto 3. Factorización
+
 1. $x^2 + 5x + 6 = (x + 2)(x + 3)$
 1. $4x^2 - 9 = (2x)^2 - 3^2 = (2x - 3)(2x + 3)$
 1. $x^2 - 6x + 9 = (x - 3)^2$
@@ -102,6 +105,7 @@ Intente resolver primero el [taller 1](../../talleres/matematicas-basicas/taller
 1. $ax + ay + bx + by = a(x + y) + b(x + y) = (a + b)(x + y)$
 
 ## Punto 4. Ecuaciones
+
 1. $3x + 7 = 22$
     $$
     \begin{aligned}
@@ -166,6 +170,7 @@ Intente resolver primero el [taller 1](../../talleres/matematicas-basicas/taller
     $$
 
 ## Punto 5. Problemas de aplicación
+
 1. **Solución:** Sean $n$ y $n+1$ los números consecutivos.
     $$
     \begin{aligned}

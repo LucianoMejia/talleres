@@ -1,0 +1,47 @@
+---
+title: "Taller 2"
+subtitle: "Reglas de derivación y aplicaciones"
+categories: ["Cálculo diferencial"]
+---
+
+## Instrucciones
+Resuelva cada ejercicio mostrando el procedimiento. Indique qué regla de derivación usa en cada paso y simplifique el resultado final.
+
+## Punto 1. Reglas básicas
+Derive las siguientes funciones:
+
+1. $f(x) = 4x^5 - 3x^3 + 2x - 7$
+1. $g(x) = 3\sqrt{x} + \dfrac{2}{x^3}$
+1. $h(x) = x^2 e^x$
+1. $k(x) = \dfrac{x^2+1}{x-1}$
+1. $m(x) = x\ln x$
+
+## Punto 2. Regla de la cadena
+Derive las siguientes funciones:
+
+1. $f(x) = (3x^2-5)^4$
+1. $g(x) = \sin(5x^2)$
+1. $h(x) = e^{-x^2}$
+1. $k(x) = \ln(x^2+4)$
+1. $m(x) = \sqrt{1+\cos x}$
+1. $n(x) = \tan^3(2x)$
+
+## Punto 3. Derivación implícita
+Halle $\dfrac{dy}{dx}$:
+
+1. $x^2 + y^2 = 25$. Luego halle la recta tangente a la curva en el punto $(3, 4)$.
+1. $x^3 + y^3 = 6xy$
+1. $e^y + xy = e$. Evalúe la derivada en el punto $(0, 1)$.
+
+## Punto 4. Aplicaciones de la derivada
+
+1. Halle la ecuación de la recta tangente a $f(x) = x^3 - 3x$ en $x = 2$.
+1. Para $f(x) = x^3 - 3x^2 - 9x + 5$, determine los intervalos de crecimiento y decrecimiento y sus extremos relativos.
+1. Para la misma función, determine los intervalos de concavidad y el punto de inflexión.
+1. Se quiere construir una caja de base cuadrada, sin tapa, con un volumen de 32 000 cm³. Halle las dimensiones que minimizan el material usado.
+1. Una piedra cae en un estanque y produce una onda circular cuyo radio crece a razón de 0.5 m/s. ¿Con qué rapidez crece el área del círculo cuando el radio mide 4 m?
+
+::: {.taller-nav}
+[← Cálculo diferencial](../../materias/calculo-diferencial.qmd)
+[Ver solucionario →](../../respuestas/calculo-diferencial/taller2.qmd){.btn .btn-outline-primary}
+:::

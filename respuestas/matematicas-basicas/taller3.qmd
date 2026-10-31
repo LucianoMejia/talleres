@@ -11,6 +11,7 @@ Intente resolver primero el [taller 3](../../talleres/matematicas-basicas/taller
 ## Punto 1. Funciones: conceptos básicos
 
 ### Dominio y Rango
+
 1. $f(x) = 3x - 5$\
     Dominio: $\mathbb{R}$, Rango: $\mathbb{R}$
 1. $g(x) = \sqrt{x - 2}$\
@@ -27,6 +28,7 @@ Intente resolver primero el [taller 3](../../talleres/matematicas-basicas/taller
 ### Evaluación de Funciones
 
 Dada $f(x) = 2x^2 - 3x + 1$:
+
 1. $f(2) = 2(2)^2 - 3(2) + 1 = 8 - 6 + 1 = 3$
 1. $f(-1) = 2(-1)^2 - 3(-1) + 1 = 2 + 3 + 1 = 6$
 1. $f(a + h) = 2(a + h)^2 - 3(a + h) + 1$
@@ -49,6 +51,7 @@ Dada $f(x) = 2x^2 - 3x + 1$:
 ### Operaciones con Funciones
 
 Sean $f(x) = 2x + 3$ y $g(x) = x^2 - 1$:
+
 1. $(f + g)(x) = 2x + 3 + x^2 - 1 = x^2 + 2x + 2$
 1. $(f \cdot g)(x) = (2x + 3)(x^2 - 1) = 2x^3 + 3x^2 - 2x - 3$
 1. $\left(\frac{f}{g}\right)(x) = \frac{2x + 3}{x^2 - 1}$\
@@ -59,6 +62,7 @@ Sean $f(x) = 2x + 3$ y $g(x) = x^2 - 1$:
 ## Punto 2. Función lineal
 
 ### Ecuación de la Recta
+
 1. Puntos $(2, 3)$ y $(-1, 6)$:
     $$
     \begin{aligned}
@@ -92,6 +96,7 @@ Sean $f(x) = 2x + 3$ y $g(x) = x^2 - 1$:
     $$
 
 ### Problemas de Aplicación
+
 1. Tanque de agua:
 
     1. $V(t) = 500 - 15t$
@@ -107,6 +112,7 @@ Sean $f(x) = 2x + 3$ y $g(x) = x^2 - 1$:
 ## Punto 3. Función cuadrática
 
 ### Análisis de Funciones Cuadráticas
+
 1. $f(x) = x^2 - 4x + 3$
 
     1. Vértice: $x_v = -\frac{-4}{2(1)} = 2$, $y_v = (2)^2 - 4(2) + 3 = -1 \Rightarrow (2, -1)$
@@ -138,6 +144,7 @@ Sean $f(x) = 2x + 3$ y $g(x) = x^2 - 1$:
     
 
 ### Problemas de Aplicación
+
 1. Objeto lanzado: $h(t) = -5t^2 + 40t + 10$
 
     1. Tiempo máximo: $t_v = -\frac{40}{2(-5)} = 4$ segundos
@@ -160,6 +167,7 @@ Sean $f(x) = 2x + 3$ y $g(x) = x^2 - 1$:
 ## Punto 4. Derivadas
 
 ### Derivadas Básicas
+
 1. $f(x) = 5x^3 - 4x^2 + 7x - 2$\
     $f'(x) = 15x^2 - 8x + 7$
 1. $g(x) = \frac{3}{x^2} + \sqrt{x} = 3x^{-2} + x^{1/2}$\
@@ -174,6 +182,7 @@ Sean $f(x) = 2x + 3$ y $g(x) = x^2 - 1$:
     $n'(x) = \frac{1}{2}(4x^2 + 9)^{-1/2}(8x) = \frac{4x}{\sqrt{4x^2 + 9}}$
 
 ### Aplicaciones de la Derivada
+
 1. $f(x) = x^3 - 2x + 1$, punto $(1, 0)$\
     $f'(x) = 3x^2 - 2$, $f'(1) = 1$\
     Ecuación: $y - 0 = 1(x - 1) \Rightarrow y = x - 1$
@@ -193,6 +202,7 @@ Sean $f(x) = 2x + 3$ y $g(x) = x^2 - 1$:
     $x = 6$ (descartado) o $x = 2$ cm
 
 ### Razones de Cambio Relacionadas
+
 1. $V = \frac{4}{3}\pi r^3$, $\frac{dr}{dt} = 2$ cm/s, $r = 5$ cm
     $$
     \begin{aligned}

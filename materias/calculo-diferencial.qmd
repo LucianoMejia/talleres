@@ -4,10 +4,11 @@ subtitle: "Materia 2 de 5"
 toc: false
 ---
 
-Límites, regla de L'Hôpital y aplicaciones de las derivadas.
+Límites, regla de L'Hôpital, reglas de derivación y aplicaciones de la derivada.
 
 ## Talleres
 
 | Taller | Tema | Ejercicios | Solucionario |
 |:-:|---|:-:|:-:|
 | 1 | Límites y regla de L'Hôpital | [Abrir](../talleres/calculo-diferencial/taller1.qmd) | [Abrir](../respuestas/calculo-diferencial/taller1.qmd) |
+| 2 | Reglas de derivación y aplicaciones | [Abrir](../talleres/calculo-diferencial/taller2.qmd) | [Abrir](../respuestas/calculo-diferencial/taller2.qmd) |

@@ -9,6 +9,7 @@ Resuelva cada ejercicio mostrando desarrollo ordenado. Verifique condiciones de 
 
 ## Punto 1. Integrales indefinidas básicas
 Calcule las siguientes integrales:
+
 1. $\int (6x^5 - 4x^2 + 7)\,dx$
 1. $\int \left(\frac{5}{x} - 3\sqrt{x} + \frac{2}{x^2}\right)\,dx$
 1. $\int (4e^{2x} - 3\cos x)\,dx$
@@ -18,6 +19,7 @@ Calcule las siguientes integrales:
 
 ## Punto 2. Sustitución
 Resuelva por cambio de variable:
+
 1. $\int x\sqrt{x^2+9}\,dx$
 1. $\int \frac{2x-1}{x^2-x+5}\,dx$
 1. $\int \frac{\cos(3x)}{1+\sin(3x)}\,dx$
@@ -25,6 +27,7 @@ Resuelva por cambio de variable:
 1. $\int \frac{1}{x\ln x}\,dx$, con $x>1$
 
 ## Punto 3. Integrales trigonométricas elementales
+
 1. $\int \sin(4x)\,dx$
 1. $\int \cos^3 x\sin x\,dx$
 1. $\int \tan x\,dx$
@@ -32,6 +35,7 @@ Resuelva por cambio de variable:
 1. $\int \frac{dx}{1+\cos x}$
 
 ## Punto 4. Integrales definidas básicas
+
 1. $\int_0^2 (3x^2-4x+1)\,dx$
 1. $\int_{-1}^{1} (x^3+2x^2)\,dx$
 1. $\int_0^{\pi/2} \sin x\,dx$
@@ -39,6 +43,7 @@ Resuelva por cambio de variable:
 1. $\int_0^1 \frac{2x}{x^2+1}\,dx$
 
 ## Punto 5. Aplicaciones cortas
+
 1. Encuentre la función $f(x)$ tal que $f'(x)=6x^2-4x+3$ y $f(1)=5$.
 1. Calcule el área bajo la curva $y=2x+1$ entre $x=0$ y $x=4$.
 1. Determine el área entre $y=x^2$ y el eje $x$ en el intervalo $[0,3]$.

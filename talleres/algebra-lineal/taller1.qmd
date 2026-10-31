@@ -9,6 +9,7 @@ Resuelva cada ejercicio mostrando el procedimiento completo. Es importante justi
 
 ## Punto 1. Sistemas de ecuaciones y forma matricial
 Escriba cada sistema en forma matricial $AX=b$ y luego indique la matriz aumentada correspondiente.
+
 1. $$
     \begin{cases}
     2x + 3y = 7 \\
@@ -31,6 +32,7 @@ Escriba cada sistema en forma matricial $AX=b$ y luego indique la matriz aumenta
 
 ## Punto 2. Eliminación de Gauss
 Resuelva los siguientes sistemas utilizando el método de Gauss.
+
 1. $$
     \begin{cases}
     x + 2y = 5 \\
@@ -53,6 +55,7 @@ Resuelva los siguientes sistemas utilizando el método de Gauss.
 
 ## Punto 3. Determinantes
 Calcule el determinante de cada matriz.
+
 1. $$
     A = \begin{pmatrix}
     2 & 3 \\

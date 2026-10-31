@@ -1,0 +1,46 @@
+---
+title: "Taller 3"
+subtitle: "Transformada de Laplace"
+categories: ["Ecuaciones diferenciales"]
+---
+
+## Instrucciones
+Resuelva cada ejercicio usando la tabla de transformadas y sus propiedades (linealidad, traslación y derivadas). Para las transformadas inversas, use fracciones parciales o completación de cuadrados cuando sea necesario.
+
+## Punto 1. Transformada de Laplace
+Calcule $\mathcal{L}\{f(t)\}$:
+
+1. $f(t) = 3 - 2t + t^2$
+1. $f(t) = e^{-3t} + 4\sin(2t)$
+1. $f(t) = te^{2t}$
+1. $f(t) = e^{t}\cos(3t)$
+1. $f(t) = \cosh(2t)$
+
+## Punto 2. Transformada inversa
+Calcule $\mathcal{L}^{-1}\{F(s)\}$:
+
+1. $F(s) = \dfrac{4}{s^3}$
+1. $F(s) = \dfrac{2s+3}{s^2+9}$
+1. $F(s) = \dfrac{1}{s(s+2)}$
+1. $F(s) = \dfrac{s+5}{s^2+2s+5}$
+1. $F(s) = \dfrac{1}{(s-1)(s+3)}$
+
+## Punto 3. Problemas de valor inicial
+Resuelva usando la transformada de Laplace:
+
+1. $y' + 2y = 0$, $y(0) = 3$
+1. $y' - y = e^{2t}$, $y(0) = 0$
+1. $y'' + 4y = 0$, $y(0) = 1$, $y'(0) = 2$
+1. $y'' - 3y' + 2y = 0$, $y(0) = 0$, $y'(0) = 1$
+1. $y'' + y = 1$, $y(0) = 0$, $y'(0) = 0$
+
+## Punto 4. Función escalón y aplicaciones
+
+1. Calcule $\mathcal{L}\{u(t-2)\}$, donde $u$ es la función escalón unitario.
+1. Calcule $\mathcal{L}^{-1}\left\{\dfrac{e^{-3s}}{s^2}\right\}$.
+1. En un circuito RL se cumple $L\dfrac{di}{dt} + Ri = E$. Con $L = 1$ H, $R = 4$ Ω, $E = 12$ V e $i(0) = 0$, halle $i(t)$ y la corriente cuando $t \to \infty$.
+
+::: {.taller-nav}
+[← Ecuaciones diferenciales](../../materias/ecuaciones-diferenciales.qmd)
+[Ver solucionario →](../../respuestas/ecuaciones-diferenciales/taller3.qmd){.btn .btn-outline-primary}
+:::

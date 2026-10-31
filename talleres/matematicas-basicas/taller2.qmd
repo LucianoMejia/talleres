@@ -9,6 +9,7 @@ Resuelva cada uno de los siguientes ejercicios mostrando todo el proceso. Presen
 
 ## Punto 1. Racionalización
 Racionalice el denominador de las siguientes expresiones:
+
 1. $\frac{5}{\sqrt{3}}$
 1. $\frac{2}{\sqrt{5} + 1}$
 1. $\frac{3}{\sqrt{7} - \sqrt{2}}$
@@ -19,6 +20,7 @@ Racionalice el denominador de las siguientes expresiones:
 
 ## Punto 2. Inecuaciones
 Resuelva las siguientes inecuaciones y represente la solución en la recta numérica:
+
 1. $3x - 5 < 10$
 1. $2(x - 3) \geq x + 4$
 1. $-4 \leq 2x + 6 < 10$
@@ -30,6 +32,7 @@ Resuelva las siguientes inecuaciones y represente la solución en la recta numé
 
 ## Punto 3. Conjuntos
 Dados los conjuntos $A = \{1, 2, 3, 4, 5\}$, $B = \{3, 4, 5, 6, 7\}$, $C = \{2, 4, 6, 8\}$ y $U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}$ como conjunto universal, determine:
+
 1. $A \cup B$
 1. $A \cap B$
 1. $A - B$
@@ -41,11 +44,13 @@ Dados los conjuntos $A = \{1, 2, 3, 4, 5\}$, $B = \{3, 4, 5, 6, 7\}$, $C = \{2, 
 
 ## Punto 4. Operaciones con conjuntos: demostración
 Demuestre las siguientes propiedades usando diagramas de Venn o álgebra de conjuntos:
+
 1. $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$ (Ley distributiva)
 1. $(A \cup B)^c = A^c \cap B^c$ (Ley de De Morgan)
 1. $A - B = A \cap B^c$
 
 ## Punto 5. Problemas de aplicación con conjuntos
+
 1. En una encuesta a 100 estudiantes sobre sus preferencias deportivas, se encontró que:
 
     - 45 practican fútbol
@@ -76,6 +81,7 @@ Demuestre las siguientes propiedades usando diagramas de Venn o álgebra de conj
 
 ## Punto 6. Intervalos y notación
 Exprese los siguientes conjuntos usando notación de intervalos y represéntelos en la recta numérica:
+
 1. $\{x \in \mathbb{R} : -3 < x \leq 5\}$
 1. $\{x \in \mathbb{R} : x \geq 2\}$
 1. $\{x \in \mathbb{R} : x < -1 \text{ o } x > 4\}$

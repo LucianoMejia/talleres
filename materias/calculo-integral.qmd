@@ -4,7 +4,7 @@ subtitle: "Materia 3 de 5"
 toc: false
 ---
 
-Integrales indefinidas y definidas, sustitución, integración por partes, fracciones parciales y aplicaciones.
+Integrales indefinidas y definidas, sustitución, integración por partes, fracciones parciales, aplicaciones y series.
 
 ## Talleres
 
@@ -13,6 +13,7 @@ Integrales indefinidas y definidas, sustitución, integración por partes, fracc
 | 1 | Integrales básicas, sustitución y aplicaciones | [Abrir](../talleres/calculo-integral/taller1.qmd) | [Abrir](../respuestas/calculo-integral/taller1.qmd) |
 | 2 | Integrales definidas, áreas y volúmenes | [Abrir](../talleres/calculo-integral/taller2.qmd) | [Abrir](../respuestas/calculo-integral/taller2.qmd) |
 | 3 | Integración por partes, fracciones parciales e impropias | [Abrir](../talleres/calculo-integral/taller3.qmd) | [Abrir](../respuestas/calculo-integral/taller3.qmd) |
+| 4 | Sucesiones y series | [Abrir](../talleres/calculo-integral/taller4.qmd) | [Abrir](../respuestas/calculo-integral/taller4.qmd) |
 
 ## Explicaciones
 

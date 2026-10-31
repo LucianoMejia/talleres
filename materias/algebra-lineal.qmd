@@ -4,10 +4,11 @@ subtitle: "Materia 4 de 5"
 toc: false
 ---
 
-Sistemas de ecuaciones, matrices, eliminación de Gauss y determinantes.
+Sistemas de ecuaciones, matrices, eliminación de Gauss, determinantes, matriz inversa y vectores.
 
 ## Talleres
 
 | Taller | Tema | Ejercicios | Solucionario |
 |:-:|---|:-:|:-:|
 | 1 | Sistemas, eliminación de Gauss y determinantes | [Abrir](../talleres/algebra-lineal/taller1.qmd) | [Abrir](../respuestas/algebra-lineal/taller1.qmd) |
+| 2 | Matrices, inversa, regla de Cramer y vectores | [Abrir](../talleres/algebra-lineal/taller2.qmd) | [Abrir](../respuestas/algebra-lineal/taller2.qmd) |

@@ -1,0 +1,49 @@
+---
+title: "Taller 4"
+subtitle: "Sucesiones y series"
+categories: ["Cálculo integral"]
+---
+
+## Instrucciones
+Resuelva cada ejercicio justificando sus conclusiones. Cuando estudie la convergencia de una serie, indique siempre qué criterio usa y por qué se puede aplicar.
+
+## Punto 1. Sucesiones
+Determine si cada sucesión converge o diverge. Si converge, halle su límite:
+
+1. $a_n = \dfrac{3n+2}{n-1}$
+1. $a_n = \dfrac{(-1)^n}{n}$
+1. $a_n = \left(1 + \dfrac{2}{n}\right)^n$
+1. $a_n = \dfrac{n^2}{2^n}$
+1. $a_n = \cos(n\pi)$
+
+## Punto 2. Series geométricas y telescópicas
+Halle la suma de cada serie:
+
+1. $\displaystyle\sum_{n=0}^{\infty} \left(\frac{2}{3}\right)^n$
+1. $\displaystyle\sum_{n=1}^{\infty} 5\left(-\frac{1}{4}\right)^{n-1}$
+1. $\displaystyle\sum_{n=1}^{\infty} \frac{3^n}{4^{n+1}}$
+1. $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n(n+1)}$
+1. Escriba el decimal periódico $0.\overline{36}$ como fracción usando una serie geométrica.
+
+## Punto 3. Criterios de convergencia
+Determine si cada serie converge o diverge:
+
+1. $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^2}$
+1. $\displaystyle\sum_{n=1}^{\infty} \frac{1}{\sqrt{n}}$
+1. $\displaystyle\sum_{n=1}^{\infty} \frac{n}{n+1}$
+1. $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^2+1}$
+1. $\displaystyle\sum_{n=1}^{\infty} \frac{n!}{10^n}$
+1. $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}$
+1. $\displaystyle\sum_{n=1}^{\infty} \frac{n}{3^n}$
+
+## Punto 4. Series de potencias
+
+1. Halle el radio y el intervalo de convergencia de $\displaystyle\sum_{n=1}^{\infty} \frac{x^n}{n}$.
+1. Halle el radio y el intervalo de convergencia de $\displaystyle\sum_{n=0}^{\infty} \frac{(x-2)^n}{3^n}$.
+1. A partir de la serie de Maclaurin de $e^x$, escriba la serie de $e^{-x^2}$.
+1. Escriba los cuatro primeros términos no nulos de la serie de Maclaurin de $\sin x$ y úselos para aproximar $\sin(0.1)$.
+
+::: {.taller-nav}
+[← Cálculo integral](../../materias/calculo-integral.qmd)
+[Ver solucionario →](../../respuestas/calculo-integral/taller4.qmd){.btn .btn-outline-primary}
+:::

@@ -1,0 +1,55 @@
+---
+title: "Solucionario del taller 3"
+subtitle: "Transformada de Laplace"
+categories: ["Ecuaciones diferenciales"]
+---
+
+::: {.callout-tip title="Antes de mirar"}
+Intente resolver primero el [taller 3](../../talleres/ecuaciones-diferenciales/taller3.qmd) y use este solucionario para comparar sus respuestas.
+:::
+
+## Punto 1. Transformada de Laplace
+
+1. $\dfrac{3}{s} - \dfrac{2}{s^2} + \dfrac{2}{s^3}$
+1. $\dfrac{1}{s+3} + \dfrac{8}{s^2+4}$
+1. $\dfrac{1}{(s-2)^2}$
+1. $\dfrac{s-1}{(s-1)^2+9}$
+1. $\dfrac{s}{s^2-4}$, para $s > 2$
+
+## Punto 2. Transformada inversa
+
+1. $\dfrac{4}{s^3} = 2\cdot\dfrac{2!}{s^3} \Rightarrow 2t^2$
+1. $\dfrac{2s}{s^2+9} + \dfrac{3}{s^2+9} \Rightarrow 2\cos(3t) + \sin(3t)$
+1. $\dfrac{1}{s(s+2)} = \dfrac{1/2}{s} - \dfrac{1/2}{s+2} \Rightarrow \dfrac{1}{2}\left(1 - e^{-2t}\right)$
+1. Completando el cuadrado:
+    $$
+    \frac{s+5}{(s+1)^2+4} = \frac{s+1}{(s+1)^2+4} + 2\cdot\frac{2}{(s+1)^2+4} \Rightarrow e^{-t}\left(\cos 2t + 2\sin 2t\right)
+    $$
+1. $\dfrac{1}{(s-1)(s+3)} = \dfrac{1/4}{s-1} - \dfrac{1/4}{s+3} \Rightarrow \dfrac{1}{4}\left(e^{t} - e^{-3t}\right)$
+
+## Punto 3. Problemas de valor inicial
+
+1. $sY - 3 + 2Y = 0 \Rightarrow Y = \dfrac{3}{s+2} \Rightarrow y = 3e^{-2t}$
+1. Transformando:
+    $$
+    sY - Y = \frac{1}{s-2} \Rightarrow Y = \frac{1}{(s-1)(s-2)} = \frac{-1}{s-1} + \frac{1}{s-2}
+    $$
+    $y = e^{2t} - e^{t}$
+1. $s^2Y - s - 2 + 4Y = 0 \Rightarrow Y = \dfrac{s}{s^2+4} + \dfrac{2}{s^2+4} \Rightarrow y = \cos 2t + \sin 2t$
+1. $s^2Y - 1 - 3sY + 2Y = 0 \Rightarrow Y = \dfrac{1}{(s-1)(s-2)} \Rightarrow y = e^{2t} - e^{t}$
+1. $(s^2+1)Y = \dfrac{1}{s} \Rightarrow Y = \dfrac{1}{s(s^2+1)} = \dfrac{1}{s} - \dfrac{s}{s^2+1} \Rightarrow y = 1 - \cos t$
+
+## Punto 4. Función escalón y aplicaciones
+
+1. $\mathcal{L}\{u(t-2)\} = \dfrac{e^{-2s}}{s}$
+1. Por el segundo teorema de traslación: $(t-3)\,u(t-3)$
+1. Con los datos, $i' + 4i = 12$ e $i(0) = 0$:
+    $$
+    sI + 4I = \frac{12}{s} \Rightarrow I = \frac{12}{s(s+4)} = \frac{3}{s} - \frac{3}{s+4}
+    $$
+    $i(t) = 3\left(1 - e^{-4t}\right)$ A. Cuando $t \to \infty$, la corriente tiende a $3$ A.
+
+::: {.taller-nav}
+[← Volver al taller 3](../../talleres/ecuaciones-diferenciales/taller3.qmd)
+[Ecuaciones diferenciales](../../materias/ecuaciones-diferenciales.qmd){.btn .btn-outline-primary}
+:::

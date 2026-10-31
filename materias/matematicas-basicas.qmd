@@ -4,7 +4,7 @@ subtitle: "Materia 1 de 5"
 toc: false
 ---
 
-Operaciones, homogenización, factorización, ecuaciones, conjuntos, racionalización y funciones.
+Operaciones, homogenización, factorización, ecuaciones, conjuntos, racionalización, funciones, logaritmos y trigonometría.
 
 ## Talleres
 
@@ -15,3 +15,4 @@ Operaciones, homogenización, factorización, ecuaciones, conjuntos, racionaliza
 | 3 | Funciones y derivadas | [Abrir](../talleres/matematicas-basicas/taller3.qmd) | [Abrir](../respuestas/matematicas-basicas/taller3.qmd) |
 | 4 | MCD, MCM y problemas combinados | [Abrir](../talleres/matematicas-basicas/taller4.qmd) | [Abrir](../respuestas/matematicas-basicas/taller4.qmd) |
 | 5 | Factorización, homogenización y racionalización | [Abrir](../talleres/matematicas-basicas/taller5.qmd) | [Abrir](../respuestas/matematicas-basicas/taller5.qmd) |
+| 6 | Exponentes, logaritmos y trigonometría básica | [Abrir](../talleres/matematicas-basicas/taller6.qmd) | [Abrir](../respuestas/matematicas-basicas/taller6.qmd) |

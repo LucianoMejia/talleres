@@ -8,6 +8,7 @@ categories: ["Matemáticas básicas"]
 Resuelva cada ejercicio mostrando el desarrollo completo y simplifique al máximo. Entre corchetes aparece el puntaje de cada ejercicio.
 
 ## Punto 1. Factorización (18 pts)
+
 1. Factoriza: $81a^2-100b^2$. **[2 pts]**
 1. Factoriza: $x^3+2x^2-9x-18$. **[3 pts]**
 1. Factoriza: $15x^3y-25x^2y^2+5xy$. **[2 pts]**
@@ -17,6 +18,7 @@ Resuelva cada ejercicio mostrando el desarrollo completo y simplifique al máxim
 1. Factoriza: $27x^3+64y^3$. **[3 pts]**
 
 ## Punto 2. Homogenización (18 pts)
+
 1. Multiplica y simplifica: $\sqrt{3}\cdot\sqrt[3]{9}$. **[3 pts]**
 1. Lleva a índice común: $\sqrt{3}$ y $\sqrt[3]{5}$. **[2 pts]**
 1. Efectúa: $\dfrac{3}{x-2}-\dfrac{2}{x+2}$. **[3 pts]**
@@ -26,6 +28,7 @@ Resuelva cada ejercicio mostrando el desarrollo completo y simplifique al máxim
 1. Divide: $\dfrac{\sqrt[4]{8}}{\sqrt{2}}$. **[2 pts]**
 
 ## Punto 3. Racionalización (14 pts)
+
 1. Racionaliza: $\dfrac{6}{\sqrt{5}-\sqrt{2}}$. **[2 pts]**
 1. Racionaliza: $\dfrac{10}{\sqrt{5}}$. **[1 pt]**
 1. Racionaliza: $\dfrac{1}{1+\sqrt{2}+\sqrt{3}}$. **[3 pts]**

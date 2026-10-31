@@ -8,6 +8,7 @@ categories: ["Ecuaciones diferenciales"]
 Clasifique cada ecuación diferencial y resuélvala por el método apropiado. Indique claramente las condiciones iniciales y el dominio de la solución.
 
 ## Punto 1. Variables separables
+
 1. $\frac{dy}{dx}=xy$
 1. $\frac{dy}{dx}=\frac{2x}{1+y^2}$
 1. $\frac{dy}{dx}=\frac{y-1}{x+2}$
@@ -15,6 +16,7 @@ Clasifique cada ecuación diferencial y resuélvala por el método apropiado. In
 1. $\frac{dy}{dx}=\frac{x^2+1}{y^2+1}$, con $y(0)=0$
 
 ## Punto 2. Ecuaciones lineales de primer orden
+
 1. $y'+2y=e^{-x}$
 1. $y'-\frac{3}{x}y=x^2$, $x>0$
 1. $y'+y=\sin x$, con $y(0)=1$
@@ -23,16 +25,19 @@ Clasifique cada ecuación diferencial y resuélvala por el método apropiado. In
 
 ## Punto 3. Ecuaciones exactas
 Determine si son exactas y, si no lo son, proponga un posible factor integrante simple cuando aplique:
+
 1. $(2xy+y^2)\,dx+(x^2+2xy)\,dy=0$
 1. $(3x^2+y)\,dx+(x-4y)\,dy=0$
 1. $(y\cos x+2x)\,dx+(\sin x+3y^2)\,dy=0$
 
 ## Punto 4. Problemas de aplicación
+
 1. Crecimiento poblacional: $\frac{dP}{dt}=0.08P$, con $P(0)=1200$. Halle $P(t)$ y el tiempo para duplicarse.
 1. Enfriamiento de Newton: $\frac{dT}{dt}=-k(T-22)$, $T(0)=90$ y $T(10)=60$. Determine $k$ y $T(t)$.
 1. Mezclas: un tanque tiene 100 L con 5 kg de sal. Entra salmuera a 2 L/min con concentración de 0.1 kg/L y sale al mismo ritmo. Formule y resuelva la E.D. para la cantidad de sal $Q(t)$.
 
 ## Punto 5. Campo direccional y análisis cualitativo
+
 1. Para $y'=y(1-y)$, identifique puntos de equilibrio y su estabilidad.
 1. Para $y'=x-y$, describa el comportamiento cualitativo de soluciones cerca de la recta $y=x$.
 1. Para $y'=y^2-4$, analice en qué intervalos las soluciones crecen o decrecen.

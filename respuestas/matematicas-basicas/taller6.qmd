@@ -1,0 +1,81 @@
+---
+title: "Solucionario del taller 6"
+subtitle: "Exponentes, logaritmos y trigonometría básica"
+categories: ["Matemáticas básicas"]
+---
+
+::: {.callout-tip title="Antes de mirar"}
+Intente resolver primero el [taller 6](../../talleres/matematicas-basicas/taller6.qmd) y use este solucionario para comparar sus respuestas.
+:::
+
+## Punto 1. Propiedades de los exponentes
+
+1. $$
+    \frac{(2x^3y^{-2})^3}{4x^5y^{-4}} = \frac{8x^9y^{-6}}{4x^5y^{-4}} = 2x^{4}y^{-2} = \boxed{\frac{2x^4}{y^2}}
+    $$
+1. $$
+    \left(\frac{27a^6}{b^3}\right)^{2/3} = \frac{27^{2/3}\,a^{4}}{b^{2}} = \boxed{\frac{9a^4}{b^2}}
+    $$
+1. $$
+    \frac{3^{n+2}-3^n}{8\cdot 3^n} = \frac{3^n(9-1)}{8\cdot 3^n} = \boxed{1}
+    $$
+1. $$
+    16^{3/4}\cdot 8^{-2/3} = (2^4)^{3/4}\cdot(2^3)^{-2/3} = 2^3\cdot 2^{-2} = \boxed{2}
+    $$
+
+## Punto 2. Logaritmos
+
+1. $\log_2 32 + \log_3 \frac{1}{9} = 5 + (-2) = \boxed{3}$
+1. $\log 25 + \log 4 = \log 100 = \boxed{2}$
+1. $\ln e^5 - \ln 1 = 5 - 0 = \boxed{5}$
+1. $2\log_a x + 3\log_a y - \log_a z = \boxed{\log_a \dfrac{x^2y^3}{z}}$
+1. $\ln\dfrac{x^3\sqrt{y}}{z^2} = \boxed{3\ln x + \tfrac{1}{2}\ln y - 2\ln z}$
+
+## Punto 3. Ecuaciones exponenciales y logarítmicas
+
+1. $2^{x+1} = 2^4 \Rightarrow x + 1 = 4 \Rightarrow \boxed{x = 3}$
+1. $3^{2x-1} = 3^3 \Rightarrow 2x - 1 = 3 \Rightarrow \boxed{x = 2}$
+1. $2x = \ln 7 \Rightarrow \boxed{x = \dfrac{\ln 7}{2} \approx 0.973}$
+1. $x + 3 = 2^4 = 16 \Rightarrow \boxed{x = 13}$
+1. Con $x > 3$:
+    $$
+    \begin{aligned}
+    \log[x(x-3)] &= 1 \\
+    x^2 - 3x - 10 &= 0 \\
+    (x-5)(x+2) &= 0
+    \end{aligned}
+    $$
+    $x = -2$ no está en el dominio, así que $\boxed{x = 5}$.
+1. Tomando logaritmo natural:
+    $$
+    \begin{aligned}
+    x\ln 5 &= (x+1)\ln 3 \\
+    x(\ln 5 - \ln 3) &= \ln 3 \\
+    x &= \frac{\ln 3}{\ln(5/3)} \approx 2.15
+    \end{aligned}
+    $$
+
+## Punto 4. Trigonometría
+
+1. $150^\circ = 150\cdot\dfrac{\pi}{180} = \boxed{\dfrac{5\pi}{6}}$ y $\dfrac{7\pi}{4}\cdot\dfrac{180^\circ}{\pi} = \boxed{315^\circ}$.
+1. $\sin\dfrac{2\pi}{3} = \dfrac{\sqrt{3}}{2}$, $\cos\dfrac{3\pi}{4} = -\dfrac{\sqrt{2}}{2}$, $\tan\dfrac{5\pi}{3} = -\sqrt{3}$.
+1. $\cos^2\theta = 1 - \dfrac{9}{25} = \dfrac{16}{25}$. En el segundo cuadrante el coseno es negativo, así que $\cos\theta = -\dfrac{4}{5}$ y $\tan\theta = -\dfrac{3}{4}$.
+1. $$
+    \frac{1-\cos^2 x}{\sin x\cos x} = \frac{\sin^2 x}{\sin x\cos x} = \frac{\sin x}{\cos x} = \tan x
+    $$
+1. $\sin x = \dfrac{1}{2} \Rightarrow \boxed{x = \dfrac{\pi}{6}}$ o $\boxed{x = \dfrac{5\pi}{6}}$.
+1. $h = 6\sin 60^\circ = 6\cdot\dfrac{\sqrt{3}}{2} = 3\sqrt{3} \approx 5.20$ m.
+
+## Punto 5. Problemas de aplicación
+
+1. $A = 1\,000\,000\,(1.08)^5 \approx \boxed{\$1\,469\,328}$
+1. $N(t) = 500\cdot 2^{t/3}$. Para $N = 8000$:
+    $$
+    2^{t/3} = 16 = 2^4 \Rightarrow \frac{t}{3} = 4 \Rightarrow t = 12 \text{ horas}
+    $$
+1. $\text{pH} = -\log(10^{-4}) = \boxed{4}$. Si $\text{pH} = 9$, entonces $[\text{H}^+] = \boxed{10^{-9}}$.
+
+::: {.taller-nav}
+[← Volver al taller 6](../../talleres/matematicas-basicas/taller6.qmd)
+[Matemáticas básicas](../../materias/matematicas-basicas.qmd){.btn .btn-outline-primary}
+:::

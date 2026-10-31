@@ -4,7 +4,7 @@ subtitle: "Materia 5 de 5"
 toc: false
 ---
 
-Variables separables, ecuaciones lineales y exactas, ecuaciones de segundo orden, modelos aplicados y análisis cualitativo.
+Variables separables, ecuaciones lineales y exactas, ecuaciones de segundo orden, modelos aplicados, análisis cualitativo y transformada de Laplace.
 
 ## Talleres
 
@@ -12,3 +12,4 @@ Variables separables, ecuaciones lineales y exactas, ecuaciones de segundo orden
 |:-:|---|:-:|:-:|
 | 1 | Ecuaciones de primer orden y análisis cualitativo | [Abrir](../talleres/ecuaciones-diferenciales/taller1.qmd) | [Abrir](../respuestas/ecuaciones-diferenciales/taller1.qmd) |
 | 2 | Ecuaciones de segundo orden y modelación física | [Abrir](../talleres/ecuaciones-diferenciales/taller2.qmd) | [Abrir](../respuestas/ecuaciones-diferenciales/taller2.qmd) |
+| 3 | Transformada de Laplace | [Abrir](../talleres/ecuaciones-diferenciales/taller3.qmd) | [Abrir](../respuestas/ecuaciones-diferenciales/taller3.qmd) |

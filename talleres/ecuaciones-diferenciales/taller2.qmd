@@ -8,6 +8,7 @@ categories: ["Ecuaciones diferenciales"]
 Resuelva cada ecuación diferencial de segundo orden indicando el tipo de solución (homogénea, particular, general o con condiciones iniciales).
 
 ## Punto 1. Ecuaciones lineales homogéneas con coeficientes constantes
+
 1. $y''-5y'+6y=0$
 1. $y''+4y'+4y=0$
 1. $y''+9y=0$
@@ -16,6 +17,7 @@ Resuelva cada ecuación diferencial de segundo orden indicando el tipo de soluci
 
 ## Punto 2. Ecuaciones no homogéneas
 Use coeficientes indeterminados o variacion de parametros:
+
 1. $y''-3y'+2y=e^x$
 1. $y''+y=\cos(2x)$
 1. $y''-4y=3x$
@@ -23,16 +25,19 @@ Use coeficientes indeterminados o variacion de parametros:
 1. $y''+y=\tan x$ (sugerencia: variacion de parametros)
 
 ## Punto 3. Problemas con condiciones iniciales
+
 1. $y''+2y'+5y=0$, $y(0)=0$, $y'(0)=4$
 1. $y''-y'-6y=0$, $y(0)=3$, $y'(0)=-1$
 1. $y''+16y=32\sin(4x)$, $y(0)=1$, $y'(0)=0$
 
 ## Punto 4. Modelación física
+
 1. Sistema masa-resorte sin amortiguamiento: $m=1$, $k=9$, $x(0)=2$, $x'(0)=0$. Formule y resuelva la ecuación del movimiento.
 1. Sistema masa-resorte con amortiguamiento: $x''+4x'+13x=0$, $x(0)=1$, $x'(0)=-1$. Interprete el tipo de amortiguamiento.
 1. Circuito RLC simplificado: $q''+6q'+25q=0$, $q(0)=0$, $q'(0)=5$. Encuentre la carga $q(t)$.
 
 ## Punto 5. Sistema de ecuaciones diferenciales
+
 1. Resuelva el sistema:
     $$
 \begin{aligned}

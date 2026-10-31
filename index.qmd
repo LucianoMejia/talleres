@@ -10,11 +10,11 @@ Bienvenido. Aquí encuentra los talleres de cada materia en el orden en que se e
 
 | # | Materia | Contenido | Talleres |
 |:-:|---|---|:-:|
-| 1 | [Matemáticas básicas](materias/matematicas-basicas.qmd) | Operaciones, factorización, ecuaciones, conjuntos y funciones | 5 |
-| 2 | [Cálculo diferencial](materias/calculo-diferencial.qmd) | Límites, derivadas y regla de L'Hôpital | 1 |
-| 3 | [Cálculo integral](materias/calculo-integral.qmd) | Técnicas de integración, áreas y volúmenes | 3 |
-| 4 | [Álgebra lineal](materias/algebra-lineal.qmd) | Sistemas de ecuaciones, matrices y determinantes | 1 |
-| 5 | [Ecuaciones diferenciales](materias/ecuaciones-diferenciales.qmd) | Ecuaciones de primer y segundo orden, modelación | 2 |
+| 1 | [Matemáticas básicas](materias/matematicas-basicas.qmd) | Operaciones, factorización, ecuaciones, conjuntos, funciones, logaritmos y trigonometría | 6 |
+| 2 | [Cálculo diferencial](materias/calculo-diferencial.qmd) | Límites, regla de L'Hôpital y reglas de derivación | 2 |
+| 3 | [Cálculo integral](materias/calculo-integral.qmd) | Técnicas de integración, áreas, volúmenes y series | 4 |
+| 4 | [Álgebra lineal](materias/algebra-lineal.qmd) | Sistemas de ecuaciones, matrices, inversa, determinantes y vectores | 2 |
+| 5 | [Ecuaciones diferenciales](materias/ecuaciones-diferenciales.qmd) | Primer y segundo orden, modelación y transformada de Laplace | 3 |
 
 ## Cómo trabajar los talleres
 

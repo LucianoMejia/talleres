@@ -9,6 +9,7 @@ Resuelva cada uno de los siguientes ejercicios mostrando todo el proceso. Presen
 
 ## Punto 1. Jerarquía de operaciones
 Resuelva las siguientes expresiones respetando la jerarquía de operaciones:
+
 1. $5 + 3 \times 2^2 - 8 \div 4$
 1. $\left(12 - 3\right) \times 2 + 5^2 \div 5$
 1. $\frac{15 + 3 \times 4}{9 - 2^2}$
@@ -17,6 +18,7 @@ Resuelva las siguientes expresiones respetando la jerarquía de operaciones:
 
 ## Punto 2. Homogenización
 Simplifique las siguientes expresiones algebraicas combinando términos semejantes:
+
 1. $5x + 3y - 2x + 7y - x$
 1. $4a^2 - 3ab + 2b^2 + 5ab - a^2 + 3b^2$
 1. $\frac{2x}{3} + \frac{x}{4} - \frac{5x}{6}$
@@ -25,6 +27,7 @@ Simplifique las siguientes expresiones algebraicas combinando términos semejant
 
 ## Punto 3. Factorización
 Factorice completamente las siguientes expresiones:
+
 1. $x^2 + 5x + 6$
 1. $4x^2 - 9$
 1. $x^2 - 6x + 9$
@@ -36,6 +39,7 @@ Factorice completamente las siguientes expresiones:
 
 ## Punto 4. Ecuaciones
 Resuelva las siguientes ecuaciones:
+
 1. $3x + 7 = 22$
 1. $\frac{2x - 3}{4} = \frac{x + 1}{2}$
 1. $x^2 - 5x + 6 = 0$
@@ -47,6 +51,7 @@ Resuelva las siguientes ecuaciones:
 
 ## Punto 5. Problemas de aplicación
 Resuelva los siguientes problemas planteando y resolviendo la ecuación correspondiente:
+
 1. La suma de dos números consecutivos es 47. ¿Cuáles son esos números?
 1. Un rectángulo tiene un perímetro de 36 metros. Si el largo es el doble del ancho, encuentre las dimensiones del rectángulo.
 1. Pedro tiene el triple de la edad de Juan. Si dentro de 8 años la suma de sus edades será 56 años, ¿cuál es la edad actual de cada uno?
