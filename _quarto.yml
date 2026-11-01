@@ -13,7 +13,7 @@ lang: es
 website:
   title: "Talleres de matemáticas"
   description: "Talleres, solucionarios y explicaciones de matemáticas"
-  favicon: logo_unal.png
+  favicon: favicon.svg
   search:
     location: navbar
     type: overlay

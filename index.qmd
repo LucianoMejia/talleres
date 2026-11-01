@@ -4,6 +4,12 @@ subtitle: "Talleres, solucionarios y explicaciones para practicar"
 toc: false
 ---
 
+![](logo_unal.png){fig-alt="Logo de la Universidad Nacional de Colombia" width="340px" fig-align="center"}
+
+::: {.autor}
+Página creada por **José Luciano Mejía Arias** con talleres para estudiar matemáticas.
+:::
+
 Bienvenido. Aquí encuentra los talleres de cada materia en el orden en que se estudian. Cada taller tiene su solucionario para que pueda revisar su trabajo.
 
 ## Materias

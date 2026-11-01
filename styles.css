@@ -106,3 +106,9 @@ td .katex {
     padding-right: 1rem;
   }
 }
+
+.autor {
+  text-align: center;
+  color: var(--muted);
+  margin: 0.5rem 0 2rem;
+}
