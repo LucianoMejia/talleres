@@ -10,45 +10,114 @@ Intente resolver primero el [taller 1](../../talleres/calculo-integral/taller1.q
 
 ## Punto 1. Integrales indefinidas básicas
 
-1. $\int (6x^5 - 4x^2 + 7)\,dx = x^6 - \frac{4}{3}x^3 + 7x + C$.
-1. $\int \left(\frac{5}{x} - 3\sqrt{x} + \frac{2}{x^2}\right)\,dx = 5\ln|x| - 2x^{3/2} - \frac{2}{x} + C$.
-1. $\int (4e^{2x} - 3\cos x)\,dx = 2e^{2x} - 3\sin x + C$.
-1. $\int \left(\sec^2 x + 5\csc x\cot x\right)\,dx = \tan x - 5\csc x + C$.
-1. $\int (2x+1)^7\,dx = \frac{(2x+1)^8}{16} + C$.
-1. $\int \frac{3x^2+1}{x^3+x+4}\,dx = \ln|x^3+x+4| + C$.
+1. Regla de la potencia término a término:
+    $$
+    \int (6x^5 - 4x^2 + 7)\,dx = 6\cdot\frac{x^6}{6} - 4\cdot\frac{x^3}{3} + 7x + C = \boxed{x^6 - \frac{4}{3}x^3 + 7x + C}
+    $$
+1. Se escribe $\sqrt{x} = x^{1/2}$ y $\frac{2}{x^2} = 2x^{-2}$:
+    $$
+    \int \left(\frac{5}{x} - 3x^{1/2} + 2x^{-2}\right)dx = 5\ln|x| - 3\cdot\frac{x^{3/2}}{3/2} + 2\cdot\frac{x^{-1}}{-1} + C = \boxed{5\ln|x| - 2x^{3/2} - \frac{2}{x} + C}
+    $$
+1. Usando $\int e^{2x}dx = \frac{1}{2}e^{2x}$ y $\int \cos x\,dx = \sin x$:
+    $$
+    \int (4e^{2x} - 3\cos x)\,dx = \boxed{2e^{2x} - 3\sin x + C}
+    $$
+1. Como $(\tan x)' = \sec^2 x$ y $(\csc x)' = -\csc x\cot x$:
+    $$
+    \int \left(\sec^2 x + 5\csc x\cot x\right)dx = \boxed{\tan x - 5\csc x + C}
+    $$
+1. Con $u = 2x+1$, $du = 2\,dx$:
+    $$
+    \int (2x+1)^7\,dx = \frac{1}{2}\int u^7\,du = \frac{1}{2}\cdot\frac{u^8}{8} + C = \boxed{\frac{(2x+1)^8}{16} + C}
+    $$
+1. El numerador es la derivada del denominador. Con $u = x^3+x+4$, $du = (3x^2+1)\,dx$:
+    $$
+    \int \frac{du}{u} = \boxed{\ln|x^3+x+4| + C}
+    $$
 
 ## Punto 2. Sustitución
 
-1. $\int x\sqrt{x^2+9}\,dx = \frac{1}{3}(x^2+9)^{3/2} + C$.
-1. $\int \frac{2x-1}{x^2-x+5}\,dx = \ln(x^2-x+5) + C$.
-1. $\int \frac{\cos(3x)}{1+\sin(3x)}\,dx = \frac{1}{3}\ln|1+\sin(3x)| + C$.
-1. $\int \frac{e^{\sqrt{x}}}{\sqrt{x}}\,dx = 2e^{\sqrt{x}} + C$.
-1. $\int \frac{1}{x\ln x}\,dx = \ln(\ln x) + C$, $x>1$.
+1. Con $u = x^2+9$, $du = 2x\,dx$:
+    $$
+    \int x\sqrt{x^2+9}\,dx = \frac{1}{2}\int u^{1/2}\,du = \frac{1}{2}\cdot\frac{2}{3}u^{3/2} + C = \boxed{\frac{1}{3}(x^2+9)^{3/2} + C}
+    $$
+1. Con $u = x^2-x+5$, $du = (2x-1)\,dx$. Como $x^2-x+5 = \left(x-\frac{1}{2}\right)^2 + \frac{19}{4} > 0$, no hace falta el valor absoluto:
+    $$
+    \int \frac{du}{u} = \boxed{\ln(x^2-x+5) + C}
+    $$
+1. Con $u = 1+\sin(3x)$, $du = 3\cos(3x)\,dx$:
+    $$
+    \int \frac{\cos(3x)}{1+\sin(3x)}\,dx = \frac{1}{3}\int \frac{du}{u} = \boxed{\frac{1}{3}\ln|1+\sin(3x)| + C}
+    $$
+1. Con $u = \sqrt{x}$, $du = \dfrac{dx}{2\sqrt{x}}$:
+    $$
+    \int \frac{e^{\sqrt{x}}}{\sqrt{x}}\,dx = 2\int e^u\,du = \boxed{2e^{\sqrt{x}} + C}
+    $$
+1. Con $u = \ln x$, $du = \dfrac{dx}{x}$; como $x>1$, $\ln x > 0$:
+    $$
+    \int \frac{1}{x\ln x}\,dx = \int \frac{du}{u} = \boxed{\ln(\ln x) + C}
+    $$
 
 ## Punto 3. Integrales trigonométricas elementales
 
-1. $\int \sin(4x)\,dx = -\frac{1}{4}\cos(4x) + C$.
-1. $\int \cos^3 x\sin x\,dx = -\frac{\cos^4 x}{4} + C$.
-1. $\int \tan x\,dx = \ln|\sec x| + C$.
-1. $\int \sec x(\sec x+\tan x)\,dx = \tan x + \sec x + C$.
-1. $\int \frac{dx}{1+\cos x} = \tan\left(\frac{x}{2}\right) + C$.
+1. Con $u = 4x$, $du = 4\,dx$:
+    $$
+    \int \sin(4x)\,dx = \frac{1}{4}\int \sin u\,du = \boxed{-\frac{1}{4}\cos(4x) + C}
+    $$
+1. Con $u = \cos x$, $du = -\sin x\,dx$:
+    $$
+    \int \cos^3 x\sin x\,dx = -\int u^3\,du = \boxed{-\frac{\cos^4 x}{4} + C}
+    $$
+1. Se escribe $\tan x = \dfrac{\sin x}{\cos x}$ y se toma $u = \cos x$, $du = -\sin x\,dx$:
+    $$
+    \int \tan x\,dx = -\int \frac{du}{u} = -\ln|\cos x| + C = \boxed{\ln|\sec x| + C}
+    $$
+1. Se distribuye y se usan derivadas conocidas:
+    $$
+    \int (\sec^2 x + \sec x\tan x)\,dx = \boxed{\tan x + \sec x + C}
+    $$
+1. Usando $1+\cos x = 2\cos^2\left(\frac{x}{2}\right)$:
+    $$
+    \int \frac{dx}{1+\cos x} = \frac{1}{2}\int \sec^2\left(\frac{x}{2}\right)dx = \boxed{\tan\left(\frac{x}{2}\right) + C}
+    $$
 
 ## Punto 4. Integrales definidas básicas
 
-1. $\int_0^2 (3x^2-4x+1)\,dx = 2$.
-1. $\int_{-1}^{1} (x^3+2x^2)\,dx = \frac{4}{3}$.
-1. $\int_0^{\pi/2} \sin x\,dx = 1$.
-1. $\int_1^{e} \frac{1}{x}\,dx = 1$.
-1. $\int_0^1 \frac{2x}{x^2+1}\,dx = \ln 2$.
+1. Antiderivada $x^3 - 2x^2 + x$:
+    $$
+    \int_0^2 (3x^2-4x+1)\,dx = \left[x^3-2x^2+x\right]_0^2 = 8 - 8 + 2 = \boxed{2}
+    $$
+1. $x^3$ es impar, así que su integral en $[-1,1]$ es $0$; $2x^2$ es par:
+    $$
+    \int_{-1}^{1} (x^3+2x^2)\,dx = 0 + 2\int_0^1 2x^2\,dx = 4\cdot\frac{1}{3} = \boxed{\frac{4}{3}}
+    $$
+1. Antiderivada $-\cos x$:
+    $$
+    \int_0^{\pi/2} \sin x\,dx = \left[-\cos x\right]_0^{\pi/2} = 0 - (-1) = \boxed{1}
+    $$
+1. Antiderivada $\ln x$:
+    $$
+    \int_1^{e} \frac{1}{x}\,dx = \ln e - \ln 1 = \boxed{1}
+    $$
+1. Con $u = x^2+1$, $du = 2x\,dx$:
+    $$
+    \int_0^1 \frac{2x}{x^2+1}\,dx = \left[\ln(x^2+1)\right]_0^1 = \ln 2 - \ln 1 = \boxed{\ln 2}
+    $$
 
 ## Punto 5. Aplicaciones cortas
 
-1. Si $f'(x)=6x^2-4x+3$, entonces $f(x)=2x^3-2x^2+3x+C$. Con $f(1)=5$ se obtiene $C=2$. Por tanto,
-    $$f(x)=2x^3-2x^2+3x+2.$$
-1. Area bajo $y=2x+1$ entre $0$ y $4$:
-    $$A=\int_0^4 (2x+1)\,dx = [x^2+x]_0^4 = 20.$$
-1. Area bajo $y=x^2$ en $[0,3]$:
-    $$A=\int_0^3 x^2\,dx = \left[\frac{x^3}{3}\right]_0^3 = 9.$$
+1. Si $f'(x)=6x^2-4x+3$, entonces $f(x)=2x^3-2x^2+3x+C$. Con $f(1)=5$ se obtiene $2 - 2 + 3 + C = 5$, es decir, $C=2$. Por tanto,
+    $$
+    \boxed{f(x)=2x^3-2x^2+3x+2}
+    $$
+1. La recta $y=2x+1$ es positiva en $[0,4]$, así que el área es la integral:
+    $$
+    A=\int_0^4 (2x+1)\,dx = \left[x^2+x\right]_0^4 = 16 + 4 = \boxed{20}
+    $$
+1. Como $x^2 \ge 0$ en $[0,3]$:
+    $$
+    A=\int_0^3 x^2\,dx = \left[\frac{x^3}{3}\right]_0^3 = \boxed{9}
+    $$
 
 ::: {.taller-nav}
 [← Volver al taller 1](../../talleres/calculo-integral/taller1.qmd)

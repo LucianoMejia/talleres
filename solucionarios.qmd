@@ -1,0 +1,51 @@
+---
+title: "Solucionarios"
+subtitle: "Todas las respuestas, organizadas por materia"
+toc: false
+---
+
+::: {.callout-tip title="Antes de mirar"}
+Intente resolver cada taller por su cuenta y use el solucionario solo para comparar. En cualquier taller puede pasar al solucionario con la pestaña **Solucionario** que está arriba del enunciado.
+:::
+
+## 1. Matemáticas básicas
+
+| Taller | Tema | Enunciado | Respuestas |
+|:-:|---|:-:|:-:|
+| 1 | Operaciones, álgebra y ecuaciones | [Enunciado](talleres/matematicas-basicas/taller1.qmd) | [Solucionario](respuestas/matematicas-basicas/taller1.qmd) |
+| 2 | Racionalización, inecuaciones y conjuntos | [Enunciado](talleres/matematicas-basicas/taller2.qmd) | [Solucionario](respuestas/matematicas-basicas/taller2.qmd) |
+| 3 | Funciones y derivadas | [Enunciado](talleres/matematicas-basicas/taller3.qmd) | [Solucionario](respuestas/matematicas-basicas/taller3.qmd) |
+| 4 | MCD, MCM y problemas combinados | [Enunciado](talleres/matematicas-basicas/taller4.qmd) | [Solucionario](respuestas/matematicas-basicas/taller4.qmd) |
+| 5 | Factorización, homogenización y racionalización | [Enunciado](talleres/matematicas-basicas/taller5.qmd) | [Solucionario](respuestas/matematicas-basicas/taller5.qmd) |
+| 6 | Exponentes, logaritmos y trigonometría básica | [Enunciado](talleres/matematicas-basicas/taller6.qmd) | [Solucionario](respuestas/matematicas-basicas/taller6.qmd) |
+
+## 2. Cálculo diferencial
+
+| Taller | Tema | Enunciado | Respuestas |
+|:-:|---|:-:|:-:|
+| 1 | Límites y regla de L'Hôpital | [Enunciado](talleres/calculo-diferencial/taller1.qmd) | [Solucionario](respuestas/calculo-diferencial/taller1.qmd) |
+| 2 | Reglas de derivación y aplicaciones | [Enunciado](talleres/calculo-diferencial/taller2.qmd) | [Solucionario](respuestas/calculo-diferencial/taller2.qmd) |
+
+## 3. Cálculo integral
+
+| Taller | Tema | Enunciado | Respuestas |
+|:-:|---|:-:|:-:|
+| 1 | Integrales básicas, sustitución y aplicaciones | [Enunciado](talleres/calculo-integral/taller1.qmd) | [Solucionario](respuestas/calculo-integral/taller1.qmd) |
+| 2 | Integrales definidas, áreas y volúmenes | [Enunciado](talleres/calculo-integral/taller2.qmd) | [Solucionario](respuestas/calculo-integral/taller2.qmd) |
+| 3 | Integración por partes, fracciones parciales e impropias | [Enunciado](talleres/calculo-integral/taller3.qmd) | [Solucionario](respuestas/calculo-integral/taller3.qmd) |
+| 4 | Sucesiones y series | [Enunciado](talleres/calculo-integral/taller4.qmd) | [Solucionario](respuestas/calculo-integral/taller4.qmd) |
+
+## 4. Álgebra lineal
+
+| Taller | Tema | Enunciado | Respuestas |
+|:-:|---|:-:|:-:|
+| 1 | Sistemas, eliminación de Gauss y determinantes | [Enunciado](talleres/algebra-lineal/taller1.qmd) | [Solucionario](respuestas/algebra-lineal/taller1.qmd) |
+| 2 | Matrices, inversa, regla de Cramer y vectores | [Enunciado](talleres/algebra-lineal/taller2.qmd) | [Solucionario](respuestas/algebra-lineal/taller2.qmd) |
+
+## 5. Ecuaciones diferenciales
+
+| Taller | Tema | Enunciado | Respuestas |
+|:-:|---|:-:|:-:|
+| 1 | Ecuaciones de primer orden y análisis cualitativo | [Enunciado](talleres/ecuaciones-diferenciales/taller1.qmd) | [Solucionario](respuestas/ecuaciones-diferenciales/taller1.qmd) |
+| 2 | Ecuaciones de segundo orden y modelación física | [Enunciado](talleres/ecuaciones-diferenciales/taller2.qmd) | [Solucionario](respuestas/ecuaciones-diferenciales/taller2.qmd) |
+| 3 | Transformada de Laplace | [Enunciado](talleres/ecuaciones-diferenciales/taller3.qmd) | [Solucionario](respuestas/ecuaciones-diferenciales/taller3.qmd) |

@@ -10,47 +10,135 @@ Intente resolver primero el [taller 3](../../talleres/calculo-integral/taller3.q
 
 ## Punto 1. Integración por partes
 
-1. $\int x e^x\,dx = e^x(x-1)+C$.
-1. $\int x\ln x\,dx = \frac{x^2}{2}\ln x-\frac{x^2}{4}+C$.
-1. $\int x^2\cos x\,dx = x^2\sin x+2x\cos x-2\sin x+C$.
-1. $\int e^{2x}\sin x\,dx = \frac{e^{2x}}{5}(2\sin x-\cos x)+C$.
-1. $\int \arctan x\,dx = x\arctan x-\frac{1}{2}\ln(1+x^2)+C$.
+1. Tome $u=x$, $dv=e^x\,dx$, de modo que $du=dx$ y $v=e^x$:
+    $$
+    \int x e^x\,dx = xe^x-\int e^x\,dx = \boxed{e^x(x-1)+C}
+    $$
+1. Tome $u=\ln x$, $dv=x\,dx$, de modo que $du=\frac{dx}{x}$ y $v=\frac{x^2}{2}$:
+    $$
+    \int x\ln x\,dx = \frac{x^2}{2}\ln x-\int \frac{x}{2}\,dx = \boxed{\frac{x^2}{2}\ln x-\frac{x^2}{4}+C}
+    $$
+1. Aplique partes dos veces. Primero $u=x^2$, $dv=\cos x\,dx$:
+    $$
+    \int x^2\cos x\,dx = x^2\sin x-2\int x\sin x\,dx.
+    $$
+    Luego $u=x$, $dv=\sin x\,dx$: $\int x\sin x\,dx=-x\cos x+\sin x$. Por tanto,
+    $$
+    \boxed{\int x^2\cos x\,dx = x^2\sin x+2x\cos x-2\sin x+C}
+    $$
+1. Sea $I=\int e^{2x}\sin x\,dx$. Con $u=e^{2x}$, $dv=\sin x\,dx$ y luego $u=e^{2x}$, $dv=\cos x\,dx$:
+    $$
+    I=-e^{2x}\cos x+2\int e^{2x}\cos x\,dx=-e^{2x}\cos x+2e^{2x}\sin x-4I.
+    $$
+    Despejando, $5I=e^{2x}(2\sin x-\cos x)$:
+    $$
+    \boxed{\int e^{2x}\sin x\,dx = \frac{e^{2x}}{5}(2\sin x-\cos x)+C}
+    $$
+1. Tome $u=\arctan x$, $dv=dx$, de modo que $du=\frac{dx}{1+x^2}$ y $v=x$:
+    $$
+    \int \arctan x\,dx = x\arctan x-\int\frac{x}{1+x^2}\,dx = \boxed{x\arctan x-\frac{1}{2}\ln(1+x^2)+C}
+    $$
 
 ## Punto 2. Fracciones parciales
 
-1. $\int \frac{3x+5}{x^2-1}\,dx = 4\ln|x-1|-\ln|x+1|+C$.
-1. $\int \frac{2x^2+3x+1}{x(x+1)(x+2)}\,dx = \frac{1}{2}\ln|x|+\frac{3}{2}\ln|x+2|+C$.
-1. $\int \frac{dx}{x^2+5x+6} = \ln|x+2|-\ln|x+3|+C$.
-1. $\int \frac{x+4}{(x-1)^2}\,dx = \ln|x-1|-\frac{5}{x-1}+C$.
-1. $\int \frac{4x}{x^2(x^2+1)}\,dx = 4\ln|x|-2\ln(x^2+1)+C$.
+1. Como $x^2-1=(x-1)(x+1)$, escriba $\frac{3x+5}{(x-1)(x+1)}=\frac{A}{x-1}+\frac{B}{x+1}$. Con $x=1$: $8=2A$, $A=4$; con $x=-1$: $2=-2B$, $B=-1$.
+    $$
+    \int \frac{3x+5}{x^2-1}\,dx = \boxed{4\ln|x-1|-\ln|x+1|+C}
+    $$
+1. El numerador se factoriza como $2x^2+3x+1=(2x+1)(x+1)$, así que para $x\neq -1$ la fracción se simplifica a $\frac{2x+1}{x(x+2)}=\frac{A}{x}+\frac{B}{x+2}$. Con $x=0$: $A=\frac{1}{2}$; con $x=-2$: $B=\frac{3}{2}$.
+    $$
+    \int \frac{2x^2+3x+1}{x(x+1)(x+2)}\,dx = \boxed{\frac{1}{2}\ln|x|+\frac{3}{2}\ln|x+2|+C}
+    $$
+1. Como $x^2+5x+6=(x+2)(x+3)$, se tiene $\frac{1}{(x+2)(x+3)}=\frac{1}{x+2}-\frac{1}{x+3}$:
+    $$
+    \int \frac{dx}{x^2+5x+6} = \boxed{\ln|x+2|-\ln|x+3|+C}
+    $$
+1. Escriba $\frac{x+4}{(x-1)^2}=\frac{A}{x-1}+\frac{B}{(x-1)^2}$. Entonces $x+4=A(x-1)+B$, de donde $A=1$ y $B=5$:
+    $$
+    \int \frac{x+4}{(x-1)^2}\,dx = \int\left(\frac{1}{x-1}+\frac{5}{(x-1)^2}\right)dx = \boxed{\ln|x-1|-\frac{5}{x-1}+C}
+    $$
+1. Simplificando, $\frac{4x}{x^2(x^2+1)}=\frac{4}{x(x^2+1)}=\frac{A}{x}+\frac{Bx+C}{x^2+1}$. Entonces $4=A(x^2+1)+(Bx+C)x$, de donde $A=4$, $B=-4$ y $C=0$:
+    $$
+    \int \frac{4x}{x^2(x^2+1)}\,dx = \int\left(\frac{4}{x}-\frac{4x}{x^2+1}\right)dx = \boxed{4\ln|x|-2\ln(x^2+1)+C}
+    $$
 
 ## Punto 3. Integrales trigonométricas y sustitución trigonométrica
 
-1. $$\int \sin^2 x\cos^2 x\,dx = \frac{x}{8}-\frac{\sin(4x)}{32}+C.$$
-1. $$\int \frac{dx}{\sqrt{9-x^2}} = \arcsin\left(\frac{x}{3}\right)+C.$$
-1. $$\int \sqrt{16-x^2}\,dx = \frac{x}{2}\sqrt{16-x^2}+8\arcsin\left(\frac{x}{4}\right)+C.$$
-1. $$\int \frac{x^2}{\sqrt{x^2+4}}\,dx = \frac{x}{2}\sqrt{x^2+4}-2\ln\left|x+\sqrt{x^2+4}\right|+C.$$
-1. Para $x>1$:
-    $$\int \frac{dx}{x^2\sqrt{x^2-1}} = \frac{\sqrt{x^2-1}}{x}+C.$$
+1. Use $\sin x\cos x=\frac{1}{2}\sin(2x)$ y $\sin^2(2x)=\frac{1-\cos(4x)}{2}$:
+    $$
+    \int \sin^2 x\cos^2 x\,dx = \frac{1}{4}\int\sin^2(2x)\,dx = \frac{1}{8}\int(1-\cos(4x))\,dx = \boxed{\frac{x}{8}-\frac{\sin(4x)}{32}+C}
+    $$
+1. Con $x=3\sin\theta$, $dx=3\cos\theta\,d\theta$ y $\sqrt{9-x^2}=3\cos\theta$:
+    $$
+    \int \frac{dx}{\sqrt{9-x^2}} = \int d\theta = \theta+C = \boxed{\arcsin\left(\frac{x}{3}\right)+C}
+    $$
+1. Con $x=4\sin\theta$, $dx=4\cos\theta\,d\theta$ y $\sqrt{16-x^2}=4\cos\theta$:
+    $$
+    \int 16\cos^2\theta\,d\theta = 8\theta+4\sin(2\theta)+C = 8\theta+8\sin\theta\cos\theta+C.
+    $$
+    Volviendo a $x$ con $\sin\theta=\frac{x}{4}$ y $\cos\theta=\frac{\sqrt{16-x^2}}{4}$:
+    $$
+    \boxed{\int \sqrt{16-x^2}\,dx = \frac{x}{2}\sqrt{16-x^2}+8\arcsin\left(\frac{x}{4}\right)+C}
+    $$
+1. Con $x=2\tan\theta$, $dx=2\sec^2\theta\,d\theta$ y $\sqrt{x^2+4}=2\sec\theta$:
+    $$
+    \int 4\tan^2\theta\sec\theta\,d\theta = 4\int(\sec^3\theta-\sec\theta)\,d\theta = 2\sec\theta\tan\theta-2\ln|\sec\theta+\tan\theta|+C.
+    $$
+    Volviendo a $x$ (la constante $\ln 2$ se absorbe en $C$):
+    $$
+    \boxed{\int \frac{x^2}{\sqrt{x^2+4}}\,dx = \frac{x}{2}\sqrt{x^2+4}-2\ln\left|x+\sqrt{x^2+4}\right|+C}
+    $$
+1. Para $x>1$, con $x=\sec\theta$, $dx=\sec\theta\tan\theta\,d\theta$ y $\sqrt{x^2-1}=\tan\theta$:
+    $$
+    \int \frac{\sec\theta\tan\theta}{\sec^2\theta\tan\theta}\,d\theta = \int\cos\theta\,d\theta = \sin\theta+C.
+    $$
+    Como $\sin\theta=\frac{\sqrt{x^2-1}}{x}$:
+    $$
+    \boxed{\int \frac{dx}{x^2\sqrt{x^2-1}} = \frac{\sqrt{x^2-1}}{x}+C}
+    $$
 
 ## Punto 4. Integrales impropias
 
-1. $$\int_1^{\infty} \frac{1}{x^p}\,dx$$
-    converge si y solo si $p>1$, y en ese caso su valor es
-    $$\frac{1}{p-1}.$$
-1. $\int_0^1 \frac{1}{\sqrt{x}}\,dx = 2$.
-1. $\int_0^{\infty} e^{-2x}\,dx = \frac{1}{2}$.
-1. $\int_{-\infty}^{\infty} \frac{1}{x^2+1}\,dx = \pi$.
+1. Para $p\neq 1$:
+    $$
+    \int_1^{b} x^{-p}\,dx = \frac{b^{1-p}-1}{1-p},
+    $$
+    que tiende a $\frac{1}{p-1}$ si $p>1$ y a $\infty$ si $p<1$. Para $p=1$, $\int_1^b \frac{dx}{x}=\ln b\to\infty$. Por tanto,
+    $$
+    \boxed{\int_1^{\infty} \frac{dx}{x^p}=\frac{1}{p-1}\ \text{si } p>1;\ \text{diverge si } p\le 1}
+    $$
+1. El integrando no está acotado en $x=0$:
+    $$
+    \int_0^1 \frac{dx}{\sqrt{x}} = \lim_{a\to 0^+}\left[2\sqrt{x}\right]_a^1 = \lim_{a\to 0^+}(2-2\sqrt{a}) = \boxed{2}
+    $$
+1. $$
+    \int_0^{\infty} e^{-2x}\,dx = \lim_{b\to\infty}\left[-\frac{e^{-2x}}{2}\right]_0^b = \lim_{b\to\infty}\frac{1-e^{-2b}}{2} = \boxed{\frac{1}{2}}
+    $$
+1. Separe en $x=0$:
+    $$
+    \int_{-\infty}^{\infty} \frac{dx}{x^2+1} = \lim_{a\to-\infty}\left(0-\arctan a\right)+\lim_{b\to\infty}\left(\arctan b-0\right) = \frac{\pi}{2}+\frac{\pi}{2} = \boxed{\pi}
+    $$
 
 ## Punto 5. Aplicaciones de la integral
 
-1. Si $v(t)=3t^2-6t+2$ y $s(0)=5$:
-    $$s(t)=\int (3t^2-6t+2)\,dt=t^3-3t^2+2t+C, \quad C=5,$$
-    $$s(t)=t^3-3t^2+2t+5.$$
-1. Trabajo en el resorte:
-    $$W=\int_0^{0.2}120x\,dx=60x^2\Big|_0^{0.2}=2.4\ \text{J}.$$
-1. Si $C'(q)=0.04q+15$ y $C(0)=800$:
-    $$C(q)=0.02q^2+15q+800.$$
+1. Integre la velocidad y use la condición inicial:
+    $$
+    s(t)=\int (3t^2-6t+2)\,dt=t^3-3t^2+2t+C, \qquad s(0)=C=5,
+    $$
+    $$
+    \boxed{s(t)=t^3-3t^2+2t+5}
+    $$
+1. El trabajo es la integral de la fuerza:
+    $$
+    W=\int_0^{0.2}120x\,dx=60x^2\Big|_0^{0.2}=60(0.04)=\boxed{2.4\ \text{J}}
+    $$
+1. Integre el costo marginal y use $C(0)=800$:
+    $$
+    C(q)=\int(0.04q+15)\,dq=0.02q^2+15q+K, \qquad C(0)=K=800,
+    $$
+    $$
+    \boxed{C(q)=0.02q^2+15q+800}
+    $$
 
 ::: {.taller-nav}
 [← Volver al taller 3](../../talleres/calculo-integral/taller3.qmd)

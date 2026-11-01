@@ -10,54 +10,134 @@ Intente resolver primero el [taller 1](../../talleres/ecuaciones-diferenciales/t
 
 ## Punto 1. Variables separables
 
-1. $\dfrac{dy}{dx}=xy \Rightarrow y=Ce^{x^2/2}$.
-1. $\dfrac{dy}{dx}=\dfrac{2x}{1+y^2} \Rightarrow y+\dfrac{y^3}{3}=x^2+C$.
-1. $\dfrac{dy}{dx}=\dfrac{y-1}{x+2} \Rightarrow y=1+C(x+2)$.
-1. $\dfrac{dy}{dx}=e^{x-y} \Rightarrow e^y=e^x+C \Rightarrow y=\ln(e^x+C)$.
-1. $\dfrac{dy}{dx}=\dfrac{x^2+1}{y^2+1},\ y(0)=0$:
-    $$\frac{y^3}{3}+y=\frac{x^3}{3}+x+C,\quad C=0.$$
+1. $\dfrac{dy}{dx}=xy$. Separando e integrando ($y\neq 0$):
+    $$
+    \int\frac{dy}{y}=\int x\,dx \Rightarrow \ln|y|=\frac{x^2}{2}+C_0 \Rightarrow \boxed{y=Ce^{x^2/2}}
+    $$
+    Con $C=0$ se incluye la solución de equilibrio $y=0$.
+1. $\dfrac{dy}{dx}=\dfrac{2x}{1+y^2}$. Separando e integrando:
+    $$
+    \int(1+y^2)\,dy=\int 2x\,dx \Rightarrow \boxed{y+\frac{y^3}{3}=x^2+C}
+    $$
+1. $\dfrac{dy}{dx}=\dfrac{y-1}{x+2}$. Separando ($y\neq 1$, $x\neq -2$):
+    $$
+    \int\frac{dy}{y-1}=\int\frac{dx}{x+2} \Rightarrow \ln|y-1|=\ln|x+2|+C_0 \Rightarrow \boxed{y=1+C(x+2)}
+    $$
+    Con $C=0$ se recupera la solución constante $y=1$.
+1. $\dfrac{dy}{dx}=e^{x-y}=e^xe^{-y}$. Separando e integrando:
+    $$
+    \int e^y\,dy=\int e^x\,dx \Rightarrow e^y=e^x+C \Rightarrow \boxed{y=\ln(e^x+C)}
+    $$
+    válida donde $e^x+C>0$.
+1. $\dfrac{dy}{dx}=\dfrac{x^2+1}{y^2+1}$, $y(0)=0$. Separando e integrando:
+    $$
+    \int(y^2+1)\,dy=\int(x^2+1)\,dx \Rightarrow \frac{y^3}{3}+y=\frac{x^3}{3}+x+C
+    $$
+    Con $y(0)=0$ se obtiene $C=0$. Como $g(u)=\frac{u^3}{3}+u$ es estrictamente creciente, $g(y)=g(x)$ implica $y=x$:
+    $$
+    \boxed{y=x},\quad x\in\mathbb{R}
+    $$
 
 ## Punto 2. Ecuaciones lineales de primer orden
 
-1. $y'+2y=e^{-x}$:
-    $$y=e^{-x}+Ce^{-2x}.$$
-1. $y'-\frac{3}{x}y=x^2$, $x>0$:
-    $$y=x^3(\ln x+C).$$
-1. $y'+y=\sin x$, $y(0)=1$:
-    $$y=\frac{1}{2}(\sin x-\cos x)+\frac{3}{2}e^{-x}.$$
-1. $2y'+y=4x$:
-    $$y=4x-8+Ce^{-x/2}.$$
-1. $y'+\frac{1}{x}y=\ln x$, $x>0$:
-    $$y=\frac{x}{2}\ln x-\frac{x}{4}+\frac{C}{x}.$$
+1. $y'+2y=e^{-x}$. Factor integrante $\mu=e^{2x}$:
+    $$
+    (e^{2x}y)'=e^{x} \Rightarrow e^{2x}y=e^x+C \Rightarrow \boxed{y=e^{-x}+Ce^{-2x}}
+    $$
+1. $y'-\frac{3}{x}y=x^2$, $x>0$. Factor integrante $\mu=e^{-3\ln x}=x^{-3}$:
+    $$
+    \left(\frac{y}{x^3}\right)'=\frac{1}{x} \Rightarrow \frac{y}{x^3}=\ln x+C \Rightarrow \boxed{y=x^3(\ln x+C)}
+    $$
+1. $y'+y=\sin x$, $y(0)=1$. Factor integrante $\mu=e^{x}$:
+    $$
+    (e^{x}y)'=e^x\sin x \Rightarrow e^xy=\frac{e^x}{2}(\sin x-\cos x)+C \Rightarrow y=\frac{1}{2}(\sin x-\cos x)+Ce^{-x}
+    $$
+    Con $y(0)=1$: $-\frac{1}{2}+C=1$, así $C=\frac{3}{2}$:
+    $$
+    \boxed{y=\frac{1}{2}(\sin x-\cos x)+\frac{3}{2}e^{-x}}
+    $$
+1. $2y'+y=4x$. Dividiendo entre 2, $y'+\frac{1}{2}y=2x$, con $\mu=e^{x/2}$:
+    $$
+    (e^{x/2}y)'=2xe^{x/2} \Rightarrow e^{x/2}y=4xe^{x/2}-8e^{x/2}+C \Rightarrow \boxed{y=4x-8+Ce^{-x/2}}
+    $$
+1. $y'+\frac{1}{x}y=\ln x$, $x>0$. Factor integrante $\mu=x$:
+    $$
+    (xy)'=x\ln x \Rightarrow xy=\frac{x^2}{2}\ln x-\frac{x^2}{4}+C \Rightarrow \boxed{y=\frac{x}{2}\ln x-\frac{x}{4}+\frac{C}{x}}
+    $$
 
 ## Punto 3. Ecuaciones exactas
 
-1. Es exacta. Solución implicita:
-    $$x^2y+xy^2=C.$$
-1. Es exacta. Solución implicita:
-    $$x^3+xy-2y^2=C.$$
-1. Es exacta. Solución implicita:
-    $$y\sin x+x^2+y^3=C.$$
+1. $M=2xy+y^2$, $N=x^2+2xy$. Como $M_y=2x+2y=N_x$, es exacta. Integrando $M$ respecto a $x$:
+    $$
+    F=x^2y+xy^2+g(y),\quad F_y=x^2+2xy+g'(y)=N \Rightarrow g'(y)=0
+    $$
+    $$
+    \boxed{x^2y+xy^2=C}
+    $$
+1. $M=3x^2+y$, $N=x-4y$. Como $M_y=1=N_x$, es exacta. Integrando $M$ respecto a $x$:
+    $$
+    F=x^3+xy+g(y),\quad F_y=x+g'(y)=x-4y \Rightarrow g(y)=-2y^2
+    $$
+    $$
+    \boxed{x^3+xy-2y^2=C}
+    $$
+1. $M=y\cos x+2x$, $N=\sin x+3y^2$. Como $M_y=\cos x=N_x$, es exacta. Integrando $M$ respecto a $x$:
+    $$
+    F=y\sin x+x^2+g(y),\quad F_y=\sin x+g'(y)=\sin x+3y^2 \Rightarrow g(y)=y^3
+    $$
+    $$
+    \boxed{y\sin x+x^2+y^3=C}
+    $$
+
+Las tres ecuaciones son exactas, así que no se necesita factor integrante.
 
 ## Punto 4. Problemas de aplicación
 
-1. $\dfrac{dP}{dt}=0.08P$, $P(0)=1200$:
-    $$P(t)=1200e^{0.08t}.$$
-    Tiempo de duplicacion:
-    $$t_d=\frac{\ln 2}{0.08}\approx 8.66.$$
-1. $\dfrac{dT}{dt}=-k(T-22)$, $T(0)=90$, $T(10)=60$:
-    $$T(t)=22+68e^{-kt},$$
-    $$60=22+68e^{-10k}\Rightarrow k=\frac{1}{10}\ln\left(\frac{34}{19}\right)\approx 0.0582,$$
-    $$T(t)=22+68e^{-0.0582t}.$$
-1. Mezclas, $Q(0)=5$:
-    $$\frac{dQ}{dt}=0.2-0.02Q,$$
-    $$Q(t)=10-5e^{-0.02t}.$$
+1. $\dfrac{dP}{dt}=0.08P$, $P(0)=1200$. Es separable: $P=P(0)e^{0.08t}$. Para duplicarse, $2400=1200e^{0.08t}$, es decir, $e^{0.08t}=2$:
+    $$
+    \boxed{P(t)=1200e^{0.08t}},\qquad \boxed{t_d=\frac{\ln 2}{0.08}\approx 8.66}
+    $$
+    (en las unidades de tiempo del problema).
+1. $\dfrac{dT}{dt}=-k(T-22)$, $T(0)=90$, $T(10)=60$. Separando, $T-22=Ce^{-kt}$, y con $T(0)=90$ se obtiene $C=68$:
+    $$
+    T(t)=22+68e^{-kt}
+    $$
+    Con $T(10)=60$:
+    $$
+    60=22+68e^{-10k} \Rightarrow e^{-10k}=\frac{19}{34} \Rightarrow \boxed{k=\frac{1}{10}\ln\left(\frac{34}{19}\right)\approx 0.0582}
+    $$
+    $$
+    \boxed{T(t)=22+68e^{-0.0582t}}
+    $$
+1. Mezclas. Entra sal a $2\cdot 0.1=0.2$ kg/min y sale a $\frac{2}{100}Q$ kg/min (el volumen se mantiene en 100 L), con $Q(0)=5$:
+    $$
+    \frac{dQ}{dt}=0.2-0.02Q
+    $$
+    Es lineal: $Q=10+Ce^{-0.02t}$, y con $Q(0)=5$ se obtiene $C=-5$:
+    $$
+    \boxed{Q(t)=10-5e^{-0.02t}}
+    $$
+    A largo plazo $Q\to 10$ kg (concentración de $0.1$ kg/L).
 
 ## Punto 5. Campo direccional y análisis cualitativo
 
-1. Para $y'=y(1-y)$: equilibrios en $y=0$ y $y=1$. $y=0$ es inestable, $y=1$ es estable.
-1. Para $y'=x-y$: la pendiente es cero sobre la recta $y=x$ (isoclina). Encima de ella las pendientes son negativas y debajo positivas; las trayectorias tienden a acercarse a esa zona al avanzar en $x$.
-1. Para $y'=y^2-4=(y-2)(y+2)$: equilibrios en $y=\pm2$. Las soluciones crecen si $|y|>2$ y decrecen si $|y|<2$.
+1. $f(y)=y(1-y)=0$ da los equilibrios $y=0$ y $y=1$. Como $f'(y)=1-2y$, $f'(0)=1>0$ y $f'(1)=-1<0$:
+    $$
+    \boxed{y=0 \text{ inestable},\quad y=1 \text{ estable}}
+    $$
+1. Para $y'=x-y$, la pendiente es cero sobre la recta $y=x$ (isoclina); encima de ella las pendientes son negativas y debajo positivas. Resolviendo la ecuación lineal ($\mu=e^x$):
+    $$
+    y=x-1+Ce^{-x}
+    $$
+    Por lo tanto, todas las soluciones se acercan a la recta $y=x-1$ (que es solución) cuando $x\to\infty$; cruzan la recta $y=x$ con pendiente horizontal y quedan por debajo de ella:
+    $$
+    \boxed{y-(x-1)=Ce^{-x}\to 0 \text{ cuando } x\to\infty}
+    $$
+1. $y'=y^2-4=(y-2)(y+2)$, con equilibrios en $y=\pm2$. El signo de $y'$ es positivo si $|y|>2$ y negativo si $|y|<2$:
+    $$
+    \boxed{\text{crecen si } y<-2 \text{ o } y>2,\quad \text{decrecen si } -2<y<2}
+    $$
+    Así, $y=-2$ es estable y $y=2$ es inestable.
 
 ::: {.taller-nav}
 [← Volver al taller 1](../../talleres/ecuaciones-diferenciales/taller1.qmd)

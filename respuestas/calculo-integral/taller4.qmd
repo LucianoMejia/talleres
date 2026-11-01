@@ -10,45 +10,95 @@ Intente resolver primero el [taller 4](../../talleres/calculo-integral/taller4.q
 
 ## Punto 1. Sucesiones
 
-1. $\displaystyle\lim_{n\to\infty}\frac{3n+2}{n-1} = \lim_{n\to\infty}\frac{3+2/n}{1-1/n} = 3$. Converge a $3$.
-1. $\left|\dfrac{(-1)^n}{n}\right| = \dfrac{1}{n} \to 0$. Converge a $0$.
-1. $\displaystyle\lim_{n\to\infty}\left(1+\frac{2}{n}\right)^n = e^2$. Converge a $e^2$.
-1. Aplicando L'Hôpital dos veces a $\dfrac{x^2}{2^x}$: $\dfrac{2}{(\ln 2)^2\,2^x} \to 0$. Converge a $0$.
-1. $\cos(n\pi) = (-1)^n$ oscila entre $-1$ y $1$. Diverge.
+1. Divida numerador y denominador por $n$:
+    $$
+    \lim_{n\to\infty}\frac{3n+2}{n-1} = \lim_{n\to\infty}\frac{3+2/n}{1-1/n} = 3
+    $$
+    $\boxed{\text{Converge a } 3}$.
+1. Como $\left|\dfrac{(-1)^n}{n}\right| = \dfrac{1}{n} \to 0$, por el teorema del sándwich $a_n\to 0$. $\boxed{\text{Converge a } 0}$.
+1. Use el límite notable $\left(1+\frac{k}{n}\right)^n\to e^k$ con $k=2$:
+    $$
+    \lim_{n\to\infty}\left(1+\frac{2}{n}\right)^n = e^2
+    $$
+    $\boxed{\text{Converge a } e^2}$.
+1. Aplicando L'Hôpital dos veces a $f(x)=\dfrac{x^2}{2^x}$:
+    $$
+    \lim_{x\to\infty}\frac{x^2}{2^x} = \lim_{x\to\infty}\frac{2x}{(\ln 2)\,2^x} = \lim_{x\to\infty}\frac{2}{(\ln 2)^2\,2^x} = 0
+    $$
+    $\boxed{\text{Converge a } 0}$.
+1. $\cos(n\pi) = (-1)^n$ toma los valores $-1, 1, -1, 1, \dots$ y no se acerca a ningún número. $\boxed{\text{Diverge}}$.
 
 ## Punto 2. Series geométricas y telescópicas
 
-1. $r = \dfrac{2}{3}$: $\dfrac{1}{1-2/3} = \boxed{3}$
-1. $a = 5$, $r = -\dfrac{1}{4}$: $\dfrac{5}{1+1/4} = \boxed{4}$
-1. $$
+1. Geométrica con primer término $a=1$ y razón $r = \dfrac{2}{3}$, $|r|<1$:
+    $$
+    \sum_{n=0}^{\infty}\left(\frac{2}{3}\right)^n = \frac{1}{1-2/3} = \boxed{3}
+    $$
+1. Geométrica con $a = 5$ y $r = -\dfrac{1}{4}$, $|r|<1$:
+    $$
+    \sum_{n=1}^{\infty} 5\left(-\frac{1}{4}\right)^{n-1} = \frac{5}{1+1/4} = \boxed{4}
+    $$
+1. Saque el factor $\frac{1}{4}$ y sume la geométrica de razón $\frac{3}{4}$:
+    $$
     \sum_{n=1}^{\infty}\frac{3^n}{4^{n+1}} = \frac{1}{4}\sum_{n=1}^{\infty}\left(\frac{3}{4}\right)^n = \frac{1}{4}\cdot\frac{3/4}{1-3/4} = \boxed{\frac{3}{4}}
     $$
-1. Como $\dfrac{1}{n(n+1)} = \dfrac{1}{n} - \dfrac{1}{n+1}$, la suma parcial es $S_N = 1 - \dfrac{1}{N+1} \to \boxed{1}$.
-1. $$
+1. Como $\dfrac{1}{n(n+1)} = \dfrac{1}{n} - \dfrac{1}{n+1}$, la serie es telescópica y la suma parcial es
+    $$
+    S_N = 1 - \frac{1}{N+1} \to \boxed{1}
+    $$
+1. Escriba el decimal como geométrica con $a=\frac{36}{100}$ y $r=\frac{1}{100}$:
+    $$
     0.\overline{36} = \frac{36}{100} + \frac{36}{100^2} + \cdots = \frac{36/100}{1-1/100} = \frac{36}{99} = \boxed{\frac{4}{11}}
     $$
 
 ## Punto 3. Criterios de convergencia
 
-1. Serie $p$ con $p = 2 > 1$: **converge**.
-1. Serie $p$ con $p = \tfrac{1}{2} \le 1$: **diverge**.
-1. $\displaystyle\lim_{n\to\infty}\frac{n}{n+1} = 1 \neq 0$. Por el criterio del término $n$-ésimo, **diverge**.
-1. $\dfrac{1}{n^2+1} < \dfrac{1}{n^2}$ y $\sum \dfrac{1}{n^2}$ converge. Por comparación, **converge**.
-1. Criterio de la razón: $\dfrac{a_{n+1}}{a_n} = \dfrac{n+1}{10} \to \infty$. **Diverge**.
-1. Serie alternante con $\dfrac{1}{n}$ decreciente y con límite $0$. Por el criterio de Leibniz **converge** (condicionalmente, porque la armónica diverge).
-1. Criterio de la razón: $\dfrac{a_{n+1}}{a_n} = \dfrac{n+1}{3n} \to \dfrac{1}{3} < 1$. **Converge**.
+1. Es una serie $p$ con $p = 2 > 1$. $\boxed{\text{Converge}}$.
+1. Es una serie $p$ con $p = \tfrac{1}{2} \le 1$. $\boxed{\text{Diverge}}$.
+1. Criterio del término $n$-ésimo:
+    $$
+    \lim_{n\to\infty}\frac{n}{n+1} = 1 \neq 0
+    $$
+    $\boxed{\text{Diverge}}$.
+1. Comparación directa: $0<\dfrac{1}{n^2+1} < \dfrac{1}{n^2}$ y $\sum \dfrac{1}{n^2}$ converge (serie $p$ con $p=2$). $\boxed{\text{Converge}}$.
+1. Criterio de la razón:
+    $$
+    \frac{a_{n+1}}{a_n} = \frac{(n+1)!/10^{n+1}}{n!/10^n} = \frac{n+1}{10} \to \infty > 1
+    $$
+    $\boxed{\text{Diverge}}$.
+1. Serie alternante con $b_n=\dfrac{1}{n}$ decreciente y $b_n\to 0$. Por el criterio de Leibniz converge, y como $\sum\frac{1}{n}$ (armónica) diverge, la convergencia es condicional. $\boxed{\text{Converge condicionalmente}}$.
+1. Criterio de la razón:
+    $$
+    \frac{a_{n+1}}{a_n} = \frac{(n+1)/3^{n+1}}{n/3^n} = \frac{n+1}{3n} \to \frac{1}{3} < 1
+    $$
+    $\boxed{\text{Converge}}$.
 
 ## Punto 4. Series de potencias
 
-1. Razón: $\left|\dfrac{x^{n+1}/(n+1)}{x^n/n}\right| \to |x|$, así que $R = 1$. En $x = 1$ es la serie armónica (diverge) y en $x = -1$ es alternante (converge). Intervalo: $\boxed{[-1, 1)}$.
-1. Es geométrica con razón $\dfrac{x-2}{3}$: converge si $|x-2| < 3$, así que $R = 3$. En los extremos los términos valen $\pm 1$ y no tienden a $0$. Intervalo: $\boxed{(-1, 5)}$.
-1. $$
-    e^x = \sum_{n=0}^{\infty}\frac{x^n}{n!} \quad\Rightarrow\quad e^{-x^2} = \sum_{n=0}^{\infty}\frac{(-1)^n x^{2n}}{n!} = 1 - x^2 + \frac{x^4}{2} - \frac{x^6}{6} + \cdots
+1. Criterio de la razón:
     $$
-1. $$
-    \sin x \approx x - \frac{x^3}{6} + \frac{x^5}{120} - \frac{x^7}{5040}
+    \left|\frac{x^{n+1}/(n+1)}{x^n/n}\right| = \frac{n}{n+1}|x| \to |x| < 1,
     $$
-    $\sin(0.1) \approx 0.1 - 0.0001667 + 0.0000001 \approx 0.0998334$.
+    así que $R = 1$. En $x = 1$ queda la serie armónica (diverge) y en $x = -1$ la armónica alternante (converge por Leibniz).
+    $$
+    \boxed{R=1,\quad I=[-1, 1)}
+    $$
+1. Es geométrica con razón $\dfrac{x-2}{3}$: converge si $|x-2| < 3$, así que $R = 3$. En $x=-1$ y $x=5$ los términos valen $(-1)^n$ y $1$, que no tienden a $0$, así que diverge en ambos extremos.
+    $$
+    \boxed{R=3,\quad I=(-1, 5)}
+    $$
+1. Reemplace $x$ por $-x^2$ en la serie de $e^x$:
+    $$
+    e^x = \sum_{n=0}^{\infty}\frac{x^n}{n!} \quad\Rightarrow\quad \boxed{e^{-x^2} = \sum_{n=0}^{\infty}\frac{(-1)^n x^{2n}}{n!} = 1 - x^2 + \frac{x^4}{2} - \frac{x^6}{6} + \cdots}
+    $$
+1. Las derivadas de $\sin x$ en $0$ son $0, 1, 0, -1, \dots$, de modo que
+    $$
+    \sin x \approx x - \frac{x^3}{6} + \frac{x^5}{120} - \frac{x^7}{5040}.
+    $$
+    Con $x=0.1$:
+    $$
+    \sin(0.1) \approx 0.1 - 0.0001667 + 0.0000001 \approx \boxed{0.0998334}
+    $$
 
 ::: {.taller-nav}
 [← Volver al taller 4](../../talleres/calculo-integral/taller4.qmd)

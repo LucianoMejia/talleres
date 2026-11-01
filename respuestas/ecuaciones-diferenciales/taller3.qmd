@@ -10,44 +10,96 @@ Intente resolver primero el [taller 3](../../talleres/ecuaciones-diferenciales/t
 
 ## Punto 1. Transformada de Laplace
 
-1. $\dfrac{3}{s} - \dfrac{2}{s^2} + \dfrac{2}{s^3}$
-1. $\dfrac{1}{s+3} + \dfrac{8}{s^2+4}$
-1. $\dfrac{1}{(s-2)^2}$
-1. $\dfrac{s-1}{(s-1)^2+9}$
-1. $\dfrac{s}{s^2-4}$, para $s > 2$
+1. Por linealidad, con $\mathcal{L}\{t^n\}=\dfrac{n!}{s^{n+1}}$:
+    $$
+    \mathcal{L}\{3-2t+t^2\}=3\cdot\frac{1}{s}-2\cdot\frac{1}{s^2}+\frac{2!}{s^3}=\boxed{\frac{3}{s}-\frac{2}{s^2}+\frac{2}{s^3}}
+    $$
+1. Con $\mathcal{L}\{e^{at}\}=\dfrac{1}{s-a}$ y $\mathcal{L}\{\sin bt\}=\dfrac{b}{s^2+b^2}$:
+    $$
+    \mathcal{L}\{e^{-3t}+4\sin(2t)\}=\frac{1}{s+3}+4\cdot\frac{2}{s^2+4}=\boxed{\frac{1}{s+3}+\frac{8}{s^2+4}}
+    $$
+1. Como $\mathcal{L}\{t\}=\dfrac{1}{s^2}$, por traslación en $s$ (cambiar $s$ por $s-2$):
+    $$
+    \mathcal{L}\{te^{2t}\}=\boxed{\frac{1}{(s-2)^2}}
+    $$
+1. Como $\mathcal{L}\{\cos 3t\}=\dfrac{s}{s^2+9}$, por traslación en $s$ (cambiar $s$ por $s-1$):
+    $$
+    \mathcal{L}\{e^{t}\cos(3t)\}=\boxed{\frac{s-1}{(s-1)^2+9}}
+    $$
+1. Como $\cosh(2t)=\dfrac{e^{2t}+e^{-2t}}{2}$:
+    $$
+    \mathcal{L}\{\cosh(2t)\}=\frac{1}{2}\left(\frac{1}{s-2}+\frac{1}{s+2}\right)=\boxed{\frac{s}{s^2-4}},\quad s>2
+    $$
 
 ## Punto 2. Transformada inversa
 
-1. $\dfrac{4}{s^3} = 2\cdot\dfrac{2!}{s^3} \Rightarrow 2t^2$
-1. $\dfrac{2s}{s^2+9} + \dfrac{3}{s^2+9} \Rightarrow 2\cos(3t) + \sin(3t)$
-1. $\dfrac{1}{s(s+2)} = \dfrac{1/2}{s} - \dfrac{1/2}{s+2} \Rightarrow \dfrac{1}{2}\left(1 - e^{-2t}\right)$
-1. Completando el cuadrado:
+1. Escribiendo $\dfrac{4}{s^3}=2\cdot\dfrac{2!}{s^3}$:
     $$
-    \frac{s+5}{(s+1)^2+4} = \frac{s+1}{(s+1)^2+4} + 2\cdot\frac{2}{(s+1)^2+4} \Rightarrow e^{-t}\left(\cos 2t + 2\sin 2t\right)
+    \mathcal{L}^{-1}\left\{\frac{4}{s^3}\right\}=\boxed{2t^2}
     $$
-1. $\dfrac{1}{(s-1)(s+3)} = \dfrac{1/4}{s-1} - \dfrac{1/4}{s+3} \Rightarrow \dfrac{1}{4}\left(e^{t} - e^{-3t}\right)$
+1. Separando en dos fracciones:
+    $$
+    \frac{2s+3}{s^2+9}=2\cdot\frac{s}{s^2+9}+\frac{3}{s^2+9} \Rightarrow \boxed{2\cos(3t)+\sin(3t)}
+    $$
+1. Por fracciones parciales:
+    $$
+    \frac{1}{s(s+2)}=\frac{1/2}{s}-\frac{1/2}{s+2} \Rightarrow \boxed{\frac{1}{2}\left(1-e^{-2t}\right)}
+    $$
+1. Completando el cuadrado, $s^2+2s+5=(s+1)^2+4$ y $s+5=(s+1)+4$:
+    $$
+    \frac{s+5}{(s+1)^2+4}=\frac{s+1}{(s+1)^2+4}+2\cdot\frac{2}{(s+1)^2+4} \Rightarrow \boxed{e^{-t}\left(\cos 2t+2\sin 2t\right)}
+    $$
+1. Por fracciones parciales:
+    $$
+    \frac{1}{(s-1)(s+3)}=\frac{1/4}{s-1}-\frac{1/4}{s+3} \Rightarrow \boxed{\frac{1}{4}\left(e^{t}-e^{-3t}\right)}
+    $$
 
 ## Punto 3. Problemas de valor inicial
 
-1. $sY - 3 + 2Y = 0 \Rightarrow Y = \dfrac{3}{s+2} \Rightarrow y = 3e^{-2t}$
-1. Transformando:
+1. $y'+2y=0$, $y(0)=3$. Transformando:
     $$
-    sY - Y = \frac{1}{s-2} \Rightarrow Y = \frac{1}{(s-1)(s-2)} = \frac{-1}{s-1} + \frac{1}{s-2}
+    sY-3+2Y=0 \Rightarrow Y=\frac{3}{s+2} \Rightarrow \boxed{y=3e^{-2t}}
     $$
-    $y = e^{2t} - e^{t}$
-1. $s^2Y - s - 2 + 4Y = 0 \Rightarrow Y = \dfrac{s}{s^2+4} + \dfrac{2}{s^2+4} \Rightarrow y = \cos 2t + \sin 2t$
-1. $s^2Y - 1 - 3sY + 2Y = 0 \Rightarrow Y = \dfrac{1}{(s-1)(s-2)} \Rightarrow y = e^{2t} - e^{t}$
-1. $(s^2+1)Y = \dfrac{1}{s} \Rightarrow Y = \dfrac{1}{s(s^2+1)} = \dfrac{1}{s} - \dfrac{s}{s^2+1} \Rightarrow y = 1 - \cos t$
+1. $y'-y=e^{2t}$, $y(0)=0$. Transformando:
+    $$
+    sY-Y=\frac{1}{s-2} \Rightarrow Y=\frac{1}{(s-1)(s-2)}=\frac{-1}{s-1}+\frac{1}{s-2}
+    $$
+    $$
+    \boxed{y=e^{2t}-e^{t}}
+    $$
+1. $y''+4y=0$, $y(0)=1$, $y'(0)=2$. Transformando:
+    $$
+    s^2Y-s-2+4Y=0 \Rightarrow Y=\frac{s}{s^2+4}+\frac{2}{s^2+4} \Rightarrow \boxed{y=\cos 2t+\sin 2t}
+    $$
+1. $y''-3y'+2y=0$, $y(0)=0$, $y'(0)=1$. Transformando:
+    $$
+    s^2Y-1-3sY+2Y=0 \Rightarrow Y=\frac{1}{(s-1)(s-2)}=\frac{-1}{s-1}+\frac{1}{s-2}
+    $$
+    $$
+    \boxed{y=e^{2t}-e^{t}}
+    $$
+1. $y''+y=1$, $y(0)=0$, $y'(0)=0$. Transformando:
+    $$
+    (s^2+1)Y=\frac{1}{s} \Rightarrow Y=\frac{1}{s(s^2+1)}=\frac{1}{s}-\frac{s}{s^2+1} \Rightarrow \boxed{y=1-\cos t}
+    $$
 
 ## Punto 4. Función escalón y aplicaciones
 
-1. $\mathcal{L}\{u(t-2)\} = \dfrac{e^{-2s}}{s}$
-1. Por el segundo teorema de traslación: $(t-3)\,u(t-3)$
-1. Con los datos, $i' + 4i = 12$ e $i(0) = 0$:
+1. Por definición, $u(t-2)=0$ para $t<2$ y $1$ para $t\geq 2$:
     $$
-    sI + 4I = \frac{12}{s} \Rightarrow I = \frac{12}{s(s+4)} = \frac{3}{s} - \frac{3}{s+4}
+    \mathcal{L}\{u(t-2)\}=\int_2^{\infty}e^{-st}\,dt=\boxed{\frac{e^{-2s}}{s}},\quad s>0
     $$
-    $i(t) = 3\left(1 - e^{-4t}\right)$ A. Cuando $t \to \infty$, la corriente tiende a $3$ A.
+1. Como $\mathcal{L}^{-1}\left\{\dfrac{1}{s^2}\right\}=t$, por el segundo teorema de traslación, $\mathcal{L}^{-1}\{e^{-as}F(s)\}=f(t-a)\,u(t-a)$:
+    $$
+    \mathcal{L}^{-1}\left\{\frac{e^{-3s}}{s^2}\right\}=\boxed{(t-3)\,u(t-3)}
+    $$
+1. Con los datos, $i'+4i=12$ e $i(0)=0$. Transformando:
+    $$
+    sI+4I=\frac{12}{s} \Rightarrow I=\frac{12}{s(s+4)}=\frac{3}{s}-\frac{3}{s+4}
+    $$
+    $$
+    \boxed{i(t)=3\left(1-e^{-4t}\right)\ \text{A}},\qquad \boxed{\lim_{t\to\infty}i(t)=3\ \text{A}}
+    $$
 
 ::: {.taller-nav}
 [← Volver al taller 3](../../talleres/ecuaciones-diferenciales/taller3.qmd)

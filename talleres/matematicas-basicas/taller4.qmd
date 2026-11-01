@@ -9,46 +9,36 @@ Resuelva cada uno de los siguientes ejercicios mostrando todo el proceso. Presen
 
 **Conceptos importantes:**
 
-- El **MCD** (Máximo Común Divisor) es el mayor número que divide exactamente a dos o más números.
-- El **MCM** (Mínimo Común Múltiplo) es el menor número que es múltiplo de dos o más números.
+- El **MCD** (máximo común divisor) es el mayor número que divide exactamente a dos o más números.
+- El **MCM** (mínimo común múltiplo) es el menor número que es múltiplo de dos o más números.
 
 ## Punto 1. Máximo común divisor (MCD)
 
-**1.** Calcula el MCD de 24 y 36.
-
-**2.** Encuentra el MCD de 48, 72 y 96.
-
-**3.** Determina el MCD de 105 y 140.
-
-**4.** Calcula el MCD de 84, 126 y 210.
-
-**5.** Se tienen dos cintas de tela, una de 180 cm y otra de 252 cm. Se desea cortarlas en pedazos iguales de la mayor longitud posible sin que sobre material. ¿Cuál debe ser la longitud de cada pedazo?
+1. Calcule el MCD de 24 y 36.
+1. Encuentre el MCD de 48, 72 y 96.
+1. Determine el MCD de 105 y 140.
+1. Calcule el MCD de 84, 126 y 210.
+1. Se tienen dos cintas de tela, una de 180 cm y otra de 252 cm. Se desea cortarlas en pedazos iguales de la mayor longitud posible sin que sobre material. ¿Cuál debe ser la longitud de cada pedazo?
 
 ## Punto 2. Mínimo común múltiplo (MCM)
 
-**6.** Calcula el MCM de 12 y 18.
-
-**7.** Encuentra el MCM de 15, 20 y 30.
-
-**8.** Determina el MCM de 8, 12 y 16.
-
-**9.** Calcula el MCM de 45 y 75.
-
-**10.** Tres luces intermitentes se encienden cada 4, 6 y 9 segundos respectivamente. Si en este momento se encienden al mismo tiempo, ¿en cuántos segundos volverán a coincidir?
+1. Calcule el MCM de 12 y 18.
+1. Encuentre el MCM de 15, 20 y 30.
+1. Determine el MCM de 8, 12 y 16.
+1. Calcule el MCM de 45 y 75.
+1. Tres luces intermitentes se encienden cada 4, 6 y 9 segundos respectivamente. Si en este momento se encienden al mismo tiempo, ¿en cuántos segundos volverán a coincidir?
 
 ## Punto 3. Ejercicios combinados
 
-**11.** Encuentra el MCD y MCM de 60 y 90.
-
-**12.** Calcula el MCD y MCM de 28, 42 y 70.
-
-**13.** Dos planetas completan sus órbitas alrededor del sol en 12 y 18 meses respectivamente. Si hoy están alineados, ¿en cuántos meses volverán a alinearse? (Usa MCM)
-
-**14.** Se tienen tres tubos de 120 cm, 180 cm y 240 cm de longitud. Se desea cortarlos en segmentos de igual longitud, la mayor posible, sin que sobre material. ¿Cuál debe ser la longitud de cada segmento? ¿Cuántos segmentos se obtendrán en total?
-
-**15.** Demuestra que para dos números cualesquiera $a$ y $b$, se cumple que: 
-$$\text{MCD}(a,b) \times \text{MCM}(a,b) = a \times b$$
-Verifica esta propiedad con los números 16 y 24.
+1. Encuentre el MCD y el MCM de 60 y 90.
+1. Calcule el MCD y el MCM de 28, 42 y 70.
+1. Dos planetas completan sus órbitas alrededor del Sol en 12 y 18 meses respectivamente. Si hoy están alineados, ¿en cuántos meses volverán a alinearse?
+1. Se tienen tres tubos de 120 cm, 180 cm y 240 cm de longitud. Se desea cortarlos en segmentos de igual longitud, la mayor posible, sin que sobre material. ¿Cuál debe ser la longitud de cada segmento? ¿Cuántos segmentos se obtendrán en total?
+1. Demuestre que para dos números enteros positivos $a$ y $b$ se cumple
+    $$
+    \text{MCD}(a,b)\cdot\text{MCM}(a,b) = a\cdot b
+    $$
+    y verifique esta propiedad con los números 16 y 24.
 
 ::: {.taller-nav}
 [← Matemáticas básicas](../../materias/matematicas-basicas.qmd)

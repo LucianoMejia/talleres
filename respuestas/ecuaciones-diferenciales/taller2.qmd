@@ -10,63 +10,125 @@ Intente resolver primero el [taller 2](../../talleres/ecuaciones-diferenciales/t
 
 ## Punto 1. Ecuaciones lineales homogéneas con coeficientes constantes
 
-1. $y''-5y'+6y=0$:
-    $$y=C_1e^{2x}+C_2e^{3x}.$$
-1. $y''+4y'+4y=0$:
-    $$y=(C_1+C_2x)e^{-2x}.$$
-1. $y''+9y=0$:
-    $$y=C_1\cos(3x)+C_2\sin(3x).$$
-1. $y''-2y'+10y=0$:
-    $$y=e^x\left(C_1\cos(3x)+C_2\sin(3x)\right).$$
-1. $y''+y'-12y=0$, $y(0)=2$, $y'(0)=1$:
-    $$y=e^{3x}+e^{-4x}.$$
+1. $y''-5y'+6y=0$. Ecuación característica $r^2-5r+6=(r-2)(r-3)=0$, raíces reales distintas $r=2,3$:
+    $$
+    \boxed{y=C_1e^{2x}+C_2e^{3x}}
+    $$
+1. $y''+4y'+4y=0$. Ecuación característica $r^2+4r+4=(r+2)^2=0$, raíz doble $r=-2$:
+    $$
+    \boxed{y=(C_1+C_2x)e^{-2x}}
+    $$
+1. $y''+9y=0$. Ecuación característica $r^2+9=0$, raíces $r=\pm 3i$:
+    $$
+    \boxed{y=C_1\cos(3x)+C_2\sin(3x)}
+    $$
+1. $y''-2y'+10y=0$. Ecuación característica $r^2-2r+10=0$, raíces $r=1\pm 3i$:
+    $$
+    \boxed{y=e^x\left(C_1\cos(3x)+C_2\sin(3x)\right)}
+    $$
+1. $y''+y'-12y=0$, $y(0)=2$, $y'(0)=1$. Ecuación característica $r^2+r-12=(r-3)(r+4)=0$, así $y=C_1e^{3x}+C_2e^{-4x}$. Con las condiciones iniciales:
+    $$
+    C_1+C_2=2,\qquad 3C_1-4C_2=1 \Rightarrow C_1=\frac{9}{7},\quad C_2=\frac{5}{7}
+    $$
+    $$
+    \boxed{y=\frac{9}{7}e^{3x}+\frac{5}{7}e^{-4x}}
+    $$
 
 ## Punto 2. Ecuaciones no homogéneas
 
-1. $y''-3y'+2y=e^x$:
-    $$y=C_1e^x+C_2e^{2x}-xe^x.$$
-1. $y''+y=\cos(2x)$:
-    $$y=C_1\cos x+C_2\sin x-\frac{1}{3}\cos(2x).$$
-1. $y''-4y=3x$:
-    $$y=C_1e^{2x}+C_2e^{-2x}-\frac{3}{4}x.$$
-1. $y''+4y'+13y=e^{-2x}\sin(3x)$:
-    $$y=e^{-2x}\left(C_1\cos 3x+C_2\sin 3x\right)-\frac{x}{6}e^{-2x}\cos 3x.$$
-1. $y''+y=\tan x$:
-    $$y=C_1\cos x+C_2\sin x-\cos x\ln|\sec x+\tan x|.$$
+1. $y''-3y'+2y=e^x$. Raíces características $r=1,2$, así $y_h=C_1e^x+C_2e^{2x}$. Como $e^x$ ya está en $y_h$, se ensaya $y_p=Axe^x$:
+    $$
+    y_p''-3y_p'+2y_p=-Ae^x=e^x \Rightarrow A=-1
+    $$
+    $$
+    \boxed{y=C_1e^x+C_2e^{2x}-xe^x}
+    $$
+1. $y''+y=\cos(2x)$. $y_h=C_1\cos x+C_2\sin x$. Se ensaya $y_p=A\cos(2x)$:
+    $$
+    -4A\cos(2x)+A\cos(2x)=\cos(2x) \Rightarrow A=-\frac{1}{3}
+    $$
+    $$
+    \boxed{y=C_1\cos x+C_2\sin x-\frac{1}{3}\cos(2x)}
+    $$
+1. $y''-4y=3x$. $y_h=C_1e^{2x}+C_2e^{-2x}$. Se ensaya $y_p=Ax+B$:
+    $$
+    -4(Ax+B)=3x \Rightarrow A=-\frac{3}{4},\quad B=0
+    $$
+    $$
+    \boxed{y=C_1e^{2x}+C_2e^{-2x}-\frac{3}{4}x}
+    $$
+1. $y''+4y'+13y=e^{-2x}\sin(3x)$. Raíces características $r=-2\pm3i$, así que hay resonancia y se ensaya $y_p=xe^{-2x}\left(A\cos 3x+B\sin 3x\right)$. Sustituyendo:
+    $$
+    e^{-2x}\left(6B\cos 3x-6A\sin 3x\right)=e^{-2x}\sin 3x \Rightarrow A=-\frac{1}{6},\quad B=0
+    $$
+    $$
+    \boxed{y=e^{-2x}\left(C_1\cos 3x+C_2\sin 3x\right)-\frac{x}{6}e^{-2x}\cos 3x}
+    $$
+1. $y''+y=\tan x$. Con $y_1=\cos x$, $y_2=\sin x$ y $W=1$, por variación de parámetros:
+    $$
+    u_1'=-\sin x\tan x=\cos x-\sec x \Rightarrow u_1=\sin x-\ln|\sec x+\tan x|
+    $$
+    $$
+    u_2'=\cos x\tan x=\sin x \Rightarrow u_2=-\cos x
+    $$
+    Entonces $y_p=u_1\cos x+u_2\sin x=-\cos x\ln|\sec x+\tan x|$ y
+    $$
+    \boxed{y=C_1\cos x+C_2\sin x-\cos x\ln|\sec x+\tan x|}
+    $$
 
 ## Punto 3. Problemas con condiciones iniciales
 
-1. $y''+2y'+5y=0$, $y(0)=0$, $y'(0)=4$:
-    $$y=2e^{-x}\sin(2x).$$
-1. $y''-y'-6y=0$, $y(0)=3$, $y'(0)=-1$:
-    $$y=e^{3x}+2e^{-2x}.$$
-1. $y''+16y=32\sin(4x)$, $y(0)=1$, $y'(0)=0$:
-    $$y=\cos(4x)+\sin(4x)-4x\cos(4x).$$
+1. $y''+2y'+5y=0$, $y(0)=0$, $y'(0)=4$. Raíces $r=-1\pm 2i$, así $y=e^{-x}(C_1\cos 2x+C_2\sin 2x)$. De $y(0)=0$ sale $C_1=0$, y de $y'(0)=2C_2=4$ sale $C_2=2$:
+    $$
+    \boxed{y=2e^{-x}\sin(2x)}
+    $$
+1. $y''-y'-6y=0$, $y(0)=3$, $y'(0)=-1$. Raíces $r=3,-2$, así $y=C_1e^{3x}+C_2e^{-2x}$:
+    $$
+    C_1+C_2=3,\qquad 3C_1-2C_2=-1 \Rightarrow C_1=1,\quad C_2=2
+    $$
+    $$
+    \boxed{y=e^{3x}+2e^{-2x}}
+    $$
+1. $y''+16y=32\sin(4x)$, $y(0)=1$, $y'(0)=0$. $y_h=C_1\cos 4x+C_2\sin 4x$; por resonancia se ensaya $y_p=x(A\cos 4x+B\sin 4x)$:
+    $$
+    -8A\sin 4x+8B\cos 4x=32\sin 4x \Rightarrow A=-4,\quad B=0
+    $$
+    Con $y(0)=1$ sale $C_1=1$, y con $y'(0)=4C_2-4=0$ sale $C_2=1$:
+    $$
+    \boxed{y=\cos(4x)+\sin(4x)-4x\cos(4x)}
+    $$
 
 ## Punto 4. Modelación física
 
-1. Masa-resorte sin amortiguamiento ($m=1$, $k=9$):
-    $$x''+9x=0,\quad x(0)=2,\ x'(0)=0 \Rightarrow x(t)=2\cos(3t).$$
-1. $x''+4x'+13x=0$, $x(0)=1$, $x'(0)=-1$:
-    $$x(t)=e^{-2t}\left(\cos(3t)+\frac{1}{3}\sin(3t)\right).$$
-    Es un sistema subamortiguado (oscilatorio amortiguado).
-1. $q''+6q'+25q=0$, $q(0)=0$, $q'(0)=5$:
-    $$q(t)=\frac{5}{4}e^{-3t}\sin(4t).$$
+1. Masa-resorte sin amortiguamiento ($m=1$, $k=9$): $mx''+kx=0$, es decir, $x''+9x=0$, con $\omega=3$. Entonces $x=C_1\cos 3t+C_2\sin 3t$; de $x(0)=2$ sale $C_1=2$ y de $x'(0)=0$ sale $C_2=0$:
+    $$
+    \boxed{x(t)=2\cos(3t)}
+    $$
+1. $x''+4x'+13x=0$, $x(0)=1$, $x'(0)=-1$. Raíces $r=-2\pm 3i$, así $x=e^{-2t}(C_1\cos 3t+C_2\sin 3t)$. De $x(0)=1$ sale $C_1=1$, y de $x'(0)=-2+3C_2=-1$ sale $C_2=\frac{1}{3}$:
+    $$
+    \boxed{x(t)=e^{-2t}\left(\cos(3t)+\frac{1}{3}\sin(3t)\right)}
+    $$
+    Como las raíces son complejas ($c^2-4mk=16-52<0$), el sistema es subamortiguado: oscila con amplitud que decae como $e^{-2t}$.
+1. $q''+6q'+25q=0$, $q(0)=0$, $q'(0)=5$. Raíces $r=-3\pm 4i$, así $q=e^{-3t}(C_1\cos 4t+C_2\sin 4t)$. De $q(0)=0$ sale $C_1=0$, y de $q'(0)=4C_2=5$ sale $C_2=\frac{5}{4}$:
+    $$
+    \boxed{q(t)=\frac{5}{4}e^{-3t}\sin(4t)}
+    $$
 
 ## Punto 5. Sistema de ecuaciones diferenciales
 
-1. $$
-    \begin{aligned}
-        x' &= 3x+4y,\\
-        y' &= -4x+3y,
-    \end{aligned}
+1. Sistema $x'=3x+4y$, $y'=-4x+3y$, con $x(0)=1$, $y(0)=0$. La matriz $\begin{pmatrix}3&4\\-4&3\end{pmatrix}$ tiene autovalores $\lambda=3\pm 4i$, así que
     $$
-    con $x(0)=1$, $y(0)=0$:
-    $$x(t)=e^{3t}\cos(4t),\qquad y(t)=-e^{3t}\sin(4t).$$
-1. Para $y''+2y'+2y=0$, una forma de primer orden es:
-    $$u_1=y,\quad u_2=y',$$
-    $$u_1'=u_2,\quad u_2'=-2u_2-2u_1.$$
-    El retrato de fase es una espiral estable hacia el origen (autovalores $-1\pm i$).
+    x=e^{3t}(C_1\cos 4t+C_2\sin 4t)
+    $$
+    De $x(0)=1$ sale $C_1=1$, y de $x'(0)=3x(0)+4y(0)=3$ se obtiene $3C_1+4C_2=3$, es decir, $C_2=0$. Luego $y=\frac{x'-3x}{4}$:
+    $$
+    \boxed{x(t)=e^{3t}\cos(4t),\qquad y(t)=-e^{3t}\sin(4t)}
+    $$
+1. Para $y''+2y'+2y=0$, con $u_1=y$, $u_2=y'$:
+    $$
+    \boxed{u_1'=u_2,\quad u_2'=-2u_1-2u_2}
+    $$
+    La matriz $\begin{pmatrix}0&1\\-2&-2\end{pmatrix}$ tiene polinomio característico $\lambda^2+2\lambda+2=0$, con autovalores $\lambda=-1\pm i$. Como son complejos con parte real negativa, el origen es un foco (espiral) estable: las trayectorias giran en espiral hacia el origen.
 
 ::: {.taller-nav}
 [← Volver al taller 2](../../talleres/ecuaciones-diferenciales/taller2.qmd)

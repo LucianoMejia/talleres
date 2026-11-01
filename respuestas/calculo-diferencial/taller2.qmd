@@ -10,45 +10,78 @@ Intente resolver primero el [taller 2](../../talleres/calculo-diferencial/taller
 
 ## Punto 1. Reglas básicas
 
-1. $f'(x) = 20x^4 - 9x^2 + 2$
-1. $g(x) = 3x^{1/2} + 2x^{-3} \Rightarrow g'(x) = \dfrac{3}{2\sqrt{x}} - \dfrac{6}{x^4}$
-1. Regla del producto: $h'(x) = 2xe^x + x^2e^x = xe^x(x+2)$
+1. Regla de la potencia término a término:
+    $$
+    \boxed{f'(x) = 20x^4 - 9x^2 + 2}
+    $$
+1. Se escribe $g(x) = 3x^{1/2} + 2x^{-3}$ y se usa la regla de la potencia:
+    $$
+    \boxed{g'(x) = \frac{3}{2\sqrt{x}} - \frac{6}{x^4}}
+    $$
+1. Regla del producto:
+    $$
+    h'(x) = 2x\,e^x + x^2e^x = \boxed{xe^x(x+2)}
+    $$
 1. Regla del cociente:
     $$
-    k'(x) = \frac{2x(x-1) - (x^2+1)}{(x-1)^2} = \frac{x^2-2x-1}{(x-1)^2}
+    k'(x) = \frac{2x(x-1) - (x^2+1)}{(x-1)^2} = \boxed{\frac{x^2-2x-1}{(x-1)^2}}
     $$
-1. $m'(x) = \ln x + x\cdot\dfrac{1}{x} = \ln x + 1$
+1. Regla del producto:
+    $$
+    m'(x) = 1\cdot\ln x + x\cdot\frac{1}{x} = \boxed{\ln x + 1}
+    $$
 
 ## Punto 2. Regla de la cadena
 
-1. $f'(x) = 4(3x^2-5)^3\cdot 6x = 24x(3x^2-5)^3$
-1. $g'(x) = 10x\cos(5x^2)$
-1. $h'(x) = -2xe^{-x^2}$
-1. $k'(x) = \dfrac{2x}{x^2+4}$
-1. $m'(x) = \dfrac{-\sin x}{2\sqrt{1+\cos x}}$
-1. $n'(x) = 3\tan^2(2x)\cdot\sec^2(2x)\cdot 2 = 6\tan^2(2x)\sec^2(2x)$
+1. Derivada externa $4u^3$ con $u = 3x^2-5$, derivada interna $6x$:
+    $$
+    f'(x) = 4(3x^2-5)^3\cdot 6x = \boxed{24x(3x^2-5)^3}
+    $$
+1. Derivada externa $\cos u$ con $u = 5x^2$, derivada interna $10x$:
+    $$
+    \boxed{g'(x) = 10x\cos(5x^2)}
+    $$
+1. Derivada externa $e^u$ con $u = -x^2$, derivada interna $-2x$:
+    $$
+    \boxed{h'(x) = -2xe^{-x^2}}
+    $$
+1. Derivada externa $\dfrac{1}{u}$ con $u = x^2+4$, derivada interna $2x$:
+    $$
+    \boxed{k'(x) = \frac{2x}{x^2+4}}
+    $$
+1. Derivada externa $\dfrac{1}{2\sqrt{u}}$ con $u = 1+\cos x$, derivada interna $-\sin x$:
+    $$
+    \boxed{m'(x) = \frac{-\sin x}{2\sqrt{1+\cos x}}}
+    $$
+1. Se aplica la cadena dos veces: potencia, tangente y argumento $2x$:
+    $$
+    n'(x) = 3\tan^2(2x)\cdot\sec^2(2x)\cdot 2 = \boxed{6\tan^2(2x)\sec^2(2x)}
+    $$
 
 ## Punto 3. Derivación implícita
 
-1. $2x + 2yy' = 0 \Rightarrow y' = -\dfrac{x}{y}$. En $(3,4)$ la pendiente es $-\dfrac{3}{4}$:
+1. Derivando ambos lados: $2x + 2yy' = 0 \Rightarrow y' = -\dfrac{x}{y}$. En $(3,4)$ la pendiente es $-\dfrac{3}{4}$, así que
     $$
-    y - 4 = -\frac{3}{4}(x-3) \Rightarrow y = -\frac{3}{4}x + \frac{25}{4}
+    y - 4 = -\frac{3}{4}(x-3) \Rightarrow \boxed{y' = -\frac{x}{y}, \quad y = -\frac{3}{4}x + \frac{25}{4}}
     $$
-1. Derivando ambos lados:
+1. Derivando ambos lados (regla del producto en $6xy$):
     $$
     \begin{aligned}
     3x^2 + 3y^2y' &= 6y + 6xy' \\
     y'(3y^2 - 6x) &= 6y - 3x^2 \\
-    y' &= \frac{2y - x^2}{y^2 - 2x}
+    y' &= \boxed{\frac{2y - x^2}{y^2 - 2x}}
     \end{aligned}
     $$
-1. $e^y y' + y + xy' = 0 \Rightarrow y' = -\dfrac{y}{e^y + x}$. En $(0,1)$: $y' = -\dfrac{1}{e}$.
+1. Derivando ambos lados: $e^y y' + y + xy' = 0 \Rightarrow y'(e^y + x) = -y$. En $(0,1)$:
+    $$
+    y' = -\frac{y}{e^y + x} \Rightarrow \boxed{y'(0) = -\frac{1}{e}}
+    $$
 
 ## Punto 4. Aplicaciones de la derivada
 
-1. $f(2) = 2$, $f'(x) = 3x^2 - 3$, $f'(2) = 9$:
+1. $f(2) = 8 - 6 = 2$, $f'(x) = 3x^2 - 3$ y $f'(2) = 9$. Con la forma punto-pendiente:
     $$
-    y - 2 = 9(x-2) \Rightarrow y = 9x - 16
+    y - 2 = 9(x-2) \Rightarrow \boxed{y = 9x - 16}
     $$
 1. $f'(x) = 3x^2 - 6x - 9 = 3(x-3)(x+1)$. Puntos críticos: $x = -1$ y $x = 3$.
 
@@ -58,17 +91,29 @@ Intente resolver primero el [taller 2](../../talleres/calculo-diferencial/taller
     | $(-1, 3)$ | $-$ | decrece |
     | $(3, \infty)$ | $+$ | crece |
 
-    Máximo relativo en $(-1, 10)$ y mínimo relativo en $(3, -22)$.
-1. $f''(x) = 6x - 6$. Es cóncava hacia abajo en $(-\infty, 1)$, cóncava hacia arriba en $(1, \infty)$ y tiene punto de inflexión en $(1, -6)$.
-1. Sea $x$ el lado de la base y $h$ la altura. Como $x^2h = 32\,000$, el área de material es
+    Con $f(-1) = 10$ y $f(3) = -22$:
+    $$
+    \boxed{\text{Crece en } (-\infty,-1)\cup(3,\infty),\ \text{decrece en } (-1,3);\ \text{máx. } (-1,10),\ \text{mín. } (3,-22)}
+    $$
+1. $f''(x) = 6x - 6 = 0 \Rightarrow x = 1$. Para $x<1$, $f''<0$; para $x>1$, $f''>0$. Además $f(1) = -6$:
+    $$
+    \boxed{\text{Cóncava hacia abajo en } (-\infty,1),\ \text{hacia arriba en } (1,\infty);\ \text{inflexión en } (1,-6)}
+    $$
+1. Sea $x$ el lado de la base y $h$ la altura. Como $x^2h = 32\,000$, se tiene $h = \dfrac{32\,000}{x^2}$ y el área de material es
     $$
     \begin{aligned}
     S(x) &= x^2 + 4xh = x^2 + \frac{128\,000}{x} \\
     S'(x) &= 2x - \frac{128\,000}{x^2} = 0 \Rightarrow x^3 = 64\,000 \Rightarrow x = 40
     \end{aligned}
     $$
-    La base mide 40 cm × 40 cm y la altura $h = 20$ cm. Se usan 4800 cm² de material.
-1. $A = \pi r^2 \Rightarrow \dfrac{dA}{dt} = 2\pi r\dfrac{dr}{dt} = 2\pi(4)(0.5) = 4\pi \approx 12.57$ m²/s.
+    Como $S''(x) = 2 + \dfrac{256\,000}{x^3} > 0$, es un mínimo. Entonces $h = \dfrac{32\,000}{1600} = 20$ y se usan $4800$ cm² de material:
+    $$
+    \boxed{\text{Base de } 40 \text{ cm} \times 40 \text{ cm y altura de } 20 \text{ cm}}
+    $$
+1. Derivando $A = \pi r^2$ respecto al tiempo y sustituyendo $r = 4$ y $\dfrac{dr}{dt} = 0.5$:
+    $$
+    \frac{dA}{dt} = 2\pi r\frac{dr}{dt} = 2\pi(4)(0.5) = \boxed{4\pi \approx 12.57 \text{ m}^2/\text{s}}
+    $$
 
 ::: {.taller-nav}
 [← Volver al taller 2](../../talleres/calculo-diferencial/taller2.qmd)

@@ -26,5 +26,5 @@ Bienvenido. Aquí encuentra los talleres de cada materia en el orden en que se e
 
 1. Elija la materia y abra el taller que le asignaron.
 2. Resuelva los ejercicios en su cuaderno, mostrando todo el procedimiento.
-3. Solo después de intentarlo, abra el solucionario y compare sus respuestas.
+3. Solo después de intentarlo, use la pestaña **Solucionario** que está arriba de cada taller y compare sus respuestas. También puede ver [todos los solucionarios](solucionarios.qmd) en una sola página.
 4. Si tiene dudas sobre un tema, revise las explicaciones de la materia.

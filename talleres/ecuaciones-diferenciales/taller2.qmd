@@ -40,11 +40,11 @@ Use coeficientes indeterminados o variacion de parametros:
 
 1. Resuelva el sistema:
     $$
-\begin{aligned}
-        x' &= 3x+4y\\
-        y' &= -4x+3y
+    \begin{aligned}
+      x' &= 3x+4y\\
+      y' &= -4x+3y
     \end{aligned}
-$$
+    $$
     con $x(0)=1$, $y(0)=0$.
 1. Convierta en sistema de primer orden la ecuación:
     $$y''+2y'+2y=0$$

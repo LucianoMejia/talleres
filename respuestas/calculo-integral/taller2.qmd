@@ -10,50 +10,102 @@ Intente resolver primero el [taller 2](../../talleres/calculo-integral/taller2.q
 
 ## Punto 1. Integrales definidas y propiedades
 
-1. $\int_{-2}^{2} (x^5+3x^2)\,dx = 16$.
-1. $\int_0^3 |x-1|\,dx = \frac{5}{2}$.
-1. $\int_1^4 (2x-3)\,dx = 6$.
-1. $\int_0^{\pi} \cos x\,dx = 0$.
-1. $\int_0^6 f(x)\,dx = 5 + (-3) = 2$.
+1. Por simetría: $x^5$ es impar (su integral en $[-2,2]$ es $0$) y $3x^2$ es par:
+    $$
+    \int_{-2}^{2} (x^5+3x^2)\,dx = 0 + 2\int_0^2 3x^2\,dx = 2\left[x^3\right]_0^2 = \boxed{16}
+    $$
+1. Se separa donde cambia el signo de $x-1$:
+    $$
+    \int_0^3 |x-1|\,dx = \int_0^1 (1-x)\,dx + \int_1^3 (x-1)\,dx = \frac{1}{2} + 2 = \boxed{\frac{5}{2}}
+    $$
+1. Antiderivada $x^2 - 3x$:
+    $$
+    \int_1^4 (2x-3)\,dx = \left[x^2-3x\right]_1^4 = 4 - (-2) = \boxed{6}
+    $$
+1. Antiderivada $\sin x$:
+    $$
+    \int_0^{\pi} \cos x\,dx = \sin\pi - \sin 0 = \boxed{0}
+    $$
+1. Por aditividad respecto al intervalo:
+    $$
+    \int_0^6 f(x)\,dx = \int_0^2 f(x)\,dx + \int_2^6 f(x)\,dx = 5 + (-3) = \boxed{2}
+    $$
 
 ## Punto 2. Teorema fundamental del cálculo
 
-1. Si $F(x)=\int_1^x (t^2+2t)\,dt$, entonces
-    $$F'(x)=x^2+2x, \qquad F(3)=\int_1^3 (t^2+2t)\,dt=\frac{50}{3}.$$
-1. Si $G(x)=\int_x^{2x} \ln(1+t^2)\,dt$, entonces
-    $$G'(x)=2\ln(1+4x^2)-\ln(1+x^2).$$
-1. $$\frac{d}{dx}\left(\int_0^{x^3} \sqrt{1+t^4}\,dt\right)=\sqrt{1+x^{12}}\cdot 3x^2.$$
-1. Para $H(x)=\int_{\sin x}^{\cos x} (1+t^3)\,dt$,
-    $$H'(x)=-(1+\cos^3 x)\sin x-(1+\sin^3 x)\cos x.$$
+1. Por el teorema fundamental, $F'(x)$ es el integrando evaluado en $x$. Además,
+    $$
+    F(3)=\int_1^3 (t^2+2t)\,dt = \left[\frac{t^3}{3}+t^2\right]_1^3 = 18 - \frac{4}{3} = \frac{50}{3}
+    $$
+    $$
+    \boxed{F'(x)=x^2+2x, \qquad F(3)=\frac{50}{3}}
+    $$
+1. Con la regla de Leibniz, $G'(x) = f(2x)\cdot 2 - f(x)\cdot 1$ para $f(t)=\ln(1+t^2)$:
+    $$
+    \boxed{G'(x)=2\ln(1+4x^2)-\ln(1+x^2)}
+    $$
+1. Teorema fundamental con la regla de la cadena (límite superior $x^3$, derivada $3x^2$):
+    $$
+    \frac{d}{dx}\left(\int_0^{x^3} \sqrt{1+t^4}\,dt\right)=\sqrt{1+(x^3)^4}\cdot 3x^2 = \boxed{3x^2\sqrt{1+x^{12}}}
+    $$
+1. Con la regla de Leibniz, $H'(x) = f(\cos x)(\cos x)' - f(\sin x)(\sin x)'$ para $f(t)=1+t^3$:
+    $$
+    \boxed{H'(x)=-(1+\cos^3 x)\sin x-(1+\sin^3 x)\cos x}
+    $$
 
 ## Punto 3. Área entre curvas
 
-1. Entre $y=x$ y $y=x^2$:
-    $$A=\int_0^1 (x-x^2)\,dx=\frac{1}{6}.$$
-1. Entre $y=4-x^2$ y eje $x$:
-    $$A=\int_{-2}^{2}(4-x^2)\,dx=\frac{32}{3}.$$
-1. Entre $y=2x+3$ y $y=x^2$ (intersecciones en $x=-1,3$):
-    $$A=\int_{-1}^{3}(2x+3-x^2)\,dx=\frac{32}{3}.$$
-1. Entre $y=\sin x$ y $y=\cos x$ en $[0,\pi/2]$:
-    $$A=\int_0^{\pi/4}(\cos x-\sin x)\,dx+\int_{\pi/4}^{\pi/2}(\sin x-\cos x)\,dx=2(\sqrt{2}-1).$$
+1. Las curvas se cortan en $x^2 = x$, es decir, $x=0$ y $x=1$. En $[0,1]$, $x \ge x^2$:
+    $$
+    A=\int_0^1 (x-x^2)\,dx=\left[\frac{x^2}{2}-\frac{x^3}{3}\right]_0^1=\boxed{\frac{1}{6}}
+    $$
+1. La parábola corta el eje $x$ en $x=\pm 2$ y es positiva entre ellos:
+    $$
+    A=\int_{-2}^{2}(4-x^2)\,dx=\left[4x-\frac{x^3}{3}\right]_{-2}^{2}=\frac{16}{3}-\left(-\frac{16}{3}\right)=\boxed{\frac{32}{3}}
+    $$
+1. Intersecciones: $x^2 = 2x+3 \Rightarrow (x-3)(x+1)=0$, es decir, $x=-1$ y $x=3$. En ese intervalo la recta está arriba:
+    $$
+    A=\int_{-1}^{3}(2x+3-x^2)\,dx=\left[x^2+3x-\frac{x^3}{3}\right]_{-1}^{3}=9-\left(-\frac{5}{3}\right)=\boxed{\frac{32}{3}}
+    $$
+1. Las curvas se cortan en $x=\pi/4$; antes de ese punto $\cos x \ge \sin x$ y después al revés:
+    $$
+    \begin{aligned}
+    A&=\int_0^{\pi/4}(\cos x-\sin x)\,dx+\int_{\pi/4}^{\pi/2}(\sin x-\cos x)\,dx \\
+    &=\left[\sin x+\cos x\right]_0^{\pi/4}+\left[-\cos x-\sin x\right]_{\pi/4}^{\pi/2} \\
+    &=(\sqrt{2}-1)+(\sqrt{2}-1)=\boxed{2(\sqrt{2}-1)}
+    \end{aligned}
+    $$
 
 ## Punto 4. Volúmenes por discos y arandelas
 
-1. Giro de $y=x^2$, $0\le x\le 2$, alrededor de eje $x$:
-    $$V=\pi\int_0^2 (x^2)^2\,dx=\frac{32\pi}{5}.$$
-1. Giro de $y=\sqrt{x}$, $0\le x\le 4$, alrededor de eje $x$:
-    $$V=\pi\int_0^4 (\sqrt{x})^2\,dx=\pi\int_0^4 x\,dx=8\pi.$$
-1. Giro de la región bajo $y=4-x$ en torno al eje $y$:
-    $$V=\pi\int_0^4 (4-y)^2\,dy=\frac{64\pi}{3}.$$
+1. Discos de radio $x^2$:
+    $$
+    V=\pi\int_0^2 (x^2)^2\,dx=\pi\left[\frac{x^5}{5}\right]_0^2=\boxed{\frac{32\pi}{5}}
+    $$
+1. Discos de radio $\sqrt{x}$:
+    $$
+    V=\pi\int_0^4 (\sqrt{x})^2\,dx=\pi\int_0^4 x\,dx=\pi\left[\frac{x^2}{2}\right]_0^4=\boxed{8\pi}
+    $$
+1. Despejando, $x = 4-y$ con $0\le y\le 4$. Al girar alrededor del eje $y$, cada sección es un disco (arandela con radio interior $0$) de radio $4-y$:
+    $$
+    V=\pi\int_0^4 (4-y)^2\,dy=\pi\left[-\frac{(4-y)^3}{3}\right]_0^4=\boxed{\frac{64\pi}{3}}
+    $$
+    Es un cono de radio $4$ y altura $4$: $\frac{1}{3}\pi(4)^2(4) = \frac{64\pi}{3}$.
 
 ## Punto 5. Longitud de arco y valor promedio
 
-1. Para $y=\frac{x^2}{2}$ en $[0,1]$, $y'=x$:
-    $$L=\int_0^1\sqrt{1+x^2}\,dx=\frac{1}{2}\left(\sqrt{2}+\ln(1+\sqrt{2})\right).$$
+1. Para $y=\frac{x^2}{2}$ en $[0,1]$, $y'=x$. Con $\int\sqrt{1+x^2}\,dx = \frac{x}{2}\sqrt{1+x^2}+\frac{1}{2}\ln\left(x+\sqrt{1+x^2}\right)$:
+    $$
+    L=\int_0^1\sqrt{1+x^2}\,dx=\boxed{\frac{1}{2}\left(\sqrt{2}+\ln(1+\sqrt{2})\right)\approx 1.148}
+    $$
 1. Valor promedio de $f(x)=x^2+1$ en $[0,3]$:
-    $$f_{\text{prom}}=\frac{1}{3}\int_0^3(x^2+1)\,dx=4.$$
+    $$
+    f_{\text{prom}}=\frac{1}{3}\int_0^3(x^2+1)\,dx=\frac{1}{3}\left[\frac{x^3}{3}+x\right]_0^3=\frac{1}{3}(9+3)=\boxed{4}
+    $$
 1. Valor promedio de $f(x)=\sin x$ en $[0,\pi]$:
-    $$f_{\text{prom}}=\frac{1}{\pi}\int_0^{\pi}\sin x\,dx=\frac{2}{\pi}.$$
+    $$
+    f_{\text{prom}}=\frac{1}{\pi}\int_0^{\pi}\sin x\,dx=\frac{1}{\pi}\left[-\cos x\right]_0^{\pi}=\boxed{\frac{2}{\pi}}
+    $$
 
 ::: {.taller-nav}
 [← Volver al taller 2](../../talleres/calculo-integral/taller2.qmd)

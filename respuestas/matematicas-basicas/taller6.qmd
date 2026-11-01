@@ -51,27 +51,40 @@ Intente resolver primero el [taller 6](../../talleres/matematicas-basicas/taller
     \begin{aligned}
     x\ln 5 &= (x+1)\ln 3 \\
     x(\ln 5 - \ln 3) &= \ln 3 \\
-    x &= \frac{\ln 3}{\ln(5/3)} \approx 2.15
+    x &= \boxed{\frac{\ln 3}{\ln(5/3)} \approx 2.15}
     \end{aligned}
     $$
 
 ## Punto 4. Trigonometría
 
 1. $150^\circ = 150\cdot\dfrac{\pi}{180} = \boxed{\dfrac{5\pi}{6}}$ y $\dfrac{7\pi}{4}\cdot\dfrac{180^\circ}{\pi} = \boxed{315^\circ}$.
-1. $\sin\dfrac{2\pi}{3} = \dfrac{\sqrt{3}}{2}$, $\cos\dfrac{3\pi}{4} = -\dfrac{\sqrt{2}}{2}$, $\tan\dfrac{5\pi}{3} = -\sqrt{3}$.
-1. $\cos^2\theta = 1 - \dfrac{9}{25} = \dfrac{16}{25}$. En el segundo cuadrante el coseno es negativo, así que $\cos\theta = -\dfrac{4}{5}$ y $\tan\theta = -\dfrac{3}{4}$.
-1. $$
-    \frac{1-\cos^2 x}{\sin x\cos x} = \frac{\sin^2 x}{\sin x\cos x} = \frac{\sin x}{\cos x} = \tan x
+1. Con los ángulos de referencia $\dfrac{\pi}{3}$, $\dfrac{\pi}{4}$ y $\dfrac{\pi}{3}$, y los signos de cada cuadrante (II, II y IV):
+    $$
+    \sin\frac{2\pi}{3} = \boxed{\frac{\sqrt{3}}{2}}, \qquad \cos\frac{3\pi}{4} = \boxed{-\frac{\sqrt{2}}{2}}, \qquad \tan\frac{5\pi}{3} = \boxed{-\sqrt{3}}
+    $$
+1. $\cos^2\theta = 1 - \dfrac{9}{25} = \dfrac{16}{25}$. En el segundo cuadrante el coseno es negativo, así que
+    $$
+    \cos\theta = \boxed{-\frac{4}{5}}, \qquad \tan\theta = \frac{\sin\theta}{\cos\theta} = \frac{3/5}{-4/5} = \boxed{-\frac{3}{4}}
+    $$
+1. Usando $\sin^2 x + \cos^2 x = 1$ (válido cuando $\sin x\cos x \neq 0$):
+    $$
+    \frac{1-\cos^2 x}{\sin x\cos x} = \frac{\sin^2 x}{\sin x\cos x} = \frac{\sin x}{\cos x} = \boxed{\tan x}
     $$
 1. $\sin x = \dfrac{1}{2} \Rightarrow \boxed{x = \dfrac{\pi}{6}}$ o $\boxed{x = \dfrac{5\pi}{6}}$.
-1. $h = 6\sin 60^\circ = 6\cdot\dfrac{\sqrt{3}}{2} = 3\sqrt{3} \approx 5.20$ m.
+1. La escalera es la hipotenusa y la altura es el cateto opuesto al ángulo de $60^\circ$:
+    $$
+    h = 6\sin 60^\circ = 6\cdot\frac{\sqrt{3}}{2} = \boxed{3\sqrt{3} \approx 5.20 \text{ m}}
+    $$
 
 ## Punto 5. Problemas de aplicación
 
-1. $A = 1\,000\,000\,(1.08)^5 \approx \boxed{\$1\,469\,328}$
+1. Con $A = P(1 + r)^n$, $P = 1\,000\,000$, $r = 0.08$ y $n = 5$:
+    $$
+    A = 1\,000\,000\,(1.08)^5 \approx \boxed{\$1\,469\,328}
+    $$
 1. $N(t) = 500\cdot 2^{t/3}$. Para $N = 8000$:
     $$
-    2^{t/3} = 16 = 2^4 \Rightarrow \frac{t}{3} = 4 \Rightarrow t = 12 \text{ horas}
+    500\cdot 2^{t/3} = 8000 \Rightarrow 2^{t/3} = 16 = 2^4 \Rightarrow \frac{t}{3} = 4 \Rightarrow \boxed{t = 12 \text{ horas}}
     $$
 1. $\text{pH} = -\log(10^{-4}) = \boxed{4}$. Si $\text{pH} = 9$, entonces $[\text{H}^+] = \boxed{10^{-9}}$.
 

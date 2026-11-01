@@ -1,35 +1,13 @@
-/* Estilo de apuntes: navegación clara, lectura amplia y ejercicios distinguibles. */
-
-:root {
-  --ink: #203040;
-  --muted: #647585;
-  --accent: #237a7b;
-  --accent-dark: #155456;
-  --paper: #fbfcfa;
-  --line: #dce5e8;
-  --exercise: #f1f7f6;
-}
-
-body {
-  background: var(--paper);
-  color: var(--ink);
-}
-
-.sidebar-title,
-h1,
-h2,
-h3 {
-  color: var(--accent-dark);
-}
+/* Estilo de libro: fondo limpio, colores del tema (claro y oscuro) y ejercicios fáciles de seguir. */
 
 h1 {
-  font-weight: 750;
+  font-weight: 700;
 }
 
 h2 {
-  border-bottom: 2px solid var(--line);
+  border-bottom: 1px solid var(--bs-border-color);
   padding-bottom: 0.35rem;
-  margin-top: 2rem;
+  margin-top: 2.25rem;
 }
 
 h3 {
@@ -37,24 +15,59 @@ h3 {
   margin-top: 1.35rem;
 }
 
-.sidebar nav[role="doc-toc"] a,
-.sidebar nav a {
-  color: var(--ink);
+.quarto-title .subtitle {
+  color: var(--bs-secondary-color);
 }
 
-.sidebar nav a:hover,
-.sidebar nav .active > a {
-  color: var(--accent);
+.callout-header {
+  font-weight: 600;
 }
 
-table {
-  background: white;
-  border: 1px solid var(--line);
+/* Menú lateral: cada solucionario aparece debajo de su taller, más discreto. */
+.sidebar-item a[href*="/respuestas/"] .menu-text {
+  padding-left: 1rem;
+  font-size: 0.92em;
+  color: var(--bs-secondary-color);
 }
 
-th {
-  background: var(--exercise);
-  color: var(--accent-dark);
+.sidebar-item a[href*="/respuestas/"] .menu-text::before {
+  content: "\21B3\00a0";
+}
+
+.sidebar-item a[href*="/respuestas/"].active .menu-text {
+  color: var(--bs-primary);
+}
+
+/* Selector Enunciado / Solucionario al inicio de cada taller. */
+.taller-switch {
+  display: inline-flex;
+  margin: 0.25rem 0 1.5rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 999px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.taller-switch a,
+.taller-switch .activa {
+  padding: 0.3rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.taller-switch a {
+  color: var(--bs-body-color);
+}
+
+.taller-switch a:hover {
+  background: var(--bs-tertiary-bg);
+}
+
+.taller-switch .activa {
+  background: var(--bs-primary);
+  color: #fff;
+  font-weight: 600;
 }
 
 /* Los ejercicios de cada punto se enumeran a), b), c)... */
@@ -71,8 +84,9 @@ section[id^="punto"] ol > li {
   margin-bottom: 0.6rem;
 }
 
-.quarto-title .subtitle {
-  color: var(--muted);
+section[id^="punto"] ol > li::marker {
+  font-weight: 600;
+  color: var(--bs-primary);
 }
 
 .taller-nav {
@@ -83,7 +97,7 @@ section[id^="punto"] ol > li {
   gap: 0.75rem;
   margin-top: 3rem;
   padding-top: 1rem;
-  border-top: 2px solid var(--line);
+  border-top: 1px solid var(--bs-border-color);
 }
 
 .taller-nav p {
@@ -100,15 +114,31 @@ td .katex {
   overflow-y: hidden;
 }
 
+.autor {
+  text-align: center;
+  color: var(--bs-secondary-color);
+  margin: 0.5rem 0 2rem;
+}
+
+/* El logo tiene fondo transparente; en modo oscuro se le da un fondo claro. */
+.quarto-dark img[src$="logo_unal.png"] {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+/* Pie de página. */
+.nav-footer {
+  font-size: 0.9rem;
+}
+
+.nav-footer .nav-link {
+  padding: 0 0.5rem;
+}
+
 @media (max-width: 700px) {
   .content {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
-
-.autor {
-  text-align: center;
-  color: var(--muted);
-  margin: 0.5rem 0 2rem;
 }
