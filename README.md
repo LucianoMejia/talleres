@@ -1,10 +1,10 @@
-# Talleres de matemáticas
+# Talleres
 
-Sitio web con talleres, solucionarios y explicaciones, construido con [Quarto](https://quarto.org/). Las páginas se escriben en Markdown (`.qmd`) y las fórmulas en LaTeX.
+Sitio web con talleres, solucionarios y explicaciones para practicar, construido con [Quarto](https://quarto.org/). Las páginas se escriben en Markdown (`.qmd`) y las fórmulas en LaTeX.
 
 ## Organización
 
-Las materias aparecen en el orden en que se estudian:
+El sitio se organiza por áreas y, dentro de cada área, por materias en el orden en que se estudian. Por ahora hay un área, Matemáticas:
 
 1. Matemáticas básicas
 2. Cálculo diferencial
@@ -20,7 +20,9 @@ materias/<materia>.qmd       página de cada materia con la tabla de talleres
 talleres/<materia>/tallerN.qmd     enunciados
 respuestas/<materia>/tallerN.qmd   solucionarios
 explicaciones/               material de apoyo
-styles.css                   estilos (tema cosmo claro / darkly oscuro)
+styles.css                   estilos generales (estilo Apple)
+theme-light.scss             tema claro (sobre cosmo): letra, colores y bordes
+theme-dark.scss              tema oscuro (sobre darkly)
 taller-switch.lua            pestañas Enunciado / Solucionario en cada taller
 ```
 
@@ -48,6 +50,13 @@ El workflow `.github/workflows/publish.yml` publica el sitio cada vez que se hac
 2. Agregue la fila del taller en `materias/<materia>.qmd`.
 3. Agregue el taller y su solucionario en el menú lateral de `_quarto.yml` y en `solucionarios.qmd`.
 4. Revise con `quarto preview` y haga push a `main`.
+
+## Agregar otra área
+
+1. Cree la página de cada materia en `materias/` y sus talleres en `talleres/<materia>/` y `respuestas/<materia>/`, igual que en Matemáticas.
+2. En `_quarto.yml`, agregue una nueva `section` al mismo nivel que `"Matemáticas"`, con sus materias adentro.
+3. En `index.qmd`, agregue un título `## <Área>` con sus tarjetas `.materia`, copiando las de Matemáticas.
+4. En `solucionarios.qmd`, agregue `## <Área>` y una tabla por materia.
 
 ### Convenciones
 

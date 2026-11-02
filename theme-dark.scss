@@ -1,0 +1,45 @@
+/*-- scss:defaults --*/
+// Tema oscuro con estilo Apple. Se aplica encima de "darkly".
+
+$web-font-path: "https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap";
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
+$headings-font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
+$font-family-monospace: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+$font-size-base: 1.0625rem;
+$line-height-base: 1.55;
+$headings-font-weight: 700;
+$headings-line-height: 1.15;
+
+// Colores
+$body-bg: #000000;
+$body-color: #F5F5F7;
+$headings-color: #F5F5F7;
+$primary: #0A84FF;
+$secondary: #98989D;
+$success: #30D158;
+$info: #64D2FF;
+$warning: #FF9F0A;
+$danger: #FF453A;
+$link-color: #2997FF;
+$link-decoration: none;
+$link-hover-decoration: underline;
+$border-color: #38383A;
+$text-muted: #98989D;
+$code-color: #FF7B72;
+$input-bg: #1C1C1E;
+
+// Superficies del sitio Quarto
+$sidebar-bg: #1C1C1E;
+$sidebar-fg: #F5F5F7;
+$footer-bg: #1C1C1E;
+$footer-fg: #98989D;
+
+// Formas
+$border-radius: .75rem;
+$border-radius-sm: .5rem;
+$border-radius-lg: 1.125rem;
+$btn-border-radius: 980px;
+$btn-border-radius-sm: 980px;
+$btn-border-radius-lg: 980px;
+$input-border-radius: .625rem;
+$box-shadow: none;

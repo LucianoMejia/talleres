@@ -1,6 +1,6 @@
 ---
 title: "Matemáticas básicas"
-subtitle: "Materia 1 de 5"
+subtitle: "Matemáticas · materia 1 de 5"
 toc: false
 ---
 

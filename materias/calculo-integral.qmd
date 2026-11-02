@@ -1,6 +1,6 @@
 ---
 title: "Cálculo integral"
-subtitle: "Materia 3 de 5"
+subtitle: "Matemáticas · materia 3 de 5"
 toc: false
 ---
 

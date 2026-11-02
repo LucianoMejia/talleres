@@ -1,93 +1,269 @@
-/* Estilo de libro: fondo limpio, colores del tema (claro y oscuro) y ejercicios fáciles de seguir. */
+/* Estilo inspirado en Apple: tipografía del sistema, superficies suaves sin bordes
+   duros, controles redondeados y movimiento corto con curvas propias.
+   Los colores vienen de los temas theme-light.scss y theme-dark.scss. */
 
-h1 {
-  font-weight: 700;
+:root {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --fill: rgba(118, 118, 128, 0.12);
+  --fill-strong: rgba(118, 118, 128, 0.2);
+  --separator: rgba(60, 60, 67, 0.16);
+  --surface: #F5F5F7;
+  --focus: color-mix(in srgb, var(--bs-primary) 38%, transparent);
+}
+.quarto-dark {
+  --fill: rgba(118, 118, 128, 0.24);
+  --fill-strong: rgba(118, 118, 128, 0.34);
+  --separator: rgba(84, 84, 88, 0.6);
+  --surface: #1C1C1E;
 }
 
-h2 {
-  border-bottom: 1px solid var(--bs-border-color);
-  padding-bottom: 0.35rem;
-  margin-top: 2.25rem;
+body {
+  letter-spacing: -0.011em;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
 }
 
-h3 {
-  font-size: 1.05rem;
-  margin-top: 1.35rem;
+::selection { background: color-mix(in srgb, var(--bs-primary) 26%, transparent); }
+
+:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px var(--focus) !important;
+  border-radius: 8px;
+}
+
+/* ---------- Títulos: tracking negativo que crece con el tamaño ---------- */
+.quarto-title .title,
+h1.title {
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  text-wrap: balance;
 }
 
 .quarto-title .subtitle {
   color: var(--bs-secondary-color);
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  line-height: 1.35;
+  margin-top: 0.5rem;
 }
 
-.callout-header {
+h2 {
+  font-size: 1.75rem;
+  letter-spacing: -0.028em;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  margin-top: 1.75rem;
+}
+
+#title-block-header { margin-bottom: 1.75rem; }
+
+.quarto-title-breadcrumbs .breadcrumb,
+.breadcrumb { font-size: 0.875rem; }
+.breadcrumb-item a { color: var(--bs-secondary-color); }
+.breadcrumb, .quarto-page-breadcrumbs, nav.quarto-page-breadcrumbs .breadcrumb { background: transparent !important; padding: 0 !important; border-radius: 0; }
+.breadcrumb-item { flex-shrink: 0; }
+
+/* Etiquetas de categoría como cápsulas */
+.quarto-category {
+  border: 0 !important;
+  background: var(--fill);
+  color: var(--bs-body-color) !important;
+  opacity: 1 !important;
+  border-radius: 999px !important;
+  padding: 0.3em 0.8em !important;
+  font-size: 0.75rem !important;
+  font-weight: 600;
+  text-transform: none !important;
+  letter-spacing: 0;
+}
+
+/* ---------- Barra lateral (como la de Ajustes de macOS) ---------- */
+#quarto-sidebar {
+  border-right: 0 !important;
+}
+.sidebar-title {
+  font-size: 1.375rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.028em;
+}
+.sidebar-title a { color: var(--bs-body-color) !important; font-weight: 700; }
+.sidebar-title, .sidebar-title a { font-weight: 700 !important; }
+
+#quarto-sidebar .sidebar-item-container .sidebar-link,
+#quarto-sidebar .sidebar-item-section > .sidebar-item-container > a {
+  border-radius: 8px;
+  padding: 0.3rem 0.55rem;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  #quarto-sidebar .sidebar-link:hover { background: var(--fill); text-decoration: none; }
+}
+#quarto-sidebar .sidebar-link.active {
+  background: color-mix(in srgb, var(--bs-primary) 14%, transparent);
   font-weight: 600;
 }
+#quarto-sidebar .sidebar-link.active .menu-text { color: var(--bs-primary); }
+.sidebar-item-section > .sidebar-item-container .menu-text { font-weight: 500; }
+/* El área (Matemáticas) va más destacada que sus materias. */
+#quarto-sidebar .sidebar-menu-container > ul > .sidebar-item-section > .sidebar-item-container .menu-text {
+  font-weight: 700;
+  font-size: 0.8125rem;
+  color: var(--bs-secondary-color);
+  letter-spacing: 0;
+}
+.sidebar-item-toggle { border-radius: 6px; }
 
-/* Menú lateral: cada solucionario aparece debajo de su taller, más discreto. */
+/* Cada solucionario aparece debajo de su taller, más discreto. */
 .sidebar-item a[href*="/respuestas/"] .menu-text {
-  padding-left: 1rem;
-  font-size: 0.92em;
+  padding-left: 0.85rem;
+  font-size: 0.9em;
+  font-weight: 400;
   color: var(--bs-secondary-color);
 }
+.sidebar-item a[href*="/respuestas/"] .menu-text::before { content: "\21B3\00a0"; }
+.sidebar-item a[href*="/respuestas/"].active .menu-text { color: var(--bs-primary); }
 
-.sidebar-item a[href*="/respuestas/"] .menu-text::before {
-  content: "\21B3\00a0";
+/* Buscador */
+#quarto-search .aa-Form,
+.aa-Form {
+  border: 0 !important;
+  border-radius: 10px !important;
+  background: var(--fill) !important;
+  box-shadow: none !important;
 }
+.aa-Form:focus-within { box-shadow: 0 0 0 4px var(--focus) !important; }
 
-.sidebar-item a[href*="/respuestas/"].active .menu-text {
-  color: var(--bs-primary);
+/* Índice de la página */
+#TOC .toc-actions, #toc-title, .toc-title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--bs-secondary-color);
+  letter-spacing: 0;
 }
+#TOC a.nav-link { font-size: 0.875rem; transition: color 150ms ease; }
 
-/* Selector Enunciado / Solucionario al inicio de cada taller. */
+/* ---------- Selector Enunciado / Solucionario: control segmentado ---------- */
 .taller-switch {
-  display: inline-flex;
-  margin: 0.25rem 0 1.5rem;
-  border: 1px solid var(--bs-border-color);
-  border-radius: 999px;
-  padding: 3px;
-  gap: 2px;
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  margin: 0.25rem 0 2rem;
+  padding: 2px;
+  gap: 0;
+  border: 0;
+  border-radius: 10px;
+  background: var(--fill);
 }
-
 .taller-switch a,
 .taller-switch .activa {
-  padding: 0.3rem 1rem;
-  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1.1rem;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  font-weight: 500;
   text-decoration: none;
-  font-size: 0.95rem;
+  white-space: nowrap;
 }
-
 .taller-switch a {
   color: var(--bs-body-color);
+  transition: opacity 150ms ease, background-color 150ms ease;
 }
-
-.taller-switch a:hover {
-  background: var(--bs-tertiary-bg);
+.taller-switch a:active { opacity: 0.6; }
+@media (hover: hover) and (pointer: fine) {
+  .taller-switch a:hover { background: var(--fill); text-decoration: none; }
 }
-
 .taller-switch .activa {
-  background: var(--bs-primary);
-  color: #fff;
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12), 0 3px 1px rgba(0, 0, 0, 0.04), 0 0 0 0.5px rgba(0, 0, 0, 0.04);
+}
+.quarto-dark .taller-switch .activa { background: #636366; }
+
+/* ---------- Ejercicios: a), b), c)… ---------- */
+section[id^="punto"] ol { list-style-type: lower-alpha; }
+section[id^="punto"] ol ol { list-style-type: lower-roman; margin-top: 0.4rem; }
+section[id^="punto"] ol > li { margin-bottom: 0.7rem; padding-left: 0.2rem; }
+section[id^="punto"] ol > li::marker { font-weight: 600; color: var(--bs-primary); }
+
+/* ---------- Tablas con esquinas redondeadas y líneas finas ---------- */
+.table, table.table {
+  border-collapse: separate !important;
+  border-spacing: 0;
+  border: 0 !important;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--surface);
+  margin: 1.25rem 0 1.75rem;
+  font-variant-numeric: tabular-nums;
+}
+.table > :not(caption) > * > * {
+  border-bottom: 0 !important;
+  border-top: 0.5px solid var(--separator) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0.7rem 0.9rem !important;
+}
+.table > thead > tr > * {
+  border-top: 0 !important;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--bs-secondary-color);
+}
+.table > :not(:first-child) { border-top: 0 !important; }
+.table a { font-weight: 500; }
+
+/* ---------- Recuadros de ayuda ---------- */
+div.callout {
+  border: 0 !important;
+  border-radius: 16px !important;
+  background: color-mix(in srgb, var(--callout-color, var(--bs-primary)) 9%, var(--bs-body-bg)) !important;
+  box-shadow: none !important;
+  overflow: hidden;
+}
+div.callout-note { --callout-color: var(--bs-primary); }
+div.callout-tip { --callout-color: var(--bs-success); }
+div.callout-warning { --callout-color: var(--bs-warning); }
+div.callout-important, div.callout-caution { --callout-color: var(--bs-danger); }
+div.callout .callout-header {
+  background: transparent !important;
+  border: 0 !important;
   font-weight: 600;
 }
+div.callout .callout-title-container { font-weight: 600; }
 
-/* Los ejercicios de cada punto se enumeran a), b), c)... */
-section[id^="punto"] ol {
-  list-style-type: lower-alpha;
+/* ---------- Botones ---------- */
+.btn {
+  font-weight: 500;
+  padding: 0.5rem 1.15rem;
+  transition: transform 160ms var(--ease-out), background-color 150ms ease, color 150ms ease, border-color 150ms ease;
 }
-
-section[id^="punto"] ol ol {
-  list-style-type: lower-roman;
-  margin-top: 0.4rem;
-}
-
-section[id^="punto"] ol > li {
-  margin-bottom: 0.6rem;
-}
-
-section[id^="punto"] ol > li::marker {
-  font-weight: 600;
+.btn:active { transform: scale(0.97); }
+.btn-outline-primary {
+  border-color: transparent;
+  background: var(--fill);
   color: var(--bs-primary);
 }
+@media (hover: hover) and (pointer: fine) {
+  .btn-outline-primary:hover { background: var(--fill-strong); color: var(--bs-primary); border-color: transparent; }
+}
+.btn-outline-primary:active { background: var(--fill-strong) !important; color: var(--bs-primary) !important; border-color: transparent !important; }
 
 .taller-nav {
   display: flex;
@@ -95,50 +271,158 @@ section[id^="punto"] ol > li::marker {
   justify-content: space-between;
   align-items: center;
   gap: 0.75rem;
-  margin-top: 3rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--bs-border-color);
+  margin-top: 3.5rem;
+  padding-top: 1.25rem;
+  border-top: 0;
+  box-shadow: 0 -0.5px 0 var(--separator);
+}
+.taller-nav p { display: contents; }
+
+/* Navegación anterior / siguiente al final de cada página */
+.page-navigation .nav-page a {
+  border-radius: 12px;
+  padding: 0.5rem 0.75rem;
+  transition: background-color 150ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .page-navigation .nav-page a:hover { background: var(--fill); text-decoration: none; }
 }
 
-.taller-nav p {
-  display: contents;
-}
+/* ---------- Fórmulas ---------- */
+td .katex { white-space: nowrap; }
+.katex-display { overflow-x: auto; overflow-y: hidden; padding: 0.15rem 0; }
 
-/* Evita que las fórmulas se partan dentro de las celdas de una tabla. */
-td .katex {
-  white-space: nowrap;
-}
-
-.katex-display {
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
+/* ---------- Inicio ---------- */
 .autor {
   text-align: center;
   color: var(--bs-secondary-color);
-  margin: 0.5rem 0 2rem;
+  margin: 0.75rem 0 2.25rem;
+  font-size: 0.9375rem;
 }
 
-/* El logo tiene fondo transparente; en modo oscuro se le da un fondo claro. */
 .quarto-dark img[src$="logo_unal.png"] {
   background: #fff;
-  border-radius: 0.5rem;
+  border-radius: 14px;
   padding: 0.75rem;
 }
 
-/* Pie de página. */
+/* Tarjetas de materias: toda la tarjeta es el enlace. */
+.materias {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 2rem;
+}
+.materia {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.1rem 1.15rem 1rem;
+  border-radius: 18px;
+  background: var(--surface);
+  transition: transform 160ms var(--ease-out), background-color 150ms ease;
+}
+.materia:active { transform: scale(0.98); }
+@media (hover: hover) and (pointer: fine) {
+  .materia:hover { background: var(--fill-strong); }
+}
+.materia:focus-within { box-shadow: 0 0 0 4px var(--focus); }
+.materia h3 {
+  margin: 0;
+  font-weight: 600 !important;
+  font-size: 1.125rem;
+  letter-spacing: -0.02em;
+}
+.materia h3 a {
+  color: var(--bs-body-color);
+  text-decoration: none !important;
+}
+.materia h3 a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.materia h3 a:focus-visible { box-shadow: none !important; }
+.materia p { margin: 0; font-size: 0.9375rem; line-height: 1.4; color: var(--bs-secondary-color); }
+.materia .num {
+  display: inline-grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: var(--bs-primary);
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.materia .count {
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--bs-primary);
+}
+.materias p:empty { display: none; }
+.materia p:last-child { margin-top: auto; }
+
+.pasos ol { counter-reset: paso; list-style: none; padding: 0; display: grid; gap: 0.5rem; margin: 1rem 0 0; }
+.pasos ol > li {
+  counter-increment: paso;
+  position: relative;
+  padding: 0.9rem 1rem 0.9rem 3.25rem;
+  border-radius: 14px;
+  background: var(--surface);
+}
+.pasos ol > li::before {
+  content: counter(paso);
+  position: absolute;
+  left: 1rem;
+  top: 0.9rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--bs-primary);
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  display: grid;
+  place-items: center;
+}
+
+/* ---------- Pie de página ---------- */
 .nav-footer {
-  font-size: 0.9rem;
+  font-size: 0.8125rem;
+  border-top: 0 !important;
+  box-shadow: 0 -0.5px 0 var(--separator);
 }
+.nav-footer .nav-link { padding: 0 0.5rem; }
 
-.nav-footer .nav-link {
-  padding: 0 0.5rem;
-}
-
-@media (max-width: 700px) {
-  .content {
-    padding-left: 1rem;
-    padding-right: 1rem;
+/* ---------- Móvil ---------- */
+@media (max-width: 991.98px) {
+  /* Barra superior translúcida */
+  #quarto-header, .quarto-secondary-nav {
+    background: color-mix(in srgb, var(--bs-body-bg) 72%, transparent) !important;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: 0 0.5px 0 var(--separator);
+    border: 0 !important;
   }
+}
+@media (max-width: 991.98px) {
+  /* Migas en una sola línea en la barra superior del celular */
+  .quarto-secondary-nav .breadcrumb { flex-wrap: nowrap; white-space: nowrap; overflow-x: auto; scrollbar-width: none; font-size: 0.8125rem; }
+  .quarto-secondary-nav .breadcrumb::-webkit-scrollbar { display: none; }
+  .quarto-secondary-nav .quarto-page-breadcrumbs { min-width: 0; flex: 1 1 auto; overflow: hidden; }
+  .quarto-secondary-nav .quarto-search-button, .quarto-secondary-nav button { flex-shrink: 0; }
+}
+@media (max-width: 700px) {
+  .content { padding-left: 1rem; padding-right: 1rem; }
+  h2 { font-size: 1.5rem; margin-top: 2.5rem; }
+  .taller-switch { display: grid; width: 100%; }
+  .table > :not(caption) > * > * { padding: 0.6rem 0.65rem !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  #quarto-header, .quarto-secondary-nav { background: var(--bs-body-bg) !important; -webkit-backdrop-filter: none; backdrop-filter: none; }
 }

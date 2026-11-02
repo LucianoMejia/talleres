@@ -1,6 +1,6 @@
 ---
 title: "Álgebra lineal"
-subtitle: "Materia 4 de 5"
+subtitle: "Matemáticas · materia 4 de 5"
 toc: false
 ---
 

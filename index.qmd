@@ -1,30 +1,78 @@
 ---
-title: "Talleres de matemáticas"
+title: "Talleres"
 subtitle: "Talleres, solucionarios y explicaciones para practicar"
 toc: false
 ---
 
-![](logo_unal.png){fig-alt="Logo de la Universidad Nacional de Colombia" width="340px" fig-align="center"}
+![](logo_unal.png){fig-alt="Logo de la Universidad Nacional de Colombia" width="300px" fig-align="center"}
 
 ::: {.autor}
-Página creada por **José Luciano Mejía Arias** con talleres para estudiar matemáticas.
+Página creada por **José Luciano Mejía Arias** con talleres para estudiar.
 :::
 
-Bienvenido. Aquí encuentra los talleres de cada materia en el orden en que se estudian. Cada taller tiene su solucionario para que pueda revisar su trabajo.
+Bienvenido. Aquí encuentra los talleres organizados por área y materia, en el orden en que se estudian. Cada taller tiene su solucionario para que pueda revisar su trabajo.
 
-## Materias
+## Matemáticas
 
-| # | Materia | Contenido | Talleres |
-|:-:|---|---|:-:|
-| 1 | [Matemáticas básicas](materias/matematicas-basicas.qmd) | Operaciones, factorización, ecuaciones, conjuntos, funciones, logaritmos y trigonometría | 6 |
-| 2 | [Cálculo diferencial](materias/calculo-diferencial.qmd) | Límites, regla de L'Hôpital y reglas de derivación | 2 |
-| 3 | [Cálculo integral](materias/calculo-integral.qmd) | Técnicas de integración, áreas, volúmenes y series | 4 |
-| 4 | [Álgebra lineal](materias/algebra-lineal.qmd) | Sistemas de ecuaciones, matrices, inversa, determinantes y vectores | 2 |
-| 5 | [Ecuaciones diferenciales](materias/ecuaciones-diferenciales.qmd) | Primer y segundo orden, modelación y transformada de Laplace | 3 |
+::: {.materias}
+
+::: {.materia}
+[1]{.num}
+
+### [Matemáticas básicas](materias/matematicas-basicas.qmd)
+
+Operaciones, factorización, ecuaciones, conjuntos, funciones, logaritmos y trigonometría.
+
+[6 talleres]{.count}
+:::
+
+::: {.materia}
+[2]{.num}
+
+### [Cálculo diferencial](materias/calculo-diferencial.qmd)
+
+Límites, regla de L'Hôpital y reglas de derivación.
+
+[2 talleres]{.count}
+:::
+
+::: {.materia}
+[3]{.num}
+
+### [Cálculo integral](materias/calculo-integral.qmd)
+
+Técnicas de integración, áreas, volúmenes y series.
+
+[4 talleres]{.count}
+:::
+
+::: {.materia}
+[4]{.num}
+
+### [Álgebra lineal](materias/algebra-lineal.qmd)
+
+Sistemas de ecuaciones, matrices, inversa, determinantes y vectores.
+
+[2 talleres]{.count}
+:::
+
+::: {.materia}
+[5]{.num}
+
+### [Ecuaciones diferenciales](materias/ecuaciones-diferenciales.qmd)
+
+Primer y segundo orden, modelación y transformada de Laplace.
+
+[3 talleres]{.count}
+:::
+
+:::
 
 ## Cómo trabajar los talleres
 
+::: {.pasos}
 1. Elija la materia y abra el taller que le asignaron.
 2. Resuelva los ejercicios en su cuaderno, mostrando todo el procedimiento.
 3. Solo después de intentarlo, use la pestaña **Solucionario** que está arriba de cada taller y compare sus respuestas. También puede ver [todos los solucionarios](solucionarios.qmd) en una sola página.
 4. Si tiene dudas sobre un tema, revise las explicaciones de la materia.
+:::

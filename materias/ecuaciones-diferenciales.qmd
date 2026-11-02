@@ -1,6 +1,6 @@
 ---
 title: "Ecuaciones diferenciales"
-subtitle: "Materia 5 de 5"
+subtitle: "Matemáticas · materia 5 de 5"
 toc: false
 ---
 

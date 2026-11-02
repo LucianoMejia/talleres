@@ -1,6 +1,6 @@
 ---
 title: "Cálculo diferencial"
-subtitle: "Materia 2 de 5"
+subtitle: "Matemáticas · materia 2 de 5"
 toc: false
 ---
 
